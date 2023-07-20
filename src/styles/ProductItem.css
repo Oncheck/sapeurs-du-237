@@ -1,0 +1,16 @@
+.lmj-plant-item-cover {
+	height: 220px;
+	width: 220px;
+	border-radius: 20px;
+	/*border: 1px solid #ff4e00;*/
+}
+
+.lmj-plant-item {
+	margin: 10px;
+	text-transform: capitalize;
+}
+
+.lmj-plant-item-price {
+	align-items: flex-end;
+	align-items: end;
+}
