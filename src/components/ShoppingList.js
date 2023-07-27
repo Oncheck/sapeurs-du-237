@@ -13,7 +13,7 @@ function ShoppingList({ cart, updateCart }) {
 		[]
 	)
 
-	/*function addToCart(id, name, price, cover) {
+	function addToCart(id, name, price, cover) {
 		const currentProductSaved = cart.find((product) => product.name === name)
 		if (currentProductSaved) {
 			const cartFilteredCurrentProduct = cart.filter(
@@ -27,7 +27,7 @@ function ShoppingList({ cart, updateCart }) {
 			updateCart([...cart, { id, name, cover, price, amount: 1 }])
 		}
 
-	}*/
+	}
 
 	function handleSubmit(e) {
 		e.preventDefault();

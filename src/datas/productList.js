@@ -23,6 +23,17 @@ export const productList = [
         category: 'Vêtements Hommes',
         price: 25000,
         cover: product_1,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -31,6 +42,17 @@ export const productList = [
         category: 'Vêtements Hommes',
         price: 25000,
         cover: product_2,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -39,6 +61,17 @@ export const productList = [
         category: 'Vêtements Hommes',
         price: 25000,
         cover: product_3,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -47,6 +80,17 @@ export const productList = [
         category: 'Vêtements Hommes',
         price: 25000,
         cover: product_4,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -74,6 +118,17 @@ export const productList = [
         category: 'Chemises Femmes',
         price: 10000,
         cover: product_5,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -82,6 +137,17 @@ export const productList = [
         category: 'Chemises Hommes',
         price: 12000,
         cover: product_6,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -90,6 +156,17 @@ export const productList = [
         category: 'Chemises Hommes',
         price: 8000,
         cover: product_7,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -98,6 +175,17 @@ export const productList = [
         category: 'Chemises Hommes',
         price: 10000,
         cover: product_8,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -106,6 +194,17 @@ export const productList = [
         category: 'Chaussures Femmes',
         price: 30000,
         cover: product_9,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -114,6 +213,17 @@ export const productList = [
         category: 'Chaussures Femmes',
         price: 50000,
         cover: product_10,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -122,6 +232,17 @@ export const productList = [
         category: 'Chaussures Femmes',
         price: 45000,
         cover: product_11,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -130,6 +251,17 @@ export const productList = [
         category: 'Sacs à main',
         price: 15000,
         cover: product_12,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -138,6 +270,17 @@ export const productList = [
         category: 'Sacs à main',
         price: 25000,
         cover: product_13,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -146,6 +289,17 @@ export const productList = [
         category: 'Chaussures Hommes',
         price: 15000,
         cover: product_14,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -154,6 +308,17 @@ export const productList = [
         category: 'Chaussures Hommes',
         price: 35000,
         cover: product_16,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     },
     {
@@ -162,6 +327,17 @@ export const productList = [
         category: 'Vêtements Femmes',
         price: 75000,
         cover: product_17,
+        images: [
+            {
+                src: product_15
+            },
+            {
+                src: product_4
+            },
+            {
+                src: product_5
+            }
+        ],
         likes: 0
     }
 ];

@@ -6,6 +6,8 @@ import '../styles/Home.css';
 import { categoriesList } from "../datas/categoriesList";
 import { productList } from '../datas/productList'
 import { Link } from "react-router-dom";
+import { redirect } from "react-router-dom";
+import ProductItem from "./ProductItem";
 
 const containerStyles = {
     width: '100%',
@@ -14,7 +16,16 @@ const containerStyles = {
     borderRadius: '30px'
 }
 
+
 function Home() {
+    
+    function handleClick(product) {
+        if (product.images) {   
+            return redirect("/products/" + product.name)
+        }
+    }
+
+    
     return (
         <>
             <Banner />
@@ -43,19 +54,10 @@ function Home() {
                 <div className="bloc-items">
                     <ul className="products-items">
                         {productList.slice(0, 7).map((product, index) => (
-                            <li key={index}>
-                                <img className='product-img' src={product.cover} alt={`${product.name} cover`} />
-                                <div className="product">
-                                    <div className="line-1">
-                                        <p>{product.name}</p>
-                                        <span>{product.category}</span>
-                                    </div>
-                                    <div className="line-2">
-                                        <p>{product.price} XAF</p>
-                                        <span>Livraison en 5 jours</span>
-                                    </div>
-                                </div>
-                            </li>
+                            <ProductItem 
+                                key={index}
+                                product={product}
+                            />
                         ))}
                     </ul>
                 </div>

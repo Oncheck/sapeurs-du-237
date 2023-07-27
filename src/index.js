@@ -14,7 +14,7 @@ ReactDOM.render(
         <Route exact path='' element={<Home />}></Route>
         <Route exact path='/home' element={<Home />}></Route>
         <Route exact path='/products' element={<App />}></Route>
-        <Route exact path='products/:name' element={<SingleProduct />}></Route>
+        <Route exact path='/products/:name' element={<SingleProduct />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
