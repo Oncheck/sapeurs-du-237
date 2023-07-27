@@ -1,0 +1,111 @@
+.filter {
+	color: white !important;
+	/*background-color: #31b572;*/
+	background-color: #f2f2f2;
+	padding: 32px;
+	width: 200px;
+}
+
+.filter-search input[type="search"] {
+    outline: none;
+    padding: 12px 15px;
+    color: #888;
+    font-size: 13px;
+    width: 84%;
+    border: none;
+    background: none;
+    letter-spacing: 1px;
+    float: left;
+}
+
+.filter-search form button.btn {
+    color: #ffcb45;
+    border: none;
+    padding: 10px 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    float: right;
+	width: 15%;
+	background: #e2e2e2;
+}
+.filter-search form button.btn:hover{
+	background: #2f2f2f;
+	color:#fff;
+}
+
+h3.title-filter {
+	color: #181c27;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.filter-search {
+	padding: 15px 0;
+}
+.filter-search form {
+    border: 1px solid #ddd;
+}
+
+ul.dropdown {
+	margin: 0;
+	position: relative;
+}
+
+ul.dropdown li {
+	list-style: none;
+}
+
+/*.filter-range {
+    padding: 20px 20px;
+	border: 1px solid #e4e4e4;
+}*/
+
+.input-range {
+    font-size: 15px;
+    outline: none;
+    background: none;
+    word-spacing: 1em;
+    color: #5a5a5a !important;
+    position: absolute;
+    /*left: 0%;
+    top: -27px;
+    margin-top: -10px;*/
+}
+.input-range {
+    border: 0;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.filter-categories ul li {
+    display: inline-block;
+	width: 100%;
+	margin-bottom: 6px;
+}
+
+input.checked {
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+}
+
+.filter-categories ul li span {
+	font-size: 13px;
+	color: #000;
+	letter-spacing: 1px;
+	margin-left: 3px;
+	vertical-align: top;
+}
+
+.filter-categories {
+	margin-top: 18px;
+}
