@@ -3,7 +3,6 @@ import Banner from './Banner'
 import Cart from './Cart'
 import Footer from './Footer'
 import ShoppingList from './ShoppingList'
-import '../styles/Layout.css'
 
 function App() {
 	const savedCart = localStorage.getItem('cart')
@@ -15,8 +14,8 @@ function App() {
 	return (
 		<>
 			<Banner />
-			<div className='lmj-layout-inner'>
-				<Cart cart={cart} updateCart={updateCart} />
+			<div>
+				{/* <Cart cart={cart} updateCart={updateCart} /> */}
 				<ShoppingList cart={cart} updateCart={updateCart} />
 			</div>
 			<Footer />

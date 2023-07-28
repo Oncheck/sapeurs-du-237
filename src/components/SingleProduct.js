@@ -1,5 +1,5 @@
 import Banner from './Banner'
-import logo from '../assets/logo.png'
+import logo from '../assets/images/logo.png'
 import Footer from './Footer';
 import { useParams } from 'react-router-dom';
 import { productList } from '../datas/productList';

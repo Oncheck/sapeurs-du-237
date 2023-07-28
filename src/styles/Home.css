@@ -1,4 +1,4 @@
-.home-categories, .featured-products h2 {
+.home-categories, .featured-products h1 {
     margin-left: 20px;
 }
 
@@ -21,7 +21,8 @@
     height: 300px;
     background-color: #fff9ea;
     border-radius: 5%;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+    cursor: pointer;
 }
 .list-items li {
     width: 250px;
@@ -32,10 +33,16 @@
     justify-content: center;
     align-items: center;
 }
+.list-items li .categorie:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
 .list-items li .categorie {
     display: flex;
     align-items: center;
-    background: white;
+    background: #fff9ea;
+    color: black;
     border-radius: 15px;
 }
 .list-items li .categorie p {
@@ -68,6 +75,7 @@
     margin-left: 30px; 
     margin-top: 15px;
     background: '#ffcb45';
+    color: #ffcb45;
 }
 .product > .line-2 {
     margin-top: -30px;

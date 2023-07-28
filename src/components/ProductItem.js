@@ -1,4 +1,3 @@
-import '../styles/Home.css';
 import { useNavigate } from 'react-router-dom'
 
 function ProductItem({ product, index }) {

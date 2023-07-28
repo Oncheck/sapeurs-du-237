@@ -4,15 +4,15 @@ const ImageSlider = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const sliderStyles = {
-        marginTop: '30px',
+        width: '100%',
         height: '100%',
-        position: 'relative'
+        position: 'relative',
     }
 
     const slideStyles = {
-        width: '100%',
+        width: '95%',
         height: '100%',
-        borderRadius: '10px',
+        borderRadius: '30px',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundImage: `url(${slides[currentIndex].url})`
@@ -22,7 +22,7 @@ const ImageSlider = ({ slides }) => {
         position: 'absolute',
         top: '50%',
         transform: 'translate(0, -50%)',
-        left: '32px',
+        left: '2%',
         fontSize: '45px',
         color: '#333',
         zIndex: 1,
@@ -33,7 +33,7 @@ const ImageSlider = ({ slides }) => {
         position: 'absolute',
         top: '50%',
         transform: 'translate(0, -50%)',
-        right: '32px',
+        right: '7%',
         fontSize: '45px',
         color: '#333',
         zIndex: 1,

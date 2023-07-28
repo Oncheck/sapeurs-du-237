@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { productList } from '../datas/productList'
 import ProductItem from './ProductItem'
 import '../styles/ShoppingList.css'
 import '../styles/Filter.css'
+import '../styles/Home.css';
 
 function ShoppingList({ cart, updateCart }) {
 	const [activeCategory, setActiveCategory] = useState('')
@@ -12,6 +13,10 @@ function ShoppingList({ cart, updateCart }) {
 			acc.includes(product.category) ? acc : acc.concat(product.category),
 		[]
 	)
+
+	useEffect(() => {
+        document.title = 'Sapeurs du 237 - Produits'
+    })
 
 	function addToCart(id, name, price, cover) {
 		const currentProductSaved = cart.find((product) => product.name === name)
@@ -35,30 +40,21 @@ function ShoppingList({ cart, updateCart }) {
 	}
 
 	return (
-		<>
-			<div className='lmj-shopping-list'>
-				{/* <Categories
-					categories={categories}
-					setActiveCategory={setActiveCategory}
-					activeCategory={activeCategory}
-				/> */}
-
-				<ul className='lmj-plant-list'>
-					{productList.map((product) =>
-						!activeCategory || search === product.name || search === product.category || activeCategory === product.category ? (
-							<div key={product.id} style={{ marginBottom: '20px'}}>
-								<ProductItem
-									product={product}
-								/>
-								{/* <button className='btn-add' onClick={() => addToCart(product.id, product.name, product.price, product.cover)}>
-									<i className="fa fa-shopping-cart" style={{marginRight: '5px'}}></i>
-									Ajouter au panier</button> */}
-							</div>
-						) : null
-					)}
-				</ul>
-			</div>
-			<div className="filter">
+		<div className='page-products'>
+			<div className="featured-products left-side">
+                <h1 style={{ marginLeft: '20px'}}>Tous nos produits</h1>
+                <div className="bloc-items">
+                    <ul className="products-items">
+                        {productList.map((product, index) => (
+                            <ProductItem 
+                                key={index}
+                                product={product}
+                            />
+                        ))}
+                    </ul>
+                </div>
+            </div>
+			<div className="filter right-side">
 				<div className="filter-search">
 					<h3 className="title-filter">Rechercher...</h3>
 					<form onSubmit={handleSubmit}>
@@ -108,7 +104,7 @@ function ShoppingList({ cart, updateCart }) {
 					</ul>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 
