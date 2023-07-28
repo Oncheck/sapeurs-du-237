@@ -1,11 +1,10 @@
 .page-products {
 	display: flex;
-	justify-content: space-between;
 }
 
 .left-side {
 	width: 78%;
 }
 .right-side {
-	width: 20%;
+	width: 22%;
 }

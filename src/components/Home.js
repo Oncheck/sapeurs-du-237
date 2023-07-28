@@ -81,12 +81,16 @@ function Home() {
                     <p>Vous recevrez une réduction de 20% si vous nous envoyez votre adresse mail</p>
                 </div>
                 <div className="email">
-                    <input type="email" placeholder="Entrer votre mail" />
+                    <input type="email" placeholder="" />
+                    <i className="fa fa-envelope" aria-hidden="true"></i>
                     <button>Envoyer</button>
                 </div>
                 <div className="title2">
-                    <p>Vous pouvez aussi nous contacter sur <i style={{color: '#075e54', fontWeight: 'bold'}} className="fa fa-whatsapp"></i> en cliquant <Link>ici</Link></p>
-                    <p> ou par <i className="fa fa-phone"></i> <Link>ici</Link></p>
+                    <p>Vous pouvez aussi nous contacter sur 
+                        <i style={{color: '#075e54', fontWeight: 'bold', margin: '0 5px'}} className="fa fa-whatsapp"></i> 
+                        en cliquant <Link>ici </Link>
+                        ou par <i className="fa fa-phone"></i><Link> ici</Link>
+                    </p>
                 </div>
             </div>
 

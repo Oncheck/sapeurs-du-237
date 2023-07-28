@@ -8,6 +8,7 @@ import '../styles/Home.css';
 function ShoppingList({ cart, updateCart }) {
 	const [activeCategory, setActiveCategory] = useState('')
 	const [search, setSearch] = useState('')
+	const [rangeValue, setRangeValue] = useState(10)
 	const categories = productList.reduce(
 		(acc, product) =>
 			acc.includes(product.category) ? acc : acc.concat(product.category),
@@ -56,7 +57,7 @@ function ShoppingList({ cart, updateCart }) {
             </div>
 			<div className="filter right-side">
 				<div className="filter-search">
-					<h3 className="title-filter">Rechercher...</h3>
+					<h3 className="title-filter">Rechercher un produit</h3>
 					<form onSubmit={handleSubmit}>
 						<input 
 							className="input-control" 
@@ -65,21 +66,20 @@ function ShoppingList({ cart, updateCart }) {
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}
 						/>
-						<button type='submit'><i className='fa fa-search'></i></button>
 					</form>
 				</div>
 				<div className="filter-range">
 					<h3 className="title-filter">Price range</h3>
-					<ul className="dropdown">
-						<li>
-							<div className="slider-range"></div>
-							<input
-								className="input-range"
-								type="text"
-								id="amount"
-							/>
-						</li>
-					</ul>
+					<div className="dropdown">
+						<div className="slider-range">{rangeValue}</div>
+						<input
+							className="input-range"
+							type="range"
+							id="amount"
+							value={rangeValue}
+							onChange={(e) => setRangeValue(e.target.value)}
+						/>
+					</div>
 				</div>
 				<div className="filter-categories">
 					<h3 className="title-filter">Catégories</h3>

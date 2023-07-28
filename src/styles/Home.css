@@ -103,7 +103,52 @@
 }
 
 .contact {
-    display: inline-block;
+    margin: 0 50px;
     text-align: center;
-    margin-top: -50px;
+    margin-bottom: 100px;
+}
+.contact h1 {
+    font-size: 25px;
+    font-family: 'Readex Pro';
+}
+.contact p {
+    font-size: 20px;
+    font-family: 'Readex Pro';
+}
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.contact a:hover {
+    color: #ffcb45;
+}
+.contact .email {
+    position: relative;
+}
+.contact .email input {
+    max-width: 100%;
+    width: 350px;
+    height: 35px;
+    margin-right: 20px;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 10px;
+}
+.contact .email i {
+    position: absolute;
+    margin-left: -360px;
+    margin-top: 7px;
+    font-size: 25px;
+    color: gray;
+}
+.contact .email button {
+    height: 35px;
+    width: 90px;
+    color: white;
+    background: #ffcb45;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
 }
