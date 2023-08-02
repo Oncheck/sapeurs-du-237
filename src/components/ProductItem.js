@@ -11,12 +11,10 @@ function ProductItem({ product, index }) {
 		<li key={index} onClick={() => handleClick(product)}>
 			<img className='product-img' src={product.cover} alt={`${product.name} cover`} />
 			<div className="product">
-				<div className="line-1">
-					<p>{product.name}</p>
-					<span>{product.category}</span>
-				</div>
+				<p className='product-name'>{product.name}</p>
+				<p className='product-category'>{product.category}</p>
 				<div className="line-2">
-					<p>{product.price} XAF</p>
+					<p>{product.price} €</p>
 					<span>Livraison en 5 jours</span>
 				</div>
 			</div>

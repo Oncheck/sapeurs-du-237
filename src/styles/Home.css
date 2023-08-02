@@ -1,5 +1,6 @@
 .home-categories, .featured-products h1 {
     margin-left: 20px;
+    font-family: 'Readex Pro';
 }
 
 .bloc-items {
@@ -54,21 +55,19 @@
     height: 300px;
 	border-radius: 5%;
 }
-
-.product > .line-1 p {
-    font-size: 20px;
-    font-weight: 400;
+.product .product-name {
+    margin-top: 1px;
+}
+.product .product-category {
+    color: #f3160f;
+    margin-top: -20px;
 }
 .product > .line-2 p {
     font-weight: bold;
+    margin-top: 15px;
 }
-.product > .line-1, .line-2 {
+.product .line-2 {
     display: flex;
-}
-.product > .line-1 > span {
-    margin-left: 20px;
-    margin-top: 20px;
-    color: gray;
 }
 .product > .line-2 > span {
     font-size: '12px';

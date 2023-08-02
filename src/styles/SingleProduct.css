@@ -1,0 +1,88 @@
+.single-product {
+    margin: 10px auto;
+}
+.produit {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-left {
+    width: 50%;
+    height: 800px;
+    margin-right: 50px;
+}
+
+.container-slider {
+    width: 100%;
+    height: 90%;
+    margin: 50px 20px;
+    border-radius: 10px;
+}
+.slider-right {
+    width: 50%;
+    margin-right: 30px;
+    font-family: 'Readex Pro';
+}
+.slider-right .info-produit .info-produit-header {
+    display: flex;
+    justify-content: space-between;
+}
+.slider-right .info-produit .info-produit-header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f3160f;
+}
+.slider-right p {
+    margin-top: -10px;
+}
+.slider-right p > i {
+    color: #ffcb45;
+}
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    height: 5px;
+    margin-top: 20px;
+}
+.slider-right button.btn-card {
+    background-color: #ffcb45;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    font: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+.slider-right button.btn-card:hover {
+    background-color: #a98b3f;
+    transition: all 0.6s ease-in-out;
+}
+.slider-right button i {
+    margin-right: 10px;
+}
+.slider-right .txt-contact {
+    margin-top: 20px;
+    text-align: center;
+}
+.slider-right button.btn-contact {
+    background-color: #fff9ea;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+.slider-right button.btn-contact:hover {
+    background-color: #333;
+    color: #f2f2f2;
+    transition: all 0.6s ease-in-out;
+}
+
+.autres-produits {
+    margin: 0 20px;
+    font-family: 'Readex Pro';
+}

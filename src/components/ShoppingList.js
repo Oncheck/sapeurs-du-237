@@ -39,7 +39,7 @@ function ShoppingList({ cart, updateCart }) {
 		e.preventDefault();
 		console.log(search)
 	}
-
+	console.log(productList)
 	return (
 		<div className='page-products'>
 			<div className="featured-products left-side">
