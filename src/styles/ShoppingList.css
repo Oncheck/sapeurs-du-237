@@ -8,3 +8,11 @@
 .right-side {
 	width: 22%;
 }
+.no-product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.no-product p {
+	font-size: 22px;
+}

@@ -29,7 +29,7 @@ export const productList = [
         id: 1,
         name: 'Costume Africain 1',
         category: 'Costume Africain',
-        price: 25000,
+        price: 2500,
         cover: product_1,
         images: [
             {
@@ -48,7 +48,7 @@ export const productList = [
         id: 2,
         name: 'Costume Africain 2',
         category: 'Costume Africain',
-        price: 25000,
+        price: 2500,
         cover: product_2,
         images: [
             {
@@ -67,7 +67,7 @@ export const productList = [
         id: 3,
         name: 'Costume Africain 3',
         category: 'Costume Africain',
-        price: 25000,
+        price: 1500,
         cover: product_3,
         images: [
             {
@@ -86,7 +86,7 @@ export const productList = [
         id: 4,
         name: 'Costume Africain 4',
         category: 'Costume Africain',
-        price: 25000,
+        price: 1200,
         cover: product_4,
         images: [
             {
@@ -105,7 +105,7 @@ export const productList = [
         id: 5,
         name: 'Costume Africain 5',
         category: 'Costume Africain',
-        price: 11000,
+        price: 2520,
         cover: product_5,
         images: [
             {
@@ -124,7 +124,7 @@ export const productList = [
         id: 6,
         name: 'Costume Croisé 1',
         category: 'Costume Croisé',
-        price: 10000,
+        price: 1020,
         cover: product_6,
         images: [
             {
@@ -143,7 +143,7 @@ export const productList = [
         id: 7,
         name: 'Costume Croisé 2',
         category: 'Costume Croisé',
-        price: 12000,
+        price: 500,
         cover: product_7,
         images: [
             {
@@ -162,7 +162,7 @@ export const productList = [
         id: 8,
         name: 'Costume Croisé 3',
         category: 'Costume Croisé',
-        price: 8000,
+        price: 850,
         cover: product_8,
         images: [
             {
@@ -181,7 +181,7 @@ export const productList = [
         id: 9,
         name: 'Costume Croisé 4',
         category: 'Costume Croisé',
-        price: 10000,
+        price: 1000,
         cover: product_9,
         images: [
             {
@@ -200,7 +200,7 @@ export const productList = [
         id: 10,
         name: 'Costume Croisé 5',
         category: 'Costume Croisé',
-        price: 30000,
+        price: 1250,
         cover: product_10,
         images: [
             {
@@ -219,7 +219,7 @@ export const productList = [
         id: 11,
         name: 'Costume Croisé 6',
         category: 'Costume Croisé',
-        price: 50000,
+        price: 500,
         cover: product_11,
         images: [
             {
@@ -238,7 +238,7 @@ export const productList = [
         id: 12,
         name: 'Costume Croisé 7',
         category: 'Costume Croisé',
-        price: 45000,
+        price: 450,
         cover: product_12,
         images: [
             {
@@ -257,7 +257,7 @@ export const productList = [
         id: 13,
         name: 'Costume Croisé 8',
         category: 'Costume Croisé',
-        price: 15000,
+        price: 150,
         cover: product_13,
         images: [
             {
@@ -276,7 +276,7 @@ export const productList = [
         id: 14,
         name: 'Costume Croisé 9',
         category: 'Costume Croisé',
-        price: 25000,
+        price: 2000,
         cover: product_14,
         images: [
             {
@@ -295,7 +295,7 @@ export const productList = [
         id: 15,
         name: 'Costume de mariage 1',
         category: 'Costume de mariage',
-        price: 15000,
+        price: 150,
         cover: product_15,
         images: [
             {
@@ -314,7 +314,7 @@ export const productList = [
         id: 16,
         name: 'Costume de mariage 2',
         category: 'Costume de mariage',
-        price: 35000,
+        price: 350,
         cover: product_16,
         images: [
             {
@@ -333,7 +333,7 @@ export const productList = [
         id: 17,
         name: 'Costume de mariage 3',
         category: 'Costume de mariage',
-        price: 75000,
+        price: 750,
         cover: product_17,
         images: [
             {
@@ -352,7 +352,7 @@ export const productList = [
         id: 18,
         name: 'Costume de mariage 4',
         category: 'Costume de mariage',
-        price: 75000,
+        price: 1750,
         cover: product_18,
         images: [
             {
@@ -371,7 +371,7 @@ export const productList = [
         id: 17,
         name: 'Costume de mariage 5',
         category: 'Costume de mariage',
-        price: 75000,
+        price: 750,
         cover: product_19,
         images: [
             {
@@ -390,7 +390,7 @@ export const productList = [
         id: 17,
         name: 'Costume de mariage 6',
         category: 'Costume de mariage',
-        price: 75000,
+        price: 1000,
         cover: product_20,
         images: [
             {
