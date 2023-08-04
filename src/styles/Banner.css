@@ -5,12 +5,13 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	box-shadow: -5px 30px 30px -30px gray;
 }
 .banner-img .banner-img-logo {
 	width: 200px;
 }
 .banner-links {
-	margin-right: 100px;
+	margin-right: 30px;
 }
 .banner-link {
 	margin-right: 20px;
@@ -31,4 +32,21 @@
 .banner-links i {
 	font-size: 20px;
 	cursor: pointer;
+}
+
+.btn-menu {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.banner-links {
+		display: none;
+	}
+	.btn-menu {
+		display: block;
+		position: absolute;
+		right: 25px;
+		font-size: 25px;
+		cursor: pointer;
+	}
 }

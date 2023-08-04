@@ -1,6 +1,6 @@
 import Banner from './Banner'
 import Footer from './Footer';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { productList } from '../datas/productList';
 import { useState, useEffect } from 'react';
 import SliderSingleProduct from './SliderSingleProduct';
@@ -13,10 +13,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function SingleProduct() {
 	const param = useParams()
-	const navigate = useNavigate()
 	const [show, setShow] = useState(false);
 	const [commande, setCommande] = useState({})
 	const currentProduct = productList.find(product => product.name === param.name)
+	const savedCart = localStorage.getItem('cart')
+	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 
 	useEffect(() => {
         document.title = 'Sapeurs du 237 - ' + currentProduct.name
@@ -34,6 +35,24 @@ function SingleProduct() {
 		e.preventDefault()
 
 		console.log(commande)
+	}
+
+	function addToCart({id, name, price, cover}) {
+		const currentProductSaved = cart.find((product) => product.name === name)
+		if (currentProductSaved) {
+			const cartFilteredCurrentProduct = cart.filter(
+				(product) => product.name !== name
+			)
+			updateCart([
+				...cartFilteredCurrentProduct,
+				{ id, name, price, cover, inCart: currentProductSaved.inCart + 1 }
+			])
+			localStorage.setItem('cart', JSON.stringify(cartFilteredCurrentProduct))
+		} else {
+			updateCart([...cart, { id, name, price, cover, inCart: 1 }])
+			localStorage.setItem('cart', JSON.stringify(cart))
+		}
+
 	}
 
     return (
@@ -73,12 +92,19 @@ function SingleProduct() {
 						</div>
 						<hr />
 
+						<button
+							className='btn-contact'
+							type='button'
+							onClick={handleShow}
+						>
+							<i class="fa fa-envelope" aria-hidden="true"></i> Commander
+						</button>
 						<button 
 							className="btn-card" 
 							type="button"
-							onClick={handleShow}
+							onClick={() => addToCart(currentProduct.id, currentProduct.name, currentProduct.price, currentProduct.cover)}
 						>
-							<i class="fa fa-money" aria-hidden="true"></i> Commander
+							<i class="fa fa-money" aria-hidden="true"></i> Ajouter au panier
 						</button>
 						<p className='txt-contact'>ou contactez le vendeur dès maintenant</p>
 						<button

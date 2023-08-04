@@ -42,7 +42,7 @@ export const productList = [
                 src: product_1
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 2,
@@ -61,7 +61,7 @@ export const productList = [
                 src: product_2
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 3,
@@ -80,7 +80,7 @@ export const productList = [
                 src: product_3
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 4,
@@ -99,7 +99,7 @@ export const productList = [
                 src: product_4
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 5,
@@ -118,7 +118,7 @@ export const productList = [
                 src: product_5
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 6,
@@ -137,7 +137,7 @@ export const productList = [
                 src: product_6
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 7,
@@ -156,7 +156,7 @@ export const productList = [
                 src: product_7
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 8,
@@ -175,7 +175,7 @@ export const productList = [
                 src: product_8
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 9,
@@ -194,7 +194,7 @@ export const productList = [
                 src: product_9
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 10,
@@ -213,7 +213,7 @@ export const productList = [
                 src: product_10_3
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 11,
@@ -232,7 +232,7 @@ export const productList = [
                 src: product_11_1
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 12,
@@ -251,7 +251,7 @@ export const productList = [
                 src: product_12
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 13,
@@ -270,7 +270,7 @@ export const productList = [
                 src: product_13
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 14,
@@ -289,11 +289,11 @@ export const productList = [
                 src: product_14
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 15,
-        name: 'Costume de mariage 1',
+        name: 'Modèle Africain Original',
         category: 'Costume de mariage',
         price: 150,
         cover: product_15,
@@ -308,7 +308,7 @@ export const productList = [
                 src: product_15
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 16,
@@ -327,7 +327,7 @@ export const productList = [
                 src: product_16
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 17,
@@ -346,7 +346,7 @@ export const productList = [
                 src: product_17
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 18,
@@ -365,7 +365,7 @@ export const productList = [
                 src: product_18
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 17,
@@ -384,7 +384,7 @@ export const productList = [
                 src: product_19
             }
         ],
-        likes: 0
+        inCart: 0
     },
     {
         id: 17,
@@ -403,6 +403,6 @@ export const productList = [
                 src: product_20_1
             }
         ],
-        likes: 0
+        inCart: 0
     }
 ];

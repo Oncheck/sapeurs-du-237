@@ -6,9 +6,9 @@ import '../styles/Filter.css'
 import '../styles/Home.css';
 
 function ShoppingList({ cart, updateCart }) {
-	const [activeCategory, setActiveCategory] = useState('')
+	const [activeCategory, setActiveCategory] = useState('Costume Croisé')
 	const [search, setSearch] = useState('')
-	const [rangeValue, setRangeValue] = useState(200)
+	const [rangeValue, setRangeValue] = useState(1000)
 	const categories = productList.reduce(
 		(acc, product) =>
 			acc.includes(product.category) ? acc : acc.concat(product.category),
@@ -19,30 +19,11 @@ function ShoppingList({ cart, updateCart }) {
         document.title = 'Sapeurs du 237 - Produits'
     })
 
-	function addToCart(id, name, price, cover) {
-		const currentProductSaved = cart.find((product) => product.name === name)
-		if (currentProductSaved) {
-			const cartFilteredCurrentProduct = cart.filter(
-				(product) => product.name !== name
-			)
-			updateCart([
-				...cartFilteredCurrentProduct,
-				{ id, name, cover, price, amount: currentProductSaved.amount + 1 }
-			])
-		} else {
-			updateCart([...cart, { id, name, cover, price, amount: 1 }])
-		}
-
-	}
-
-	function handleSubmit(e) {
-		e.preventDefault();
-		console.log(search)
-	}
 	
 	const productsRange = productList.filter(products => (
 		products.price <= rangeValue &&
-		products.name.includes(search)
+		products.name.includes(search) &&
+		products.category === activeCategory
 	))
 	
 	return (
@@ -103,12 +84,12 @@ function ShoppingList({ cart, updateCart }) {
 								<span className="span">{category}</span>
 							</li>
 						))}<br />
-						<button
+						{/* <button
 							className='btn-cmd' 
 							onClick={() => setActiveCategory('')}
 						>
 							Réinitialiser
-						</button>
+						</button> */}
 					</ul>
 				</div>
 			</div>

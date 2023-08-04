@@ -65,7 +65,7 @@ function Home() {
                     </ul>
                 </div>
                 <button 
-                    className="btn voir-plus" 
+                    className="btn-voir-plus" 
                     type="button"
                     onClick={() => navigate('/products')}
                 >

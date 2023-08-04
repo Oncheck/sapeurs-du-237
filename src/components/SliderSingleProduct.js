@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { Item } from "react-photoswipe-gallery";
 
 const SliderSingleProduct = ({ slides }) => {
     const [currentIndex, setCurrentIndex] = useState(0);

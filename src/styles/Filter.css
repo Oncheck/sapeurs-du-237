@@ -9,10 +9,11 @@
     padding: 12px 15px;
     color: #888;
     font-size: 13px;
-    width: 84%;
+    width: 225px;
     background: none;
     letter-spacing: 1px;
     border-radius: 15px;
+	margin-left: 25px;
 }
 h3.title-filter {
 	color: #181c27;
@@ -27,9 +28,10 @@ h3.title-filter {
 }
 .filter-range .dropdown {
 	margin-top: -10px;
+	margin-left: 25px;
 }
 .filter-range .dropdown input[type="range"] {
-    width: 250px;
+    width: 225px;
     background: gray;
 }
 .filter-range .dropdown input[type="range"]::-webkit-slider-runnable-track {
@@ -55,12 +57,19 @@ input.checked {
 }
 
 .filter-categories ul li span {
-	font-size: 13px;
+	font-size: 18px;
 	color: #000;
 	letter-spacing: 1px;
 	margin-left: 3px;
 	vertical-align: top;
     font-family: 'Readex Pro';
+}
+
+.filter-categories ul button {
+	width: 225px;
+	margin-top: 10px;
+	height: 30px;
+	font-size: 18px;
 }
 
 .filter-categories {

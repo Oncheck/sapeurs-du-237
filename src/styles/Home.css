@@ -1,6 +1,9 @@
 .home-categories, .featured-products h1 {
     margin-left: 20px;
     font-family: 'Readex Pro';
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 .bloc-items {
@@ -22,7 +25,7 @@
     height: 300px;
     background-color: #fff9ea;
     border-radius: 5%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     cursor: pointer;
 }
 .list-items li {
@@ -35,8 +38,8 @@
     align-items: center;
 }
 .list-items li .categorie:hover {
-    background: white;
-    color: black;
+    background: #ffcb45;
+    color: white;
     cursor: pointer;
 }
 .list-items li .categorie {
@@ -45,9 +48,12 @@
     background: #fff9ea;
     color: black;
     border-radius: 15px;
+    justify-content: center;
+    width: 80%;
 }
 .list-items li .categorie p {
     margin-right: 10px;
+    margin-top: 15px;
 }
 
 .products-items .product-img {
@@ -68,10 +74,10 @@
 }
 .product .line-2 {
     display: flex;
+    justify-content: space-between;
 }
 .product > .line-2 > span {
     font-size: '12px';
-    margin-left: 30px; 
     margin-top: 15px;
     background: '#ffcb45';
     color: #ffcb45;
@@ -80,25 +86,21 @@
     margin-top: -30px;
 }
 
-.btn {
-    width: 250px;
+.btn-voir-plus {
+    width: 30%;
     height: 30px;
     border: 1px solid #ffcb45;
 	color: #000;
-	background: #fff;
-	width: 200px;
+	background: #ffcb45;
 	height: 40px;
 	border-radius: 15px;
-	font-size: 15px;
+	font-size: 18px;align-self: center;
 }
-.btn:hover {
-	background: #ffcb45;
-	color: white;
+.btn-voir-plus:hover {
+	background: #fff9ea;
+	color: black;
 	transition: all 0.5 ease-out;
 	cursor: pointer;
-}
-.btn.voir-plus {
-    margin: 50px 43%;
 }
 
 .contact {

@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react'
 import '../styles/Cart.css'
+import Banner from './Banner'
+import Footer from './Footer'
 
-function Cart({ cart, updateCart }) {
-	const [isOpen, setIsOpen] = useState(true)
+function Cart() {
+	const savedCart = localStorage.getItem('cart')
+	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 	const total = cart.reduce(
-		(acc, plantType) => acc + plantType.amount * plantType.price,
+		(acc, product) => acc + product.inCart * product.price,
 		0
 	)
 	useEffect(() => {
-		document.title = `Sapeurs du 237 : ${total} XAF d'achats`
+		document.title = `Sapeurs du 237 : ${cart.length} articles dans le panier`
 	}, [total, cart])
 
 	function removeFromCart(id) {
@@ -20,55 +23,45 @@ function Cart({ cart, updateCart }) {
 		console.log('commander');
 	}
 
-	return isOpen ? (
-		<div className='lmj-cart'>
-			<button
-				className='lmj-cart-toggle-button'
-				onClick={() => setIsOpen(false)}
-				style={{ color: 'black', fontSize: 18}}
-			>
-				Fermer
-			</button>
-			{cart.length > 0 ? (
-				<div className='card'>
-					<h2>Panier</h2>
-					<ul>
-						{cart.map(({ id, name, price, amount, cover }, index) => (
-							<div key={`${name}-${index}`} className='card-item'>
-								<div style={{ display: 'flex'}}>
-									<img className='card-item-cover' src={cover} alt={`${name} cover`} />
-									<div>
-										<h3 className='card-item-name'>{name}</h3>
-										<p className='card-item-price'>{price} XAF x {amount}</p>
+	
+	return (
+		<>
+			<Banner />
+
+			<div className='card'>
+				<h2>Panier</h2>
+				{cart.length > 0 ? (
+					<div>
+						<ul>
+							{cart.map((product, index) => (
+								<div key={`${product.name}-${index}`} className='card-item'>
+									<div style={{ display: 'flex'}}>
+										<img className='card-item-cover' src={product.cover} alt={`${product.name} cover`} />
+										<div>
+											<h3 className='card-item-name'>{product.name}</h3>
+											<p className='card-item-price'>{product.price} XAF x {product.inCart}</p>
+										</div>
+										<span 
+											onClick={() => removeFromCart(index)} 
+											style={{marginLeft: '20px', marginTop: '-5px', cursor: 'pointer'}}
+										>
+											<i className="fa fa-trash-o"></i>
+										</span>
 									</div>
-									<span 
-										onClick={() => removeFromCart(index)} 
-										style={{marginLeft: '20px', marginTop: '-5px', cursor: 'pointer'}}
-									>
-										<i className="fa fa-trash-o"></i>
-									</span>
+									<button onClick={commander} className='btn-cmd'>Commander</button><hr />
 								</div>
-								<button onClick={commander} className='btn-cmd'>Commander</button><hr />
-							</div>
-						))}
-					</ul>
-					<h3>Total : {total} XAF</h3>
-					<button className='btn-cart' onClick={() => updateCart([])}>Vider le panier</button>
-				</div>
-			) : (
-				<div style={{ fontSize: 20, marginTop: 10}}>Votre panier est vide</div>
-			)}
-		</div>
-	) : (
-		<div className='lmj-cart-closed'>
-			<button
-				className='lmj-cart-toggle-button'
-				onClick={() => setIsOpen(true)}
-				style={{ color: 'black', fontSize: 18}}
-			>
-				Ouvrir le Panier
-			</button>
-		</div>
+							))}
+						</ul>
+						<h3>Total : {total} XAF</h3>
+						<button className='btn-cart' onClick={() => localStorage.removeItem('cart')}>Vider le panier</button>
+					</div>
+				) : (
+					<div style={{ fontSize: 20, marginTop: 10}}>Votre panier est vide</div>
+				)}
+			</div>
+			
+			<Footer />
+		</>
 	)
 }
 
