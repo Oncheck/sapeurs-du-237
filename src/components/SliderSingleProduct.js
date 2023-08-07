@@ -69,28 +69,17 @@ const SliderSingleProduct = ({ slides }) => {
     }
 
     return (
-        <div style={sliderStyles}>
-            <div style={leftArrowStyles} onClick={goToPrevious}>
+        <div style={sliderStyles} className="slider">
+            <div style={leftArrowStyles} className="left-arrow" onClick={goToPrevious}>
                 <i className="fa fa-arrow-left"></i>
             </div>
-            <div style={rightArrowStyles} onClick={goToNext}>
+            <div style={rightArrowStyles} className="right-arrow" onClick={goToNext}>
                 <i className="fa fa-arrow-right"></i>
             </div>
-            <div style={slideStyles}>
-                {/* <Item
-                    key={index}
-                    thumbnail={image.src}
-                    width='100%'
-                    height='100%'
-                >
-                    {({ ref, open }) => (
-                        <img ref={ref} onClick={open} src={image.src} />
-                    )}
-                </Item> */}
-            </div>
-            <div style={dotsContainerStyles}>
+            <div style={slideStyles} className="slide"></div>
+            <div style={dotsContainerStyles} className="dots-container">
                 {slides.map((slide, index) => (
-                    <div key={index} style={dotStyles} onClick={() => goToSlide(index)}>
+                    <div className="dot" key={index} style={dotStyles} onClick={() => goToSlide(index)}>
                         .
                     </div>
                 ))}

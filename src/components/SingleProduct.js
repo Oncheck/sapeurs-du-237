@@ -1,6 +1,6 @@
 import Banner from './Banner'
 import Footer from './Footer';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { productList } from '../datas/productList';
 import { useState, useEffect } from 'react';
 import SliderSingleProduct from './SliderSingleProduct';
@@ -18,6 +18,7 @@ function SingleProduct() {
 	const currentProduct = productList.find(product => product.name === param.name)
 	const savedCart = localStorage.getItem('cart')
 	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
+	const navigate = useNavigate()
 
 	useEffect(() => {
         document.title = 'Sapeurs du 237 - ' + currentProduct.name
@@ -57,7 +58,7 @@ function SingleProduct() {
 
     return (
         <>
-            <Banner />
+            <Banner /><br /><br /><br /><br /><br />
 			
 			<div className='single-product'>
 				<div className='produit'>
@@ -68,29 +69,37 @@ function SingleProduct() {
 					</div>
 					<div className='slider-right'>
 						<div className='info-produit'>
-							<h1>{currentProduct.name}</h1><hr />
+							<h2>{currentProduct.name}</h2><hr />
 							<div className='info-produit-header'>
-								<h2>{currentProduct.price} €</h2>
+								<h2>Categorie :</h2>
 								<p>{currentProduct.category}</p>
 							</div>
-							<p>Si vous commandez ce produit maintenant, vous l'aurez dans moins de <b>5 jours</b></p>
-							<p>Livraison dans tous les pays <i class="fa fa-flag" aria-hidden="true"></i>. Principalement au Cameroun</p>
+							<p>{currentProduct.description.desc}</p>
+							<p style={{color: '#f3160f'}}>{currentProduct.description.slug}</p>
 						</div>
 						<hr />
 
-						<div className='info-produit' style={{marginTop: '20px'}}>
+						<div className='info-produit'>
+							<p><b>Tissu disponible : </b>{currentProduct.description.tissu}</p>
+							<p><b>Couture : </b>{currentProduct.description.couture}</p>
+							<p><b>Prix : </b>{currentProduct.description.prix}</p>
+							<p><i class="fa fa-flag" aria-hidden="true"></i><b> Livraison :</b> {currentProduct.description.livraison}</p>
+						</div>
+						<hr />
+
+						{/* <div className='info-produit' style={{marginTop: '20px'}}>
 							<p><i class="fa fa-eye" aria-hidden="true"></i> un des articles les plus recherchés</p>
 							<p><i class="fa fa-shopping-cart" aria-hidden="true"></i> apparait dans beaucoup de panier</p>
 							<p><i class="fa fa-refresh" aria-hidden="true"></i> remboursé si pas satisfait</p>
 							<p><i class="fa fa-credit-card" aria-hidden="true"></i> vous pouvez payer maintenant, ou plus tard</p>
 						</div>
-						<hr />
+						<hr /> */}
 
-						<div className='info-produit'>
+						{/* <div className='info-produit'>
 							<h2>Description</h2>
 							<p style={{marginTop: '10px'}}>The Ayame set is made in a light and soft cotton fabric, particularly pleasant to wear. It is in melhouz, the favorite fabric of Mauritanian women and is ideal for summer. The dyeing is done by hand. The patterns and colors were created, at our request, by a Senegalese dyer. It is composed of wide pants, with pockets and a slightly open top in the back</p>
 						</div>
-						<hr />
+						<hr /> */}
 
 						<button
 							className='btn-contact'
@@ -110,6 +119,7 @@ function SingleProduct() {
 						<button
 							className='btn-contact'
 							type='button'
+							onClick={() => navigate('/contact')}
 						>
 							<i class="fa fa-envelope" aria-hidden="true"></i> Contactez
 						</button>

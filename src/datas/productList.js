@@ -42,6 +42,14 @@ export const productList = [
                 src: product_1
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -61,6 +69,14 @@ export const productList = [
                 src: product_2
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -80,6 +96,14 @@ export const productList = [
                 src: product_3
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -99,6 +123,14 @@ export const productList = [
                 src: product_4
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -118,6 +150,14 @@ export const productList = [
                 src: product_5
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -137,6 +177,14 @@ export const productList = [
                 src: product_6
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -156,6 +204,14 @@ export const productList = [
                 src: product_7
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -175,6 +231,14 @@ export const productList = [
                 src: product_8
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -194,6 +258,14 @@ export const productList = [
                 src: product_9
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -213,6 +285,14 @@ export const productList = [
                 src: product_10_3
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -232,6 +312,14 @@ export const productList = [
                 src: product_11_1
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -251,6 +339,14 @@ export const productList = [
                 src: product_12
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -270,6 +366,14 @@ export const productList = [
                 src: product_13
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -289,6 +393,14 @@ export const productList = [
                 src: product_14
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -308,6 +420,14 @@ export const productList = [
                 src: product_15
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -327,6 +447,14 @@ export const productList = [
                 src: product_16
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -346,6 +474,14 @@ export const productList = [
                 src: product_17
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -365,6 +501,14 @@ export const productList = [
                 src: product_18
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -384,6 +528,14 @@ export const productList = [
                 src: product_19
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     },
     {
@@ -403,6 +555,14 @@ export const productList = [
                 src: product_20_1
             }
         ],
+        description : {
+            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
+            slug: "Vivez toute l'élégance des gars de Deido !!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
+            couture: 'Sur-Mesure',
+            prix: 'Sur devis en fonction de votre taille et te type de tissu',
+            livraison: 'Europe, Amérique, Cameroun'
+        },
         inCart: 0
     }
 ];
