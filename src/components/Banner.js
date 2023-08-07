@@ -1,29 +1,34 @@
 import '../styles/Banner.css'
 import logo from '../assets/images/logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 function Banner() {
+	const navigate = useNavigate()
+	const [showLinks, setShowLinks] = useState(false)
+	const savedCart = localStorage.getItem('cart')
+	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 
-	function displayMenu() {
-		const banner = document.getElementsByClassName('banner')
-		banner.classList.add('display-menu')
-		console.log('Click Btn Menu')
+	const handleShowLinks = () => {
+		setShowLinks(!showLinks)
 	}
 
+
 	return (
-		<div className='banner'>
-			<div className='banner-img'>
+		<div className={showLinks ? 'show-menu' : 'banner'}>
+			<div className='banner-img'  onClick={() => navigate('/')}>
 				<img src={logo} alt='logo' className='banner-img-logo' />
 			</div>
 			<div className='banner-links'>
-				<Link to='/home' className='banner-link'>Home</Link>
-				<Link to='/products' className='banner-link'>Shop</Link>
-				<Link to='/contact' className='banner-link'>Contact us</Link>
-				<Link to='/cart' className='banner-link'>
-					<i className='fa fa-shopping-cart'><span>2</span></i>
-				</Link>
+				<NavLink to='/home' className='banner-link slideInDown-1'>Home</NavLink>
+				<NavLink to='/products' className='banner-link slideInDown-2'>Shop</NavLink>
+				<NavLink to='/contact' className='banner-link slideInDown-3'>Contact us</NavLink>
+				<NavLink to='/cart' className='banner-link slideInDown-4'>
+					<i className='fa fa-shopping-cart'><span>{cart.length}</span></i> Panier
+				</NavLink>
 			</div>
-			<button className='btn-menu'>
+			<button className='btn-menu' onClick={handleShowLinks}>
 				<span className='btn-menu-bar'></span>
 			</button>
 		</div>

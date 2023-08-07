@@ -5,7 +5,7 @@ import '../styles/ShoppingList.css'
 import '../styles/Filter.css'
 import '../styles/Home.css';
 
-function ShoppingList({ cart, updateCart }) {
+function ShoppingList() {
 	const [activeCategory, setActiveCategory] = useState('Costume Croisé')
 	const [search, setSearch] = useState('')
 	const [rangeValue, setRangeValue] = useState(1000)

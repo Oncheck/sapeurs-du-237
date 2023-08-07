@@ -6,10 +6,8 @@ function App() {
 
 	return (
 		<>
-			<Banner />
-			<div>
-				<ShoppingList />
-			</div>
+			<Banner /><br /><br /><br /><br /><br />
+			<ShoppingList />
 			<Footer />
 		</>
 	)

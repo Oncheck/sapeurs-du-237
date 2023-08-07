@@ -29,7 +29,7 @@ function Home() {
     
     return (
         <>
-            <Banner />
+            <Banner /><br /><br /><br /><br />
             <div style={containerStyles}>
                 <ImageSlider slides={slides} />
             </div>

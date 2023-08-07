@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route exact path='' element={<Home />}></Route>
+        <Route exact path='/' element={<Home />}></Route>
         <Route exact path='/home' element={<Home />}></Route>
         <Route exact path='/products' element={<App />}></Route>
         <Route exact path='/products/:name' element={<SingleProduct />}></Route>
