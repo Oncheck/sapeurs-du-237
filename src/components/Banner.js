@@ -21,9 +21,9 @@ function Banner() {
 				<img src={logo} alt='logo' className='banner-img-logo' />
 			</div>
 			<div className='banner-links'>
-				<NavLink to='/home' className='banner-link slideInDown-1'>Home</NavLink>
-				<NavLink to='/products' className='banner-link slideInDown-2'>Shop</NavLink>
-				<NavLink to='/contact' className='banner-link slideInDown-3'>Contact us</NavLink>
+				<NavLink to='/home' className='banner-link slideInDown-1'>Accueil</NavLink>
+				<NavLink to='/products' className='banner-link slideInDown-2'>Articles</NavLink>
+				<NavLink to='/contact' className='banner-link slideInDown-3'>Contact</NavLink>
 				<NavLink to='/cart' className='banner-link slideInDown-4'>
 					<i className='fa fa-shopping-cart'><span>{cart.length}</span></i> Panier
 				</NavLink>

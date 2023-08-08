@@ -49,7 +49,8 @@ const SliderSingleProduct = ({ slides }) => {
         margin: '0 3px',
         cursor: 'pointer',
         fontSize: '40px',
-        marginTop: '-5%'
+        marginTop: '-15%',
+        fontSize: '30px'
     }
 
     const goToPrevious = () => {

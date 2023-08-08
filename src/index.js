@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SingleProduct from './components/SingleProduct';
 import Home from './components/Home';
 import Cart from './components/Cart';
+import Contact from './components/Contact';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
         <Route exact path='/products' element={<App />}></Route>
         <Route exact path='/products/:name' element={<SingleProduct />}></Route>
         <Route exact path='/cart' element={<Cart />}></Route>
+        <Route exact path='/contact' element={<Contact />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
