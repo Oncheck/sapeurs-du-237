@@ -11,13 +11,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Divider from "./Divider";
 
-const containerStyles = {
-    width: '100%',
-    height: '500px',
-    margin: '50px 20px',
-    borderRadius: '30px'
-}
-
 
 function Home() {
     const navigate = useNavigate()
@@ -30,12 +23,12 @@ function Home() {
     return (
         <>
             <Banner /><br /><br /><br /><br />
-            <div style={containerStyles}>
+            <div className="container-slides">
                 <ImageSlider slides={slides} />
             </div>
 
             <div className="home-categories">
-                <h1>Nos catégories</h1>
+                <h1>Vêtements à la demande</h1>
                 <div className="bloc-items">
                     <ul className="list-items">
                         {categoriesList.map((categorie, index) => (
@@ -77,7 +70,7 @@ function Home() {
 
             <div className="contact">
                 <div className="title1">
-                    <h1>Vous pouvez entrer votre adresse email pour recevoir costamment de nouveaux produits</h1>
+                    <h2>Vous pouvez entrer votre adresse email pour recevoir costamment de nouveaux produits</h2>
                     <p>Vous recevrez une réduction de 20% si vous nous envoyez votre adresse mail</p>
                 </div>
                 <div className="email">
