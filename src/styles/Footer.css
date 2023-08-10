@@ -1,9 +1,9 @@
 .footer {
 	width: 100%;
-	height: 400px;
 	background: #fff9ea;
-	bottom: 0;
-	display: flex;
+	font-family: 'Readex Pro';
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 .footer-about {
 	display: inline-block;
@@ -12,7 +12,6 @@
 }
 .footer-about img {
 	width: 200px;
-	margin-left: 20px;
 }
 .footer-about p {
 	font-size: 15px;
@@ -26,8 +25,8 @@
 .footer-social .footer-social-icon {
 	margin-right: 15px;
 	background: #fff;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	justify-content: center;
 	align-items: center;
@@ -38,6 +37,14 @@
 	cursor: pointer;
 }
 
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    height: 5px;
+    margin-top: 20px;
+}
 .footer-bottom {
 	bottom: 0;
 }

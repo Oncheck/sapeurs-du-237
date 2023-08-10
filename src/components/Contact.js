@@ -24,7 +24,7 @@ const Contact = () => {
                         </div>
                         <h2>Email</h2>
                         <p>Vous pouvez nous contacter à l'adresse :</p>
-                        <p><Link to='mailto:adresse@gmail.com'>adresse@gmail.com</Link></p>
+                        <p><Link to='mailto:sapeurdu237@yahoo.com'>sapeurdu237@yahoo.com</Link></p>
                     </div>
                     <div className="item-contact">
                         <div className="icon">

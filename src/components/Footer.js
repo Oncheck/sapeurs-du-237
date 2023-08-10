@@ -30,10 +30,31 @@ function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className='footer-about'></div>
-				<div className='footer-about'></div>
-				<div className='footer-about'></div>
+				<div className='footer-about'>
+					<h4>Company</h4>
+					<ul>
+						<li><Link to='/'>A Propos</Link></li>
+						<li><Link to='/contact'>Contact</Link></li>
+						<li><Link to='/'>Comment ça marche ?</Link></li>
+					</ul>
+				</div>
+				<div className='footer-about'>
+					<h4>Company</h4>
+					<ul>
+						<li><Link to='/'>FAQ</Link></li>
+						<li><Link to='/contact'>Privacy</Link></li>
+						<li><Link to='/products'>Shop</Link></li>
+					</ul>
+				</div>
+				<div className='footer-about'>
+					<h4>Get in touch</h4>
+					<ul>
+						<li><Link to='mailto:sapeurdu237@yahoo.com'>sapeurdu237@yahoo.com</Link></li>
+						<li><Link to='tel:+4912354512367'>+49 1235 4512367</Link></li>
+					</ul>
+				</div>
 			</div>
+			<hr />
 			
 			<div className='footer-bottom'>
 				<p>&copy; 2023 Sapeurs du 237 | All Rights Reserved</p>
