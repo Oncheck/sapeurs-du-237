@@ -46,6 +46,7 @@
 .content-form {
     margin-top: 50px;
     font-family: 'Readex Pro';
+    margin-bottom: 200px;
 }
 .content-header {
     display: block;
@@ -85,4 +86,26 @@ form .btn-submit {
 form .btn-submit:hover {
     background: #fff9ea;
     border: 1px solid #ffcb45;
+}
+
+
+/* Responsive design */
+@media (max-width: 420px) {
+    .card-contact {
+        display: inline-block;
+    }
+    .card-contact .item-contact {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .input button {
+        width: 70%;
+        margin: 0 15%;
+    }
+    .input .col-lg-6:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .input textarea {
+        margin-top: -30px;
+    }
 }

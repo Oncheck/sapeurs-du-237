@@ -8,8 +8,9 @@ import '../styles/SingleProduct.css'
 import Divider from './Divider'
 import '../styles/Home.css';
 import ProductItem from './ProductItem';
-import { Form, Modal, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import { Form, Modal, Button, Card } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import guide from '../assets/images/guide.jpg'
 
 function SingleProduct() {
 	const param = useParams()
@@ -154,7 +155,13 @@ function SingleProduct() {
 					<Modal.Title>Entrer vos mesures</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<p>ces mesures doivent être enregistrées en cm²</p>
+					<Card style={{marginTop: '-10px'}}>
+						<Card.Title style={{textAlign: 'center', marginTop: '10px'}}>Ces mesures doivent être enregistrées en cm²</Card.Title>
+						<Card.Body>
+							<img src={guide} alt='consigne'width={430} height={300} />
+						</Card.Body>
+					</Card>
+				
 					<Form onSubmit={handleSubmit}>
 						<Form.Group className='form-group mt-4'>
 							<Form.Label className='control-label'>Epaules</Form.Label>

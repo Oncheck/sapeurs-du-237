@@ -3,6 +3,7 @@
 	padding: 32px;
 	width: 300px;
 	height: 500px;
+    font-family: 'Readex Pro';
 }
 
 .filter-search input {
@@ -62,7 +63,6 @@ input.checked {
 	letter-spacing: 1px;
 	margin-left: 3px;
 	vertical-align: top;
-    font-family: 'Readex Pro';
 }
 
 .filter-categories ul button {

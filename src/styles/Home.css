@@ -101,7 +101,8 @@
 	background: #ffcb45;
 	height: 40px;
 	border-radius: 15px;
-	font-size: 18px;align-self: center;
+	font-size: 18px;
+    align-self: center;
     margin: 0 35%;
 }
 .btn-voir-plus:hover {
@@ -163,4 +164,25 @@
 }
 .title2 {
     margin-top: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .btn-voir-plus {
+        width: 70%;
+        height: 50px;
+        border: 1px solid #ffcb45;
+        color: #000;
+        background: #ffcb45;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 18px;
+        margin: 0 15%;
+    }
+    .contact .email button {
+        margin-top: 10px;
+    }
+    .footer {
+        margin-top: -30px;
+    }
 }

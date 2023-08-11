@@ -41,7 +41,7 @@
 	display: none;
 }
 
-@media (max-width: 776px) {
+@media (max-width: 800px) {
 	.show-menu {
 		background-color: #fff9ea;
 		display: flex;
@@ -136,7 +136,7 @@
 	}
 }
 
-@media (max-width: 530px) {
+@media (max-width: 420px) {
 	.show-menu {
 		background-color: #fff9ea;
 		display: flex;

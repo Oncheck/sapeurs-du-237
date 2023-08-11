@@ -1,14 +1,8 @@
-//import { useState } from 'react'
 import '../styles/Footer.css'
 import logo from '../assets/images/logo.png'
 import { Link } from 'react-router-dom'
 
 function Footer() {
-	//const [inputValue, setInputValue] = useState('')
-
-	// function handleInput(e) {
-	// 	setInputValue(e.target.value)
-	// }
 
 	
 
@@ -58,7 +52,7 @@ function Footer() {
 			
 			<div className='footer-bottom'>
 				<p>&copy; 2023 Sapeurs du 237 | All Rights Reserved</p>
-				<p>Designed by <Link>OnCheck</Link></p>
+				<p>Designed by <Link to='https://www.oncheck.com'>OnCheck</Link></p>
 			</div>
 		</footer>
 	)

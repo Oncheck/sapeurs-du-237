@@ -1,32 +1,5 @@
-.lmj-cart {
-	background-color: #f2f2f2;
-	padding: 32px;
-	width: 250px;
-}
-
-.lmj-cart-add-button {
-	margin-left: 32px;
-	cursor: pointer;
-}
-
-.lmj-cart-toggle-button {
-	background: none;
-	outline: none;
-	border: none;
-	font-weight: 600;
-	cursor: pointer;
-	align-self: self-start;
-	padding: 0;
-	color: white;
-}
-
-.lmj-cart-closed {
-	padding: 32px;
-	width: 200px;
-}
-
-.lmj-cart-closed > button {
-	color: black;
+.card {
+	margin-top: 150px;
 }
 
 .card-item-cover {
