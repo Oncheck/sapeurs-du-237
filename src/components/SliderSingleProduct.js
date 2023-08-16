@@ -15,7 +15,7 @@ const SliderSingleProduct = ({ slides }) => {
         borderRadius: '10px',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
-        backgroundImage: `url(${slides[currentIndex].src})`
+        backgroundImage: `url(${slides[currentIndex]})`
     }
 
     const leftArrowStyles = {
@@ -49,8 +49,7 @@ const SliderSingleProduct = ({ slides }) => {
         margin: '0 3px',
         cursor: 'pointer',
         fontSize: '40px',
-        marginTop: '-15%',
-        fontSize: '30px'
+        marginTop: '-15%'
     }
 
     const goToPrevious = () => {
@@ -68,7 +67,8 @@ const SliderSingleProduct = ({ slides }) => {
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex)
     }
-
+    
+    
     return (
         <div style={sliderStyles} className="slider">
             <div style={leftArrowStyles} className="left-arrow" onClick={goToPrevious}>

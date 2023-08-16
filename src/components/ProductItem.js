@@ -14,7 +14,7 @@ function ProductItem({ product, index }) {
 				<p className='product-name'>{product.name}</p>
 				<p className='product-category'>{product.category}</p>
 				<div className="line-2">
-					<p>{product.price} €</p>
+					{product.prix && <p>{product.prix} €</p>}
 					<span>Livraison en 5 jours</span>
 				</div>
 			</div>

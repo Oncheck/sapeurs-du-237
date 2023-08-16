@@ -5,7 +5,7 @@
 	margin-top: 100px;
 }
 .footer-top {
-	margin: -20px 20px;
+	margin: -20px auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -20,7 +20,7 @@
 	width: 200px;
 }
 .footer-about p {
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: -60px;
 	color: #333;
 }
@@ -87,21 +87,9 @@ hr {
 @media (max-width: 800px) {
 	.footer {
 		bottom: 0;
-		display: inline-block !important;
+		display: inline-block;
 	}
 	.footer-top {
-		display: inline-block !important;
-		margin-top: -30px;
-	}
-	.footer-about {
 		display: inline-block;
-		width: 100%;
-		margin: 0 20px;
-	}
-	.footer-about p {
-		font-size: 18px;		
-	}
-	.footer-about:nth-child(4) {
-		margin-left: 20px;
 	}
 }

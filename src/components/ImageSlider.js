@@ -1,7 +1,8 @@
 import { useState } from "react"
 import '../styles/ImageSlider.css'
+import { slides } from "../datas/slider";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
@@ -28,7 +29,10 @@ const ImageSlider = ({ slides }) => {
             <div className="right-arrow" onClick={goToNext}>
                 <i className="fa fa-arrow-right"></i>
             </div>
-            <div className="slide" style={{backgroundImage: `url(${slides[currentIndex].url})`}}></div>
+            <div className="slide">
+                <img src={slides[currentIndex].url} alt='slide' />
+                <p>{slides[currentIndex].description}</p>
+            </div>
             <div className="dots">
                 {slides.map((slide, index) => (
                     <div className="dot" key={index} onClick={() => goToSlide(index)}>

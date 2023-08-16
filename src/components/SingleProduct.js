@@ -56,6 +56,7 @@ function SingleProduct() {
 		}
 
 	}
+	console.log(currentProduct?.images)
 
     return (
         <>
@@ -65,7 +66,7 @@ function SingleProduct() {
 				<div className='produit'>
 					<div className='slider-left'>
 						<div className='container-slider'>
-							<SliderSingleProduct slides={currentProduct.images} />
+							{/* <SliderSingleProduct slides={currentProduct?.images} /> */}
 						</div>
 					</div>
 					<div className='slider-right'>
@@ -81,10 +82,14 @@ function SingleProduct() {
 						<hr />
 
 						<div className='info-produit'>
-							<p><b>Tissu disponible : </b>{currentProduct.description.tissu}</p>
-							<p><b>Couture : </b>{currentProduct.description.couture}</p>
-							<p><b>Prix : </b>{currentProduct.description.prix}</p>
-							<p><i class="fa fa-flag" aria-hidden="true"></i><b> Livraison :</b> {currentProduct.description.livraison}</p>
+							{currentProduct.description?.tissu && <p><b>Tissu disponible : </b>{currentProduct.description.tissu}</p>}
+							<p><b>Couture : </b>Sur-mesure</p>
+							{currentProduct?.sur_mesure && <p><b>Prix sur mesure : </b>{currentProduct.sur_mesure} €</p>}
+							{currentProduct?.taille_unique && <p><b>Prix taille unique : </b>{currentProduct.taille_unique} €</p>}
+							{currentProduct?.prix && <p><b>Prix : </b>{currentProduct.prix} €</p>}
+							{currentProduct.description?.couleur && <p><b>Couleur : </b>{currentProduct.description.couleur}</p>}
+							{currentProduct.description?.matiere && <p><b>Matière : </b>{currentProduct.description.matiere}</p>}
+							<p><i class="fa fa-flag" aria-hidden="true"></i><b> Livraison :</b> Europe, Afrique, Asie</p>
 						</div>
 						<hr />
 

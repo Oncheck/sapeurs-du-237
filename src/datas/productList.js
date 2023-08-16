@@ -1,568 +1,438 @@
-import product_1 from '../assets/images/produits/Costume_Africain_1.jpg'
-import product_2 from '../assets/images/produits/Costume_Africain_2.jpg'
-import product_3 from '../assets/images/produits/Costume_Africain_3.jpg'
-import product_4 from '../assets/images/produits/Costume_Africain_4.jpg'
-import product_5 from '../assets/images/produits/Costume_Africain_5.jpg'
-import product_6 from '../assets/images/produits/Costume_Croisé_1.jpg'
-import product_7 from '../assets/images/produits/Costume_Croisé_2.jpg'
-import product_8 from '../assets/images/produits/Costume_Croisé_3.jpg'
-import product_9 from '../assets/images/produits/Costume_Croisé_4.jpg'
-import product_10 from '../assets/images/produits/Costume_Croisé_5_1.jpg'
-import product_10_1 from '../assets/images/produits/Costume_Croisé_5_2.jpg'
-import product_10_2 from '../assets/images/produits/Costume_Croisé_5_3.jpg'
-import product_10_3 from '../assets/images/produits/Costume_Croisé_5_4.jpg'
-import product_11 from '../assets/images/produits/Costume_Croisé_6_1.jpg'
-import product_11_1 from '../assets/images/produits/Costume_Croisé_6_2.jpg'
-import product_12 from '../assets/images/produits/Costume_Croisé_7.jpg'
-import product_13 from '../assets/images/produits/Costume_Croisé_8.jpg'
-import product_14 from '../assets/images/produits/Costume_Croisé_9.jpg'
-import product_15 from '../assets/images/produits/Costume_Mariage_1.jpg'
-import product_16 from '../assets/images/produits/Costume_Mariage_2.jpg'
-import product_17 from '../assets/images/produits/Costume_Mariage_3.jpg'
-import product_18 from '../assets/images/produits/Costume_Mariage_4.jpg'
-import product_19 from '../assets/images/produits/Costume_Mariage_5.jpg'
-import product_20 from '../assets/images/produits/Costume_Mariage_6_1.jpg'
-import product_20_1 from '../assets/images/produits/Costume_Mariage_6_2.jpg'
+import demande_1 from '../assets/images/produits/A la demande/1.png'
+import demande_2 from '../assets/images/produits/A la demande/2.png'
+import demande_3 from '../assets/images/produits/A la demande/3.png'
+import croise_1 from '../assets/images/produits/Costumes croisés/1.jpg'
+import croise_2 from '../assets/images/produits/Costumes croisés/2.jpg'
+import croise_3 from '../assets/images/produits/Costumes croisés/3.jpg'
+import croise_4 from '../assets/images/produits/Costumes croisés/4.jpg'
+import croise_5 from '../assets/images/produits/Costumes croisés/5.jpg'
+import croise_6 from '../assets/images/produits/Costumes croisés/6.jpg'
+import croise_7 from '../assets/images/produits/Costumes croisés/7.jpg'
+import mariage_1 from '../assets/images/produits/Costumes mariage/1.jpg'
+import mariage_2 from '../assets/images/produits/Costumes mariage/4.jpg'
+import mariage_3 from '../assets/images/produits/Costumes mariage/7_1.jpg'
+import mariage_4 from '../assets/images/produits/Costumes mariage/7_2.jpg'
+import mariage_5 from '../assets/images/produits/Costumes mariage/2.jpg'
+import mariage_6 from '../assets/images/produits/Costumes mariage/3.jpg'
+import mariage_7 from '../assets/images/produits/Costumes mariage/6_1.jpg'
+import mariage_8 from '../assets/images/produits/Costumes mariage/6_2.jpg'
+import mariage_9 from '../assets/images/produits/Costumes mariage/5.jpg'
+import chaussure_1 from '../assets/images/produits/Chaussures/3_1.png'
+import chaussure_2 from '../assets/images/produits/Chaussures/3_2.png'
+import chaussure_3 from '../assets/images/produits/Chaussures/3_3.png'
+import chaussure_4 from '../assets/images/produits/Chaussures/4_1.png'
+import chaussure_5 from '../assets/images/produits/Chaussures/4_2.png'
+import chaussure_6 from '../assets/images/produits/Chaussures/5_1.png'
+import chaussure_7 from '../assets/images/produits/Chaussures/5_2.png'
+import chaussure_8 from '../assets/images/produits/Chaussures/5_3.png'
+import chaussure_9 from '../assets/images/produits/Chaussures/6.png'
+import chaussure_10 from '../assets/images/produits/Chaussures/1_1.png'
+import chaussure_11 from '../assets/images/produits/Chaussures/1_2.png'
+import chaussure_12 from '../assets/images/produits/Chaussures/1_3.png'
+import chaussure_13 from '../assets/images/produits/Chaussures/1_4.png'
+import chemise_africaine_1 from '../assets/images/produits/Chemises africaines/2.jpg'
+import chemise_africaine_2 from '../assets/images/produits/Chemises africaines/3.jpg'
+import chemise_africaine_3 from '../assets/images/produits/Chemises africaines/6.png'
+import chemise_africaine_4 from '../assets/images/produits/Chemises africaines/5.png'
+import chemise_africaine_5 from '../assets/images/produits/Chemises africaines/4.jpg'
+import chemise_africaine_6 from '../assets/images/produits/Chemises africaines/1.png'
+import accessoire_1 from '../assets/images/produits/Accessoires/2.png';
+import accessoire_2 from '../assets/images/produits/Accessoires/3.png';
+import accessoire_3 from '../assets/images/produits/Accessoires/4.png';
+import accessoire_4 from '../assets/images/produits/Accessoires/5.png';
+import chemise_1 from '../assets/images/produits/Chemises/1_1.jpg'
+import chemise_2 from '../assets/images/produits/Chemises/1_2.jpg'
+import chemise_3 from '../assets/images/produits/Chemises/1_3.jpg'
+import chemise_4 from '../assets/images/produits/Chemises/1_4.jpg'
+import chemise_5 from '../assets/images/produits/Chemises/1_5.png'
+import chemise_6 from '../assets/images/produits/Chemises/2_1.png'
+import chemise_7 from '../assets/images/produits/Chemises/2_2.png'
+import chemise_8 from '../assets/images/produits/Chemises/2_3.png'
+import chemise_9 from '../assets/images/produits/Chemises/2_4.png'
 
 export const productList = [
     {
         id: 1,
-        name: 'Costume Africain 1',
-        category: 'Costume Africain',
-        price: 2500,
-        cover: product_1,
-        images: [
-            {
-                src: product_1
-            },
-            {
-                src: product_1
-            },
-            {
-                src: product_1
-            }
-        ],
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_2,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Bassin',
+            couleur: 'A la demande'
         },
         inCart: 0
     },
     {
         id: 2,
-        name: 'Costume Africain 2',
-        category: 'Costume Africain',
-        price: 2500,
-        cover: product_2,
-        images: [
-            {
-                src: product_2
-            },
-            {
-                src: product_2
-            },
-            {
-                src: product_2
-            }
-        ],
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_1,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Basin, N’dôp, Coton ',
+            couleur: 'A la demande'
         },
         inCart: 0
     },
     {
         id: 3,
-        name: 'Costume Africain 3',
-        category: 'Costume Africain',
-        price: 1500,
-        cover: product_3,
-        images: [
-            {
-                src: product_3
-            },
-            {
-                src: product_3
-            },
-            {
-                src: product_3
-            }
-        ],
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_3,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
         },
         inCart: 0
     },
     {
         id: 4,
-        name: 'Costume Africain 4',
-        category: 'Costume Africain',
-        price: 1200,
-        cover: product_4,
-        images: [
-            {
-                src: product_4
-            },
-            {
-                src: product_4
-            },
-            {
-                src: product_4
-            }
-        ],
+        name: 'Mode Deido',
+        category: 'Costumes croisés',
+        cover: croise_1,
         description : {
             desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
             slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140'
         },
         inCart: 0
     },
     {
         id: 5,
-        name: 'Costume Africain 5',
-        category: 'Costume Africain',
-        price: 2520,
-        cover: product_5,
-        images: [
-            {
-                src: product_5
-            },
-            {
-                src: product_5
-            },
-            {
-                src: product_5
-            }
-        ],
+        name: 'Mode Sadi',
+        category: 'Costumes croisés',
+        cover: croise_2,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume croisé 6 boutons avec boutons dorés et 3 poches.',
+            slug: "Ressentez toute la fraîcheur issue de la verdure de Bonamoussadi !!!",
+            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140'
         },
+        color: 'green',
         inCart: 0
     },
     {
         id: 6,
-        name: 'Costume Croisé 1',
-        category: 'Costume Croisé',
-        price: 1020,
-        cover: product_6,
-        images: [
-            {
-                src: product_6
-            },
-            {
-                src: product_6
-            },
-            {
-                src: product_6
-            }
-        ],
+        name: 'Mode Makepe',
+        category: 'Costumes croisés',
+        cover: croise_3,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume croisé 6 boutons couleurs et 2 poches passepoilées.',
+            slug: "Makepe : c’est une histoire d’éclat !!!",
+            tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
+        color: 'green',
         inCart: 0
     },
     {
         id: 7,
-        name: 'Costume Croisé 2',
-        category: 'Costume Croisé',
-        price: 500,
-        cover: product_7,
-        images: [
-            {
-                src: product_7
-            },
-            {
-                src: product_7
-            },
-            {
-                src: product_7
-            }
-        ],
+        name: 'Mode New-Bell',
+        category: 'Costumes croisés',
+        cover: croise_5,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume croisé, boutons couleur or et 3 poches, au design présidentiel.',
+            slug: "New-Bell, c’est une histoire de présidents !!! Abhorrez toute la sapologie des gars de New-Bell !",
+            tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
-        inCart: 0
-    },
-    {
-        id: 8,
-        name: 'Costume Croisé 3',
-        category: 'Costume Croisé',
-        price: 850,
-        cover: product_8,
-        images: [
-            {
-                src: product_8
-            },
-            {
-                src: product_8
-            },
-            {
-                src: product_8
-            }
-        ],
-        description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
-        },
-        inCart: 0
-    },
-    {
-        id: 9,
-        name: 'Costume Croisé 4',
-        category: 'Costume Croisé',
-        price: 1000,
-        cover: product_9,
-        images: [
-            {
-                src: product_9
-            },
-            {
-                src: product_9
-            },
-            {
-                src: product_9
-            }
-        ],
-        description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
-        },
+        color: 'green',
         inCart: 0
     },
     {
         id: 10,
-        name: 'Costume Croisé 5',
-        category: 'Costume Croisé',
-        price: 1250,
-        cover: product_10,
-        images: [
-            {
-                src: product_10_1
-            },
-            {
-                src: product_10_2
-            },
-            {
-                src: product_10_3
-            }
-        ],
+        name: 'Mode Tambafia (Ngola)',
+        category: 'Costumes croisés',
+        cover: croise_7,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume croisé, bleu nuit avec rayures blanches ou rouges, assortie avec 6 boutons couleurs.',
+            slug: "Tambafia à Yaoundé est l’un des Fiefs des M’Bagandô (tous ceux qui se battent dans la vie) !!!",
+            tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
+        color: 'green',
         inCart: 0
     },
     {
         id: 11,
-        name: 'Costume Croisé 6',
-        category: 'Costume Croisé',
-        price: 500,
-        cover: product_11,
-        images: [
-            {
-                src: product_11_1
-            },
-            {
-                src: product_11
-            },
-            {
-                src: product_11_1
-            }
-        ],
+        name: 'Mode Warman',
+        category: 'Costumes croisés',
+        cover: croise_6,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume croisé marron/belge avec rayures, assortie de 6 boutons couleurs uniformes et 2 poches passepoilées.',
+            slug: "Les « Warman » appartiennent à la catégorie du « mâle dominant », les gars ambitieux, pleins d’initiatives",
+            tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
-        inCart: 0
-    },
-    {
-        id: 12,
-        name: 'Costume Croisé 7',
-        category: 'Costume Croisé',
-        price: 450,
-        cover: product_12,
-        images: [
-            {
-                src: product_12
-            },
-            {
-                src: product_12
-            },
-            {
-                src: product_12
-            }
-        ],
-        description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
-        },
+        color: 'green',
         inCart: 0
     },
     {
         id: 13,
-        name: 'Costume Croisé 8',
-        category: 'Costume Croisé',
-        price: 150,
-        cover: product_13,
-        images: [
-            {
-                src: product_13
-            },
-            {
-                src: product_13
-            },
-            {
-                src: product_13
-            }
-        ],
+        name: 'Mode Joligarçonmania',
+        category: 'Costumes croisés',
+        cover: croise_4,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume croisé bleu à grandes rayures, 6 boutons couleurs et 3 poches passepoilées.',
+            slug: "La Joligarçonmania est un concept caractéristique des jolis garçons peu importe ton origine, ta morphologie, ou ta taille!!!",
+            tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
+        color: 'green',
         inCart: 0
     },
     {
         id: 14,
-        name: 'Costume Croisé 9',
-        category: 'Costume Croisé',
-        price: 2000,
-        cover: product_14,
-        images: [
-            {
-                src: product_14
-            },
-            {
-                src: product_14
-            },
-            {
-                src: product_14
-            }
-        ],
+        name: 'Costume de mariage homme',
+        category: 'Costumes de Mariage',
+        cover: mariage_1,
+        images: [mariage_1, mariage_2],
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Elégant costume bleu modèle croisé N’dôp avec fermeture latérale',
+            slug: "Appréciez toute la fraîcheur des Montagnes de l’Ouest Cameroun !!",
+            tissu: '30% Coton, 45% N’dôp original, 25% viscose'
         },
         inCart: 0
     },
     {
         id: 15,
-        name: 'Modèle Africain Original',
-        category: 'Costume de mariage',
-        price: 150,
-        cover: product_15,
-        images: [
-            {
-                src: product_15
-            },
-            {
-                src: product_15
-            },
-            {
-                src: product_15
-            }
-        ],
+        name: 'Smoking Homme 1',
+        category: 'Costumes de Mariage',
+        cover: mariage_3,
+        images: [mariage_3, mariage_4],
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Smoking style Mao avec un bouton, et satin noir assorti. ',
+            tissu: '50% viscose, 30% Polyester, 20% Satin'
         },
         inCart: 0
     },
     {
         id: 16,
-        name: 'Costume de mariage 2',
+        name: 'Smoking Homme 2',
         category: 'Costume de mariage',
-        price: 350,
-        cover: product_16,
-        images: [
-            {
-                src: product_16
-            },
-            {
-                src: product_16
-            },
-            {
-                src: product_16
-            }
-        ],
+        cover: mariage_5,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Elégant Smoking style « Los Angeles », avec 6 boutons couleurs uniformes, assorti de 2 fentes avant.',
+            tissu: 'Moers, et super 140.'
         },
         inCart: 0
     },
     {
         id: 17,
-        name: 'Costume de mariage 3',
+        name: 'Smoking Homme 3',
         category: 'Costume de mariage',
-        price: 750,
-        cover: product_17,
-        images: [
-            {
-                src: product_17
-            },
-            {
-                src: product_17
-            },
-            {
-                src: product_17
-            }
-        ],
+        cover: mariage_6,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Chic Smoking 3 pièces anglais avec gilet à 6 boutons',
+            tissu: 'Moers ou Super 140, Super 180.'
         },
         inCart: 0
     },
     {
         id: 18,
-        name: 'Costume de mariage 4',
+        name: 'MOdèle 1 « 237 »',
         category: 'Costume de mariage',
-        price: 1750,
-        cover: product_18,
-        images: [
-            {
-                src: product_18
-            },
-            {
-                src: product_18
-            },
-            {
-                src: product_18
-            }
-        ],
+        cover: mariage_7,
+        images: [mariage_7, mariage_8],
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume Modèle « La BeaugarçonMania 237 ».',
+            slug: 'Abhorrez la Mode originale camerounaise ! Dégagez fraîcheur et Charisme du 237 !!',
+            tissu: 'Super 140, Super 180.'
         },
         inCart: 0
     },
     {
-        id: 17,
-        name: 'Costume de mariage 5',
+        id: 19,
+        name: 'MOdèle 2 « 237 »',
         category: 'Costume de mariage',
-        price: 750,
-        cover: product_19,
-        images: [
-            {
-                src: product_19
-            },
-            {
-                src: product_19
-            },
-            {
-                src: product_19
-            }
-        ],
+        cover: mariage_9,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Costume Modèle « La BeaugarçonMania 237 ».',
+            slug: 'Abhorrez la Mode originale camerounaise ! Dégagez fraîcheur et Charisme du 237 !!',
+            tissu: 'Super 140, Super 180 + broderie originale. '
         },
         inCart: 0
     },
     {
-        id: 17,
-        name: 'Costume de mariage 6',
-        category: 'Costume de mariage',
-        price: 1000,
-        cover: product_20,
-        images: [
-            {
-                src: product_20_1
-            },
-            {
-                src: product_20
-            },
-            {
-                src: product_20_1
-            }
-        ],
+        id: 20,
+        name: 'Chaussure 1',
+        category: 'Chaussures',
+        cover: chaussure_1,
+        images: [chaussure_1, chaussure_2, chaussure_3],
+        prix: 60,
         description : {
-            desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
-            slug: "Vivez toute l'élégance des gars de Deido !!",
-            tissu: 'Moers (60% Viscose, 25% coton, 15% polyester) et super 140',
-            couture: 'Sur-Mesure',
-            prix: 'Sur devis en fonction de votre taille et te type de tissu',
-            livraison: 'Europe, Amérique, Cameroun'
+            desc: 'Chaussures de soirée en cuir.',
+            taille: '41-46',
+            couleur: 'noir, marron, Bordeau',
+            matiere: 'Cuir'
         },
         inCart: 0
+    },
+    {
+        id: 21,
+        name: 'Chaussure 2',
+        category: 'Chaussures',
+        cover: chaussure_4,
+        images: [chaussure_4, chaussure_5],
+        prix: 60,
+        description : {
+            desc: 'Mocassin soirée et ville',
+            taille: '41-46',
+            couleur: 'Marron',
+            matiere: 'Cuir'
+        },
+        inCart: 0
+    },
+    {
+        id: 22,
+        name: 'Chaussure 3',
+        category: 'Chaussures',
+        cover: chaussure_6,
+        images: [chaussure_6, chaussure_7, chaussure_8],
+        prix: 120,
+        description : {
+            desc: 'Mocassin soirée et ville pour Monsieur !',
+            taille: '41-46',
+            couleur: 'Marron',
+            matiere: 'Cuir'
+        },
+        inCart: 0
+    },
+    {
+        id: 23,
+        name: 'Chaussure 4',
+        category: 'Chaussures',
+        cover: chaussure_9,
+        prix: 150,
+        description : {
+            desc: 'Excellente Derby samouraï ! Pour accompagner votre costume en toute élégance !',
+            taille: '41-44',
+            couleur: 'Noir, gris samouraïs',
+            matiere: 'Cuir'
+        },
+        inCart: 0
+    },
+    {
+        id: 24,
+        name: 'Chaussure 5',
+        category: 'Chaussures',
+        cover: chaussure_10,
+        images: [chaussure_10, chaussure_11, chaussure_12, chaussure_13],
+        prix: 160,
+        description : {
+            desc: 'Oxford Derby décontracté !',
+            taille: '41-47',
+            couleur: 'Marron, noir, bleu',
+            matiere: 'Cuir'
+        },
+        inCart: 0
+    },
+    {
+        id: 25,
+        name: 'Chemise africaine Muna « Sawa »',
+        category: 'Chemises africaines',
+        cover: chemise_africaine_1,
+        prix: 'à partir de 50',
+        description : {
+            desc: 'Chemise africaine personnalisée style Muna « Sawa ».  Longues manches avec fermetures à manchettes au niveau du poignet.',
+            slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
+            tissu: 'Mélange Coton et Basin '
+        },
+        inCart: 0
+    },
+    {
+        id: 26,
+        name: 'Chemise africaine « Bantu »',
+        category: 'Chemises africaines',
+        cover: chemise_africaine_2,
+        prix: 'à partir de 50',
+        description : {
+            desc: 'Chemise africaine personnalisée style « Bantu ». Longues manches avec fermetures à manchettes au niveau du poignet, et col Mao.',
+            slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
+            tissu: 'Mélange Coton et Basin '
+        },
+        inCart: 0
+    },
+    {
+        id: 27,
+        name: 'Chemise africaine « Les Montagnards »',
+        category: 'Chemises africaines',
+        cover: chemise_africaine_3,
+        prix: 'à partir de 60',
+        description : {
+            desc: 'Chemise africaine personnalisée style « Les Montagnards ». Longues manches avec fermetures à manchettes au niveau du poignet, et col rond.',
+            slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
+            tissu: 'Mélange N’dôp et Basin'
+        },
+        inCart: 0
+    },
+    {
+        id: 28,
+        name: 'Chemise africaine « Abidjan »',
+        category: 'Chemises africaines',
+        cover: chemise_africaine_4,
+        prix: 'à partir de 45',
+        description : {
+            desc: 'Chemise africaine personnalisée style « Abidjan ». Longues manches avec fermetures à manchettes au niveau du poignet, et col rond.',
+            slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
+            tissu: 'Mélange coton et Basin'
+        },
+        inCart: 0
+    },
+    {
+        id: 29,
+        name: 'Chemise africaine « Lamidot »',
+        category: 'Chemises africaines',
+        cover: chemise_africaine_5,
+        prix: 'à partir de 60',
+        description : {
+            desc: 'Chemise africaine personnalisée style « Lamidot ». Courtes manches, col rond.',
+            slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
+            tissu: 'Mélange coton et Basin'
+        },
+        inCart: 0
+    },
+    {
+        id: 30,
+        name: 'Chemise africaine « Kribienne »',
+        category: 'Chemises africaines',
+        cover: chemise_africaine_6,
+        prix: 'à partir de 50',
+        description : {
+            desc: 'Chemise africaine personnalisée style « Kribienne ». Longues manches avec fermetures à manchettes au niveau du poignet, et col Mao.',
+            slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
+            tissu: 'Mélange coton et Basin'
+        },
+        inCart: 0
+    },
+    {
+        id: 31,
+        name: 'Chemise 1',
+        category: 'Chemises',
+        cover: chemise_1,
+        sur_mesure: 70,
+        taille_unique: 60,
+        images: [chemise_1, chemise_2, chemise_3, chemise_4, chemise_5],
+        description: {
+            desc: 'Chemises avec manchettes sur-mesure',
+            taille: 'XL-4XL'
+        }
+    },
+    {
+        id: 32,
+        name: 'Chemise 2',
+        category: 'Chemises',
+        cover: chemise_6,
+        sur_mesure: 70,
+        taille_unique: 60,
+        images: [chemise_6, chemise_7, chemise_8, chemise_9],
+        description: {
+            desc: 'Chemises avec manchettes sur-mesure',
+            taille: 'XL-4XL'
+        }
+    },
+    {
+        id: 33,
+        name: 'Noeud papillon Royal',
+        category: 'Accessoires',
+        cover: accessoire_1,
+        prix: 20,
+        images: [accessoire_1, accessoire_2, accessoire_3, accessoire_4],
+        description: {
+            desc: ''
+        }
     }
 ];

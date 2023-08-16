@@ -8,7 +8,7 @@ function Banner() {
 	const navigate = useNavigate()
 	const [showLinks, setShowLinks] = useState(false)
 	const savedCart = localStorage.getItem('cart')
-	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
+	const cart = savedCart ? JSON.parse(savedCart) : []
 
 	const handleShowLinks = () => {
 		setShowLinks(!showLinks)

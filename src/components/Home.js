@@ -1,6 +1,5 @@
 import Banner from "./Banner";
 import ImageSlider from "./ImageSlider";
-import { slides } from "../datas/slider";
 import Footer from "./Footer";
 import '../styles/Home.css';
 import { categoriesList } from "../datas/categoriesList";
@@ -14,6 +13,7 @@ import Divider from "./Divider";
 
 function Home() {
     const navigate = useNavigate()
+    const products = productList.filter(products => products.category !== "Tenues d'apparâts (à la demande)")
 
     useEffect(() => {
         document.title = 'Sapeurs du 237 - Accueil'
@@ -24,16 +24,16 @@ function Home() {
         <>
             <Banner /><br /><br /><br /><br />
             <div className="container-slides">
-                <ImageSlider slides={slides} />
+                <ImageSlider />
             </div>
 
             <div className="home-categories">
-                <h1>Vêtements à la demande</h1>
+                <h1>Nos Catégories</h1>
                 <div className="bloc-items">
                     <ul className="list-items">
                         {categoriesList.map((categorie, index) => (
                             <li key={index} style={{background: `url(${categorie.image})`, backgroundSize: 'cover'}}>
-                                <div className="categorie">
+                                <div className="categorie" onClick={() => navigate(`/category/${categorie.nom}`)}>
                                     <p>{categorie.nom}</p>
                                     <i className="fa fa-arrow-right"></i>
                                 </div>
@@ -49,7 +49,7 @@ function Home() {
                 <h1>Nos produits</h1>
                 <div className="bloc-items">
                     <ul className="products-items">
-                        {productList.slice(0, 9).map((product, index) => (
+                        {products.slice(0, 9).map((product, index) => (
                             <ProductItem 
                                 key={index}
                                 product={product}
