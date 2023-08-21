@@ -48,12 +48,18 @@ function Home() {
             <div className="featured-products">
                 <h1>Nos produits</h1>
                 <div className="bloc-items">
-                    <ul className="products-items">
+                    <ul className="list-items">
                         {products.slice(0, 9).map((product, index) => (
-                            <ProductItem 
-                                key={index}
-                                product={product}
-                            />
+                            // <ProductItem 
+                            //     key={index}
+                            //     product={product}
+                            // />
+                            <li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+                                <div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+                                    <p>{product.name}</p>
+                                    <i className="fa fa-arrow-right"></i>
+                                </div>
+                            </li>
                         ))}
                     </ul>
                 </div>

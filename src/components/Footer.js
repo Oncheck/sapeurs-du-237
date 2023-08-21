@@ -5,13 +5,17 @@ import { Link } from 'react-router-dom'
 function Footer() {
 
 	
-
 	return (
 		<footer className='footer'>
 			<div className='footer-top'>
 				<div className='footer-about'>
 					<img src={logo} alt='logo'/>
-					<p>Loremhohrohgreuhurhuorzhuirrgtrey tryrgrerfgjnrmhrohedifsdf efheuzhfu efefd</p>
+					<p>
+						La Sapologie à bas coûts.<br />
+						Différents concepts Hommes, Femmes, Mariages.
+						Sapeurs du 237 c'est aussi l'évènementiel: Photos, Services traiteurs, Création de cartes
+						digitales, Web-Design à bas coûts !
+					</p>
 					<div className='footer-social'>
 						<div className='footer-social-icon'>
 							<i className='fa fa-instagram'></i>
@@ -27,19 +31,20 @@ function Footer() {
 				<div className='footer-about'>
 					<h4>Company</h4>
 					<ul>
-						<li><Link to='/'>A Propos</Link></li>
+						<li><Link to='/'>Home</Link></li>
+						<li><Link to='/products'>Shop</Link></li>
 						<li><Link to='/contact'>Contact</Link></li>
-						<li><Link to='/'>Comment ça marche ?</Link></li>
+						<li><Link to='/espace-mariage'>Espace Mariage</Link></li>
 					</ul>
 				</div>
-				<div className='footer-about'>
+				{/* <div className='footer-about'>
 					<h4>Company</h4>
 					<ul>
 						<li><Link to='/'>FAQ</Link></li>
 						<li><Link to='/contact'>Privacy</Link></li>
 						<li><Link to='/products'>Shop</Link></li>
 					</ul>
-				</div>
+				</div> */}
 				<div className='footer-about'>
 					<h4>Get in touch</h4>
 					<ul>

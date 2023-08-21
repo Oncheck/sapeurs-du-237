@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Cart from './components/Cart';
 import Contact from './components/Contact';
 import ShoppingList from './components/ShoppingList';
+import EspaceMariage from './components/EspaceMariage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.render(
         <Route exact path='/products/:name' element={<SingleProduct />}></Route>
         <Route exact path='/cart' element={<Cart />}></Route>
         <Route exact path='/contact' element={<Contact />}></Route>
+        <Route exact path='/espace-mariage' element={<EspaceMariage />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

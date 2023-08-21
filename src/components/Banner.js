@@ -24,9 +24,10 @@ function Banner() {
 				<NavLink to='/home' className='banner-link slideInDown-1'>Accueil</NavLink>
 				<NavLink to='/products' className='banner-link slideInDown-2'>Articles</NavLink>
 				<NavLink to='/contact' className='banner-link slideInDown-3'>Contact</NavLink>
-				<NavLink to='/cart' className='banner-link slideInDown-4'>
+				{/* <NavLink to='/cart' className='banner-link slideInDown-4'>
 					<i className='fa fa-shopping-cart'><span>{cart.length}</span></i> Panier
-				</NavLink>
+				</NavLink> */}
+				<NavLink to='/espace-mariage' className='banner-link slideInDown-4'>Espace Mariage</NavLink>
 			</div>
 			<button className='btn-menu' onClick={handleShowLinks}>
 				<span className='btn-menu-bar'></span>
