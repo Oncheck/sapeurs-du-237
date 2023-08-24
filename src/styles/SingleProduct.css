@@ -17,6 +17,9 @@
     margin: 50px 20px;
     border-radius: 10px;
 }
+.container-slider img {
+    border-radius: 10px;
+}
 .slider-right {
     width: 50%;
     margin-right: 30px;
@@ -29,7 +32,7 @@
 .slider-right .info-produit .info-produit-header p {
     margin-top: 10px;
     font-size: 18px;
-    color: #f3160f;
+    color: #a98b3f;
 }
 .slider-right p {
     margin-top: -10px;
@@ -53,6 +56,7 @@ hr {
     font: 700;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 10px;
 }
 .slider-right button.btn-card:hover {
     background-color: #a98b3f;
@@ -74,6 +78,7 @@ hr {
     font: 700;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 10px;
 }
 .slider-right button.btn-contact:hover {
     background-color: #333;
@@ -84,4 +89,38 @@ hr {
 .autres-produits {
     margin: 0 20px;
     font-family: 'Readex Pro';
+}
+
+@media (max-width: 420px) {
+    .single-product {
+        margin: 0 auto;
+    }
+    .produit {
+        display: inline-block;
+        width: 100%;
+    }
+    .slider-left, .slider-right {
+        width: 90%;
+    }
+    .slider-right {
+        margin: 0 5%;
+    }
+    .info-produit h2 {
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 421px) and (max-width: 710px) {
+    .single-product {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .produit {
+        display: inline-block;
+        width: 100%;
+    }
+    .slider-left, .slider-right {
+        width: 100%;
+    }
 }

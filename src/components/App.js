@@ -3,12 +3,19 @@ import Footer from './Footer'
 import ShoppingList from './ShoppingList'
 import { useParams, useNavigate } from 'react-router-dom';
 import { productList } from '../datas/productList';
-import ProductItem from './ProductItem';
+//import ProductItem from './ProductItem';
+import { useEffect } from 'react'
+import '../styles/Home.css';
 
 function App() {
 	const {name} = useParams()
 	const navigate = useNavigate()
 	const productsByCategory = productList.filter(product => product.category === name)
+	
+	useEffect(() => {
+		window.scrollTo(0, 10)
+	})
+	
 	
 	return (
 		<>
@@ -17,12 +24,18 @@ function App() {
 				<div className="featured-products">
 					<h1>Catégorie : {name}</h1>
 					<div className="bloc-items">
-						<ul className="products-items">
+						<ul className="list-items">
 							{productsByCategory.map((product, index) => (
-								<ProductItem 
-									key={index}
-									product={product}
-								/>
+								// <ProductItem 
+								// 	key={index}
+								// 	product={product}
+								// />
+								<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+									<div className="categorie" onClick={() => navigate(`/category/${product.name}`)}>
+										<p>{product.name}</p>
+										<i className="fa fa-arrow-right"></i>
+									</div>
+								</li>
 							))}
 						</ul>
 					</div>

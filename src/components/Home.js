@@ -5,10 +5,10 @@ import '../styles/Home.css';
 import { categoriesList } from "../datas/categoriesList";
 import { productList } from '../datas/productList'
 import { Link } from "react-router-dom";
-import ProductItem from "./ProductItem";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Divider from "./Divider";
+import { Modal } from "react-bootstrap"
 
 
 function Home() {
@@ -19,6 +19,27 @@ function Home() {
         document.title = 'Sapeurs du 237 - Accueil'
     })
 
+    const [show, setShow] = useState(false)
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleClose = () => setShow(false);
+  	
+    const handleSubmit = () => {
+        if (email === '') {
+            setMessage('Veuillez entrer une adresse email valide')
+            setShow(true)
+        } else {
+            if (email.includes('@')) {
+                setMessage("Félicitations ! Vous êtes bien enregistrés parmi les abonnés de Sapeurs du 237")
+                setShow(true)
+                setEmail('')
+            } else {
+                setMessage('Veuillez entrer une adresse email valide')
+                setShow(true)
+            }
+        }
+    }
     
     return (
         <>
@@ -80,9 +101,8 @@ function Home() {
                     <p>Vous recevrez une réduction de 20% si vous nous envoyez votre adresse mail</p>
                 </div>
                 <div className="email">
-                    <input type="email" placeholder="" />
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                    <button>Envoyer</button>
+                    <input type="email" placeholder="Votre Email" onChange={(e) => setEmail(e.target.value)} required />
+                    <button onClick={handleSubmit}>Envoyer</button>
                 </div>
                 <div className="title2">
                     <p>Vous pouvez aussi nous contacter sur 
@@ -92,6 +112,15 @@ function Home() {
                     </p>
                 </div>
             </div>
+
+            <Modal show={show} onHide={handleClose} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Information</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>{message}</p>
+                </Modal.Body>
+            </Modal>
 
             <Footer />
         </>

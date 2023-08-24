@@ -91,12 +91,26 @@ form .btn-submit:hover {
 
 /* Responsive design */
 @media (max-width: 420px) {
+    .contact {
+        font-family: 'Readex Pro';
+        margin: 50px auto;
+    }
+    .contact h1 {
+        font-size: 30px;
+        text-align: center;
+    }
     .card-contact {
         display: inline-block;
+        width: 100%;
     }
     .card-contact .item-contact {
-        width: 90%;
+        width: 80%;
         margin-bottom: 50px;
+        border-radius: 35px;
+    }
+    .content-form {
+        width: 100%;
+        margin-top: 150px;
     }
     .input button {
         width: 70%;
@@ -107,5 +121,19 @@ form .btn-submit:hover {
     }
     .input textarea {
         margin-top: -30px;
+    }
+}
+@media (max-width: 920px) {
+    .card-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    .card-contact .item-contact {
+        width: 80%;
+        margin-bottom: 50px;
+        border-radius: 35px;
+    }
+    .content-form {
+        margin-top: 150px;
     }
 }

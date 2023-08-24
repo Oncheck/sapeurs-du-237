@@ -152,10 +152,9 @@
 		margin-top: -30px;
 	}
 	.show-menu .banner-links {
-		visibility: visible;
-		margin-left: -30px;
-		margin-top: 100px;
 		margin-top: 40%;
+		width: 50%;
+		margin-left: -25%;
 	}
 	.show-menu .banner-links .banner-link {
 		margin-bottom: 20px;
@@ -176,11 +175,6 @@
 	.banner-img {
 		width: 200px;
 		cursor: pointer;
-	}
-	.banner-links {
-		visibility: hidden;
-		justify-content: center;
-		align-items: center;
 	}
 	.banner-link {
 		display: block;

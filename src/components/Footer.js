@@ -8,6 +8,7 @@ function Footer() {
 	return (
 		<footer className='footer'>
 			<div className='footer-top'>
+				
 				<div className='footer-about'>
 					<img src={logo} alt='logo'/>
 					<p>
@@ -28,6 +29,7 @@ function Footer() {
 						</div>
 					</div>
 				</div>
+
 				<div className='footer-about'>
 					<h4>Company</h4>
 					<ul>
@@ -37,14 +39,7 @@ function Footer() {
 						<li><Link to='/espace-mariage'>Espace Mariage</Link></li>
 					</ul>
 				</div>
-				{/* <div className='footer-about'>
-					<h4>Company</h4>
-					<ul>
-						<li><Link to='/'>FAQ</Link></li>
-						<li><Link to='/contact'>Privacy</Link></li>
-						<li><Link to='/products'>Shop</Link></li>
-					</ul>
-				</div> */}
+				
 				<div className='footer-about'>
 					<h4>Get in touch</h4>
 					<ul>

@@ -11,6 +11,7 @@ import ProductItem from './ProductItem';
 import { Form, Modal, Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import guide from '../assets/images/guide.jpg'
+import emailjs from '@emailjs/browser'
 
 function SingleProduct() {
 	const param = useParams()
@@ -20,9 +21,11 @@ function SingleProduct() {
 	const savedCart = localStorage.getItem('cart')
 	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 	const navigate = useNavigate()
+	const [statusEmail, setStatusEmail] = useState(0)
 
 	useEffect(() => {
         document.title = 'Sapeurs du 237 - ' + currentProduct.name
+		window.scrollTo(0, 10)
     })
 
 	const similarProducts = productList.filter(products => products.category === currentProduct.category)
@@ -35,8 +38,18 @@ function SingleProduct() {
 	}
 	const handleSubmit = async e => {
 		e.preventDefault()
-
 		console.log(commande)
+
+		emailjs.send('service_xwsdc4i','template_58hj8hj', commande, 'pqmHwLj6l2G7npMob')
+		.then(result => {
+            setStatusEmail(2)
+            console.log(result.text)
+			setShow(false)
+        })
+        .catch(error => {
+            setStatusEmail(3)
+            console.log(error)
+        })
 	}
 
 	function addToCart({id, name, price, cover}) {
@@ -56,7 +69,6 @@ function SingleProduct() {
 		}
 
 	}
-	console.log(currentProduct?.images)
 
     return (
         <>
@@ -66,7 +78,8 @@ function SingleProduct() {
 				<div className='produit'>
 					<div className='slider-left'>
 						<div className='container-slider'>
-							{/* <SliderSingleProduct slides={currentProduct?.images} /> */}
+							{/* <SliderSingleProduct slides={currentProduct.cover} /> */}
+							<img src={currentProduct.cover} width='100%' height='100%' alt={currentProduct?.name} />
 						</div>
 					</div>
 					<div className='slider-right'>
@@ -74,18 +87,18 @@ function SingleProduct() {
 							<h2>{currentProduct.name}</h2><hr />
 							<div className='info-produit-header'>
 								<h2>Categorie :</h2>
-								<p>{currentProduct.category}</p>
+								<p style={{fontWeight: 'bold'}}>{currentProduct.category}</p>
 							</div>
 							<p>{currentProduct.description.desc}</p>
-							<p style={{color: '#f3160f'}}>{currentProduct.description.slug}</p>
+							<p style={{color: '#a98b3f', fontWeight: 'bold'}}>{currentProduct.description.slug}</p>
 						</div>
 						<hr />
 
 						<div className='info-produit'>
-							{currentProduct.description?.tissu && <p><b>Tissu disponible : </b>{currentProduct.description.tissu}</p>}
+							{currentProduct.description?.tissu && <p><i class="fa fa-person" aria-hidden="true"></i><b>Tissu disponible : </b>{currentProduct.description.tissu}</p>}
 							<p><b>Couture : </b>Sur-mesure</p>
-							{currentProduct?.sur_mesure && <p><b>Prix sur mesure : </b>{currentProduct.sur_mesure} €</p>}
-							{currentProduct?.taille_unique && <p><b>Prix taille unique : </b>{currentProduct.taille_unique} €</p>}
+							{currentProduct?.sur_mesure && <p><i class="fa fa-money" aria-hidden="true"></i><b>Prix sur mesure : </b>{currentProduct.sur_mesure} €</p>}
+							{currentProduct?.taille_unique && <p><i class="fa fa-money" aria-hidden="true"></i><b>Prix taille unique : </b>{currentProduct.taille_unique} €</p>}
 							{currentProduct?.prix && <p><b>Prix : </b>{currentProduct.prix} €</p>}
 							{currentProduct.description?.couleur && <p><b>Couleur : </b>{currentProduct.description.couleur}</p>}
 							{currentProduct.description?.matiere && <p><b>Matière : </b>{currentProduct.description.matiere}</p>}
@@ -93,34 +106,20 @@ function SingleProduct() {
 						</div>
 						<hr />
 
-						{/* <div className='info-produit' style={{marginTop: '20px'}}>
-							<p><i class="fa fa-eye" aria-hidden="true"></i> un des articles les plus recherchés</p>
-							<p><i class="fa fa-shopping-cart" aria-hidden="true"></i> apparait dans beaucoup de panier</p>
-							<p><i class="fa fa-refresh" aria-hidden="true"></i> remboursé si pas satisfait</p>
-							<p><i class="fa fa-credit-card" aria-hidden="true"></i> vous pouvez payer maintenant, ou plus tard</p>
-						</div>
-						<hr /> */}
-
-						{/* <div className='info-produit'>
-							<h2>Description</h2>
-							<p style={{marginTop: '10px'}}>The Ayame set is made in a light and soft cotton fabric, particularly pleasant to wear. It is in melhouz, the favorite fabric of Mauritanian women and is ideal for summer. The dyeing is done by hand. The patterns and colors were created, at our request, by a Senegalese dyer. It is composed of wide pants, with pockets and a slightly open top in the back</p>
-						</div>
-						<hr /> */}
-
 						<button
-							className='btn-contact'
+							className='btn-card'
 							type='button'
 							onClick={handleShow}
 						>
-							<i class="fa fa-envelope" aria-hidden="true"></i> Commander
+							<i class="fa fa-money" aria-hidden="true"></i> Commander
 						</button>
-						<button 
+						{/* <button 
 							className="btn-card" 
 							type="button"
 							onClick={() => addToCart(currentProduct.id, currentProduct.name, currentProduct.price, currentProduct.cover)}
 						>
 							<i class="fa fa-money" aria-hidden="true"></i> Ajouter au panier
-						</button>
+						</button> */}
 						<p className='txt-contact'>ou contactez le vendeur dès maintenant</p>
 						<button
 							className='btn-contact'
@@ -138,13 +137,15 @@ function SingleProduct() {
 				<div className="featured-products">
 					<h1>Produits similaires</h1>
 					<div className="bloc-items">
-						<ul className="products-items">
+						<ul className="list-items">
 							{similarProducts.length > 1 ?
 								similarProducts.map((product, index) => (
-									<ProductItem 
-										key={index}
-										product={product}
-									/>
+									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+										<div className="categorie">
+											<p>{product.category}</p>
+											<i className="fa fa-arrow-right"></i>
+										</div>
+									</li>
 								)) :
 								<ProductItem 
 									product={similarProducts}
@@ -163,11 +164,38 @@ function SingleProduct() {
 					<Card style={{marginTop: '-10px'}}>
 						<Card.Title style={{textAlign: 'center', marginTop: '10px'}}>Ces mesures doivent être enregistrées en cm²</Card.Title>
 						<Card.Body>
-							<img src={guide} alt='consigne'width={430} height={300} />
+							<img src={guide} alt='consigne' width={'100%'} height={'100%'} />
 						</Card.Body>
 					</Card>
 				
 					<Form onSubmit={handleSubmit}>
+						<Form.Group className='form-group mt-4'>
+							<Form.Label className='control-label'>Nom</Form.Label>
+							<Form.Control 
+								type='text' 
+								onChange={handleChange} 
+								name='nom' 
+								required
+							/>
+						</Form.Group>
+						<Form.Group className='form-group mt-4'>
+							<Form.Label className='control-label'>Email</Form.Label>
+							<Form.Control 
+								type='email' 
+								onChange={handleChange} 
+								name='email' 
+								required
+							/>
+						</Form.Group>
+						<Form.Group className='form-group mt-4'>
+							<Form.Label className='control-label'>Téléphone</Form.Label>
+							<Form.Control 
+								type='text' 
+								onChange={handleChange} 
+								name='tel' 
+								required
+							/>
+						</Form.Group>
 						<Form.Group className='form-group mt-4'>
 							<Form.Label className='control-label'>Epaules</Form.Label>
 							<Form.Control 
@@ -249,7 +277,7 @@ function SingleProduct() {
 								required
 							/>
 						</Form.Group>
-						<Form.Group className='form-group mt-4'>
+						{/* <Form.Group className='form-group mt-4'>
 							<Form.Label className='control-label'>Une photo de vous en vue latérale</Form.Label>
 							<Form.Control 
 								type='file' 
@@ -257,10 +285,15 @@ function SingleProduct() {
 								name='photo' 
 								required
 							/>
-						</Form.Group>
+						</Form.Group> */}
 						<Form.Group className='form-group mt-4'>
 							<Button variant="primary" type="submit">
-								Envoyer
+								{
+                                    statusEmail === 0 ? 'Envoyer'
+                                    : (statusEmail === 1 ? 'En cours...' 
+                                    : (statusEmail === 2 ? 'Envoyé !' 
+                                    : 'Erreur !'))
+                                }
 							</Button>
 						</Form.Group>
 					</Form>

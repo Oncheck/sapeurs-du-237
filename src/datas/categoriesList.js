@@ -16,10 +16,6 @@ export const categoriesList = [
         nom: 'Costumes croisés',
         image: costume_croise
     },
-    /*{
-        nom: 'Mon Costume',
-        image: costume
-    },*/
     {
         nom: 'Chemises africaines',
         image: chemise_africaine
