@@ -76,11 +76,11 @@ form .input {
     margin-bottom: 30px;
 }
 form .btn-submit {
-    width: 200px;
+    width: 30%;
     background: #ffcb45;
     height: 50px;
     font-size: 20px;
-    margin-left: 43%;
+    margin-left: 35%;
     color: #f2f2f2;
 }
 form .btn-submit:hover {

@@ -1,0 +1,98 @@
+.espace-mariage {
+    margin-top: 100px !important;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Readex Pro';
+    background: 'aliceblue';
+}
+.banner-mariage, .banner-second {
+    display: flex;
+}
+.banner-left, .banner-right {
+    width: 50%;
+    height: 600px;
+}
+.banner-second-left, .banner-second-right {
+    width: 50%;
+    height: 300px;
+}
+.banner-second-left {
+    background-color: #f6c64e;
+}
+.banner-second-right {
+    background-color: #ffebb7;
+}
+.banner-left {
+    background-color: aliceblue;
+}
+.banner-right {
+    background-color: #ffebb7;
+}
+.experiences {
+    background-color: #825f08;
+    height: 150px;
+    display: flex;
+}
+.experiences > .experience {
+    width: 20%;
+    margin-left: 40px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: white;
+}
+.experiences > .experience span {
+    font-size: 25px;
+}
+.title {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.title h3 {
+    text-transform: capitalize;
+}
+.items-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: center;
+    grid-gap: 15px;
+}
+.product {
+    width: 100%;
+    box-shadow: 3px 3px 3px gray;
+    margin: 0 auto;
+}
+.product img {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.product button {
+    margin-bottom: 30px;
+    border: none;
+    background: #333;
+    border-radius: 15px;
+    color: white;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+}
+.content-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.input {
+    margin-bottom: 30px;
+}
+.newsletter button {
+    border: none;
+    width: 22%;
+    border-radius: 15px;
+    height: 30px;
+    color: white;
+    background-color: #ec7855;
+    text-align: center;
+    margin-left: 39%;
+}
