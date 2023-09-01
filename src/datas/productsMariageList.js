@@ -1,4 +1,4 @@
-import costume_croise from '../assets/images/categories/Costume_Croisé.jpg'
+import costume_croise from '../assets/images/categories/Costume_Croisé.png'
 
 export const productsMariage = [
     {

@@ -1,11 +1,10 @@
-import costume_mariage from '../assets/images/categories/Costume_Mariage.jpg'
-import costume_croise from '../assets/images/categories/Costume_Croisé.jpg'
-//import costume from '../assets/images/categories/Costume.jpg'
+import costume_mariage from '../assets/images/categories/Costume_Mariage.png'
+import costume_croise from '../assets/images/categories/Costume_Croisé.png'
 import chaussure from '../assets/images/categories/Chaussure.png'
 import chemise_africaine from '../assets/images/categories/Chemise_Africaine.png'
-import chemise_sur_mesure from '../assets/images/categories/Chemise.jpg'
+import chemise_sur_mesure from '../assets/images/categories/Chemise.png'
 import accessoire from '../assets/images/categories/Accessoire.png'
-import demande from '../assets/images/categories/A_la_demande.jpg'
+import demande from '../assets/images/categories/A_la_demande.png'
 
 export const categoriesList = [
     {

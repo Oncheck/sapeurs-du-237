@@ -1,25 +1,38 @@
 import demande_1 from '../assets/images/produits/A la demande/1.png'
 import demande_2 from '../assets/images/produits/A la demande/2.png'
 import demande_3 from '../assets/images/produits/A la demande/3.png'
-import croise_1 from '../assets/images/produits/Costumes croisés/1.jpg'
-import croise_2 from '../assets/images/produits/Costumes croisés/2.jpg'
-import croise_3 from '../assets/images/produits/Costumes croisés/3.jpg'
-import croise_4 from '../assets/images/produits/Costumes croisés/4.jpg'
-import croise_5 from '../assets/images/produits/Costumes croisés/5.jpg'
-import croise_6 from '../assets/images/produits/Costumes croisés/6.jpg'
-import croise_7 from '../assets/images/produits/Costumes croisés/7.jpg'
-import mariage_1 from '../assets/images/produits/Costumes mariage/1.jpg'
-import mariage_2 from '../assets/images/produits/Costumes mariage/4.jpg'
-import mariage_3 from '../assets/images/produits/Costumes mariage/7_1.jpg'
-import mariage_4 from '../assets/images/produits/Costumes mariage/7_2.jpg'
-import mariage_5 from '../assets/images/produits/Costumes mariage/2.jpg'
-import mariage_6 from '../assets/images/produits/Costumes mariage/3.jpg'
-import mariage_7 from '../assets/images/produits/Costumes mariage/6_1.jpg'
-import mariage_8 from '../assets/images/produits/Costumes mariage/6_2.jpg'
-import mariage_9 from '../assets/images/produits/Costumes mariage/5.jpg'
-import chaussure_1 from '../assets/images/produits/Chaussures/3_1.png'
-import chaussure_2 from '../assets/images/produits/Chaussures/3_2.png'
-import chaussure_3 from '../assets/images/produits/Chaussures/3_3.png'
+import demande_4 from '../assets/images/produits/A la demande/4.png'
+import demande_5 from '../assets/images/produits/A la demande/5.png'
+import demande_6 from '../assets/images/produits/A la demande/6.png'
+import demande_7 from '../assets/images/produits/A la demande/7.png'
+import demande_8 from '../assets/images/produits/A la demande/8.png'
+import demande_9 from '../assets/images/produits/A la demande/9.png'
+import demande_10 from '../assets/images/produits/A la demande/10.png'
+import demande_11 from '../assets/images/produits/A la demande/11.png'
+import demande_12 from '../assets/images/produits/A la demande/12.png'
+import demande_13 from '../assets/images/produits/A la demande/13.png'
+import demande_14 from '../assets/images/produits/A la demande/14.png'
+import croise_1 from '../assets/images/produits/Costumes croisés/1.png'
+import croise_2 from '../assets/images/produits/Costumes croisés/2.png'
+import croise_3 from '../assets/images/produits/Costumes croisés/3.png'
+import croise_4 from '../assets/images/produits/Costumes croisés/4.png'
+import croise_5 from '../assets/images/produits/Costumes croisés/5.png'
+import croise_6 from '../assets/images/produits/Costumes croisés/6.png'
+import croise_7 from '../assets/images/produits/Costumes croisés/7.png'
+import mariage_1 from '../assets/images/produits/Costumes mariage/1.png'
+import mariage_2 from '../assets/images/produits/Costumes mariage/4.png'
+import mariage_3 from '../assets/images/produits/Costumes mariage/7_1.png'
+import mariage_4 from '../assets/images/produits/Costumes mariage/7_2.png'
+import mariage_5 from '../assets/images/produits/Costumes mariage/2.png'
+import mariage_6 from '../assets/images/produits/Costumes mariage/3.png'
+import mariage_7 from '../assets/images/produits/Costumes mariage/6.png'
+import mariage_9 from '../assets/images/produits/Costumes mariage/5.png'
+import chaussure_1_1 from '../assets/images/produits/Chaussures/3_1.png'
+import chaussure_1_2 from '../assets/images/produits/Chaussures/3_2.png'
+import chaussure_2_1 from '../assets/images/produits/Chaussures/3_3.png'
+import chaussure_2_2 from '../assets/images/produits/Chaussures/3_4.png'
+import chaussure_3_1 from '../assets/images/produits/Chaussures/3_5.png'
+import chaussure_3_2 from '../assets/images/produits/Chaussures/3_6.png'
 import chaussure_4 from '../assets/images/produits/Chaussures/4_1.png'
 import chaussure_5 from '../assets/images/produits/Chaussures/4_2.png'
 import chaussure_6 from '../assets/images/produits/Chaussures/5_1.png'
@@ -30,21 +43,22 @@ import chaussure_10 from '../assets/images/produits/Chaussures/1_1.png'
 import chaussure_11 from '../assets/images/produits/Chaussures/1_2.png'
 import chaussure_12 from '../assets/images/produits/Chaussures/1_3.png'
 import chaussure_13 from '../assets/images/produits/Chaussures/1_4.png'
-import chemise_africaine_1 from '../assets/images/produits/Chemises africaines/2.jpg'
-import chemise_africaine_2 from '../assets/images/produits/Chemises africaines/3.jpg'
+import chaussure_14 from '../assets/images/produits/Chaussures/1_5.png'
+import chemise_africaine_1 from '../assets/images/produits/Chemises africaines/2.png'
+import chemise_africaine_2 from '../assets/images/produits/Chemises africaines/3.png'
 import chemise_africaine_3 from '../assets/images/produits/Chemises africaines/6.png'
 import chemise_africaine_4 from '../assets/images/produits/Chemises africaines/5.png'
-import chemise_africaine_5 from '../assets/images/produits/Chemises africaines/4.jpg'
+import chemise_africaine_5 from '../assets/images/produits/Chemises africaines/4.png'
 import chemise_africaine_6 from '../assets/images/produits/Chemises africaines/1.png'
 import accessoire_1 from '../assets/images/produits/Accessoires/2.png';
 import accessoire_2 from '../assets/images/produits/Accessoires/3.png';
 import accessoire_3 from '../assets/images/produits/Accessoires/4.png';
 import accessoire_4 from '../assets/images/produits/Accessoires/5.png';
-import chemise_1 from '../assets/images/produits/Chemises/1_1.jpg'
-import chemise_2 from '../assets/images/produits/Chemises/1_2.jpg'
-import chemise_3 from '../assets/images/produits/Chemises/1_3.jpg'
-import chemise_4 from '../assets/images/produits/Chemises/1_4.jpg'
-import chemise_5 from '../assets/images/produits/Chemises/1_5.png'
+import chemise_1 from '../assets/images/produits/Chemises/1_1.png'
+import chemise_2 from '../assets/images/produits/Chemises/1_2.png'
+import chemise_3 from '../assets/images/produits/Chemises/1_3.png'
+import chemise_4 from '../assets/images/produits/Chemises/1_4.png'
+import chemise_5 from '../assets/images/produits/Chemises/3.png'
 import chemise_6 from '../assets/images/produits/Chemises/2_1.png'
 import chemise_7 from '../assets/images/produits/Chemises/2_2.png'
 import chemise_8 from '../assets/images/produits/Chemises/2_3.png'
@@ -77,6 +91,127 @@ export const productList = [
         id: 3,
         category: "Tenues d'apparâts (à la demande)",
         cover: demande_3,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 101,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_4,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 102,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_5,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 103,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_6,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 104,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_7,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 105,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_8,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 106,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_9,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 107,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_10,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 108,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_11,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 109,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_12,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 110,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_13,
+        description : {
+            desc: 'Mariage civil, Coutumier, Dot',
+            tissu: 'Mélange coton et N’dôp',
+            couleur: 'A la demande'
+        },
+        inCart: 0
+    },
+    {
+        id: 111,
+        category: "Tenues d'apparâts (à la demande)",
+        cover: demande_14,
         description : {
             desc: 'Mariage civil, Coutumier, Dot',
             tissu: 'Mélange coton et N’dôp',
@@ -226,7 +361,6 @@ export const productList = [
         name: 'MOdèle 1 « 237 »',
         category: 'Costume de mariage',
         cover: mariage_7,
-        images: [mariage_7, mariage_8],
         description : {
             desc: 'Costume Modèle « La BeaugarçonMania 237 ».',
             slug: 'Abhorrez la Mode originale camerounaise ! Dégagez fraîcheur et Charisme du 237 !!',
@@ -250,8 +384,8 @@ export const productList = [
         id: 20,
         name: 'Chaussure 1',
         category: 'Chaussures',
-        cover: chaussure_1,
-        images: [chaussure_1, chaussure_2, chaussure_3],
+        cover: chaussure_1_1,
+        images: [chaussure_1_1, chaussure_1_2, chaussure_2_1, chaussure_2_2, chaussure_3_1, chaussure_3_2],
         prix: 60,
         description : {
             desc: 'Chaussures de soirée en cuir.',
@@ -310,7 +444,7 @@ export const productList = [
         name: 'Chaussure 5',
         category: 'Chaussures',
         cover: chaussure_10,
-        images: [chaussure_10, chaussure_11, chaussure_12, chaussure_13],
+        images: [chaussure_10, chaussure_11, chaussure_12, chaussure_13, chaussure_14],
         prix: 160,
         description : {
             desc: 'Oxford Derby décontracté !',
@@ -405,7 +539,7 @@ export const productList = [
         cover: chemise_1,
         sur_mesure: 70,
         taille_unique: 60,
-        images: [chemise_1, chemise_2, chemise_3, chemise_4, chemise_5],
+        images: [chemise_1, chemise_2, chemise_3, chemise_4],
         description: {
             desc: 'Chemises avec manchettes sur-mesure',
             taille: 'XL-4XL'
@@ -421,6 +555,18 @@ export const productList = [
         images: [chemise_6, chemise_7, chemise_8, chemise_9],
         description: {
             desc: 'Chemises avec manchettes sur-mesure',
+            taille: 'XL-4XL'
+        }
+    },
+    {
+        id: 100,
+        name: 'Chemise avec cravatte',
+        category: 'Chemises',
+        cover: chemise_5,
+        sur_mesure: 70,
+        taille_unique: 60,
+        description: {
+            desc: 'Chemises avec manchettes sur-mesure plus cravatte',
             taille: 'XL-4XL'
         }
     },
