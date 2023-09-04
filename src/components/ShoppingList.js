@@ -36,7 +36,7 @@ function ShoppingList() {
 
 			<div className='page-products'>
 				<div className="featured-products left-side">
-					<h1 style={{ marginLeft: '10px', marginTop: '25px'}}>Tous nos produits</h1>
+					<h1 style={{ textAlign: 'center', marginTop: '50px'}}>Tous nos produits</h1>
 					<div className="bloc-items">
 						<ul className="list-items">
 							{activeCategory === '' ? (

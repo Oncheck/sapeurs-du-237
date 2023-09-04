@@ -6,17 +6,36 @@
 }
 
 .home-categories h1, .featured-products h1 {
-    margin-left: 20px;
     font-family: 'Readex Pro';
-    display: block;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .bloc-items {
     margin: 30px 0;
 }
 
+.container-gallery {
+    max-width: 85%;
+    margin: 20px auto;
+  }
+  
+  .container-gallery .container-image {
+    -moz-columns: 4 400px;
+         columns: 4 400px;
+    gap: 20px;
+  }
+  
+  .container-gallery .container-image div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .container-gallery .container-image img {
+    border-radius: 5px;
+    width: 100%;
+  }
 .list-items, .products-items {
     list-style: none;
     max-width: 100%;
@@ -31,7 +50,7 @@
     width: 250px;
     height: 300px;
     background-color: #fff9ea;
-    border-radius: 5%;
+    border-radius: 10px;
     margin-bottom: 100px;
     cursor: pointer;
 }
@@ -39,17 +58,19 @@
     width: 250px;
     height: 300px;
     background-color: #fff9ea;
-    border-radius: 5%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
-.list-items li .categorie:hover {
+
+.list-items li .categorie:hover, .container-image .categorie:hover {
     background: #ffcb45;
     color: white;
     cursor: pointer;
 }
-.list-items li .categorie {
+.list-items li .categorie, .container-image .categorie {
     display: flex;
     align-items: center;
     background: #fff9ea;
@@ -58,7 +79,7 @@
     justify-content: center;
     width: 80%;
 }
-.list-items li .categorie p {
+.list-items li .categorie p, .container-image .categorie p {
     margin-right: 10px;
     margin-top: 15px;
 }

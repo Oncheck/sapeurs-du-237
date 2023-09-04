@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Divider from "./Divider";
 import { Modal } from "react-bootstrap"
+import { Gallery, Item } from "react-photoswipe-gallery";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 
 function Home() {
@@ -52,6 +54,26 @@ function Home() {
                 <h1>Nos Catégories</h1>
                 <div className="bloc-items">
                     <ul className="list-items">
+                        {/* <Gallery>
+                            <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
+                                <Masonry columnsCount={4} gutter="30px">
+                                    {categoriesList.map((categorie, index) => (
+                                        <div className="grid">
+                                            <Item
+                                                original={categorie.image}
+                                                thumbnail={categorie.image}
+                                                width="100%"
+                                                height="100%"
+                                            >
+                                                {({ ref, open }) => (
+                                                    <img ref={ref} onClick={open} src={categorie.image} />
+                                                )}
+                                            </Item>
+                                        </div>
+                                    ))}
+                                </Masonry>
+                            </ResponsiveMasonry>
+                        </Gallery> */}
                         {categoriesList.map((categorie, index) => (
                             <li key={index} style={{background: `url(${categorie.image})`, backgroundSize: 'cover'}}>
                                 <div className="categorie" onClick={() => navigate(`/category/${categorie.nom}`)}>
@@ -68,21 +90,28 @@ function Home() {
             
             <div className="featured-products">
                 <h1>Nos produits</h1>
-                <div className="bloc-items">
-                    <ul className="list-items">
+                <div className="container-gallery">
+                    <div className="container-image">
                         {products.slice(0, 9).map((product, index) => (
                             // <ProductItem 
                             //     key={index}
                             //     product={product}
                             // />
-                            <li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+                            // <li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+                            //     <div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+                            //         <p>{product.name}</p>
+                            //         <i className="fa fa-arrow-right"></i>
+                            //     </div>
+                            // </li>
+                            <div>
+                                <img src={product.cover} alt={product?.name} />
                                 <div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
                                     <p>{product.name}</p>
                                     <i className="fa fa-arrow-right"></i>
                                 </div>
-                            </li>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 </div>
                 <button 
                     className="btn-voir-plus" 

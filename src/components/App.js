@@ -26,12 +26,8 @@ function App() {
 					<div className="bloc-items">
 						<ul className="list-items">
 							{productsByCategory.map((product, index) => (
-								// <ProductItem 
-								// 	key={index}
-								// 	product={product}
-								// />
 								<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
-									<div className="categorie" onClick={() => navigate(`/category/${product.name}`)}>
+									<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
 										<p>{product.name}</p>
 										<i className="fa fa-arrow-right"></i>
 									</div>

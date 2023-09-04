@@ -141,8 +141,8 @@ function SingleProduct() {
 							{similarProducts.length > 1 ?
 								similarProducts.map((product, index) => (
 									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
-										<div className="categorie">
-											<p>{product.category}</p>
+										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+											<p>{product?.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
 									</li>
