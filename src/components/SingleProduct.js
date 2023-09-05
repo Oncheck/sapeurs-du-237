@@ -12,6 +12,7 @@ import { Form, Modal, Button, Card } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import guide from '../assets/images/guide.jpg'
 import emailjs from '@emailjs/browser'
+import BackToTop from './BackToTop';
 
 function SingleProduct() {
 	const param = useParams()
@@ -73,6 +74,8 @@ function SingleProduct() {
     return (
         <>
             <Banner /><br /><br /><br /><br /><br />
+
+			<BackToTop />
 			
 			<div className='single-product'>
 				<div className='produit'>
@@ -139,22 +142,23 @@ function SingleProduct() {
 
 				<div className="featured-products">
 					<h1>Produits similaires</h1>
-					<div className="bloc-items">
-						<ul className="list-items">
+					<div className="container-gallery">
+						<div className="container-image">
 							{similarProducts.length > 1 ?
 								similarProducts.map((product, index) => (
-									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+									<div key={index}>
+										<img src={product.cover} alt={product?.name} />
 										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
-											<p>{product?.name}</p>
+											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
-									</li>
+									</div>
 								)) :
 								<ProductItem 
 									product={similarProducts}
 								/>
 							}
-						</ul>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -133,32 +133,32 @@
 	cursor: pointer;
 }
 
-.contact {
+.contact-home {
     margin: 0 30%;
     text-align: center;
     width: 500px;
     max-width: 40%;
 }
-.contact h1 {
+.contact-home h1 {
     font-size: 25px;
     font-family: 'Readex Pro';
 }
-.contact p {
+.contact-home p {
     font-size: 20px;
     font-family: 'Readex Pro';
 }
-.contact a {
+.contact-home a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.contact a:hover {
+.contact-home a:hover {
     color: #ffcb45;
 }
-.contact .email {
+.contact-home .email {
     position: relative;
 }
-.contact .email input {
+.contact-home .email input {
     max-width: 100%;
     width: 350px;
     height: 35px;
@@ -168,7 +168,7 @@
     border-radius: 5px;
     padding: 0 10px;
 }
-.contact .email button {
+.contact-home .email button {
     height: 35px;
     width: 90px;
     color: white;
@@ -199,11 +199,11 @@
         font-size: 18px;
         margin: 0 15%;
     }
-    .contact {
+    .contact-home {
         margin: 0 20px;
         width: 100%
     }
-    .contact .email button {
+    .contact-home .email button {
         margin-top: 10px;
     }
     .footer {
@@ -220,11 +220,11 @@
         margin: 0 25%;
         margin-top: 20px;
     }
-    .contact {
+    .contact-home {
         margin: 0 20px;
         width: 380px
     }
-    .contact .email button {
+    .contact-home .email button {
         margin-top: 10px;
     }
 }

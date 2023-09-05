@@ -4,6 +4,7 @@
 }
 .contact h1 {
     font-size: 40px;
+    text-align: center;
 }
 .card-contact {
     display: flex;
@@ -12,6 +13,7 @@
     height: 300px;
     margin: 20px auto;
     max-width: 1200px;
+    margin-bottom: 50px;
 }
 .card-contact .item-contact {
     width: 30%;
@@ -37,10 +39,19 @@
 }
 .card-contact .item-contact h2 {
     font-size: 25px;
+    text-align: center;
 }
 .card-contact .item-contact p {
     color: gray;
     font-size: 18px;
+    text-align: center;
+}
+.card-contact .item-contact a {
+    text-decoration: none;
+    color: black;
+}
+.card-contact .item-contact a:hover {
+    color: #ffcb45;
 }
 
 .content-form {
@@ -94,6 +105,7 @@ form .btn-submit:hover {
     .contact {
         font-family: 'Readex Pro';
         margin: 50px auto;
+        margin-bottom: 150px!important;
     }
     .contact h1 {
         font-size: 30px;
@@ -124,6 +136,9 @@ form .btn-submit:hover {
     }
 }
 @media (max-width: 920px) {
+    .contact {
+        margin-bottom: 150px!important;
+    }
     .card-contact {
         display: inline-block;
         width: 100%;
@@ -135,5 +150,11 @@ form .btn-submit:hover {
     }
     .content-form {
         margin-top: 150px;
+    }
+    .input .col-lg-6:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .input textarea {
+        margin-top: -30px;
     }
 }

@@ -3,11 +3,14 @@ import Footer from "./Footer";
 import '../styles/EspaceMariage.css'
 import { experiences } from "../datas/experiencesList";
 import { productsMariage } from "../datas/productsMariageList"
+import BackToTop from "./BackToTop";
 
 function EspaceMariage() {
     return (
         <div style={{ maxWidth: '1300px' }}>
             <Banner />
+
+            <BackToTop />
 
             <div className="espace-mariage">
                 <div className="banner-mariage">

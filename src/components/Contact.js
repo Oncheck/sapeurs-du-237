@@ -2,8 +2,9 @@ import Banner from "./Banner";
 import '../styles/Contact.css';
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from '@emailjs/browser'
+import BackToTop from './BackToTop'
 
 const Contact = () => {
     const [tel, setTel] = useState('')
@@ -43,9 +44,16 @@ const Contact = () => {
         setTel('')
         setMessage('')
     }
+
+    useEffect(() => {
+        document.title = 'Sapeurs du 237 - Contact'
+    })
+
     return (
         <>
             <Banner /><br /><br /><br /><br />
+
+            <BackToTop />
 
             <div className="contact">
                 <h1>Nos contacts</h1>
@@ -119,7 +127,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }

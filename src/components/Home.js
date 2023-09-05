@@ -140,7 +140,7 @@ function Home() {
 
             <Divider />
 
-            <div className="contact">
+            <div className="contact-home">
                 <div className="title1">
                     <h2>Vous pouvez entrer votre adresse email pour recevoir costamment de nouveaux produits</h2>
                     <p>Vous recevrez une réduction de 20% si vous nous envoyez votre adresse mail</p>
@@ -173,7 +173,7 @@ function Home() {
                 </Modal.Body>
             </Modal>
 
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
