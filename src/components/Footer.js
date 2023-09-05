@@ -8,7 +8,6 @@ function Footer() {
 	return (
 		<footer className='footer'>
 			<div className='footer-top'>
-				
 				<div className='footer-about'>
 					<img src={logo} alt='logo'/>
 					<p>

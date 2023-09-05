@@ -12,7 +12,7 @@ const SliderSingleProduct = ({ slides }) => {
     const slideStyles = {
         width: '100%',
         height: '100%',
-        borderRadius: '10px',
+        borderRadius: '5px',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundImage: `url(${slides[currentIndex]})`
@@ -78,13 +78,13 @@ const SliderSingleProduct = ({ slides }) => {
                 <i className="fa fa-arrow-right"></i>
             </div>
             <div style={slideStyles} className="slide"></div>
-            <div style={dotsContainerStyles} className="dots-container">
+            {/* <div style={dotsContainerStyles} className="dots-container">
                 {slides.map((slide, index) => (
                     <div className="dot" key={index} style={dotStyles} onClick={() => goToSlide(index)}>
                         .
                     </div>
                 ))}
-            </div>
+            </div> */}
         </div>
     )
 }

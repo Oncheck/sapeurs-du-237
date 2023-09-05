@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import { productList } from '../datas/productList'
 import { categoriesList } from '../datas/categoriesList'
-//import ProductItem from './ProductItem'
 import '../styles/ShoppingList.css'
 import '../styles/Filter.css'
 import '../styles/Home.css';
 import { useNavigate } from 'react-router-dom'
 import Banner from './Banner'
 import Footer from './Footer'
+import BackToTop from './BackToTop'
 
 function ShoppingList() {
 	const [activeCategory, setActiveCategory] = useState('')
@@ -28,57 +28,60 @@ function ShoppingList() {
 		products.category === activeCategory &&
 		products.name.includes(search)
 	))
-	console.log(search)
 	
 	return (
 		<>
 			<Banner /><br /><br /><br /><br />
 
+			<BackToTop />
+
 			<div className='page-products'>
 				<div className="featured-products left-side">
 					<h1 style={{ textAlign: 'center', marginTop: '50px'}}>Tous nos produits</h1>
-					<div className="bloc-items">
-						<ul className="list-items">
+					<div className="container-gallery">
+						<div className="container-image">
 							{activeCategory === '' ? (
 								products.slice(0, rangeValue).map((product, index) => (
-									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+									<div key={index}>
+										<img src={product.cover} alt={product?.name} />
 										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
-									</li>
+									</div>
 								))
 							) : (
 								productsRange.length > 0 ?
 								productsRange.slice(0, rangeValue).map((product, index) => (
-									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
+									<div key={index}>
+										<img src={product.cover} alt={product?.name} />
 										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
-									</li>
+									</div>
 								)) : <div className='no-product'>
 									<p>Aucun produit trouvé !</p>
 								</div>
 							)}
-						</ul>
+						</div>
 					</div>
-					<h1 style={{ marginLeft: '20px', marginTop: '20px'}}>Produits à la demande</h1>
-					<div className="bloc-items">
-						<ul className="list-items">
+					<h1 style={{ textAlign: 'center', marginTop: '40px'}}>Produits à la demande</h1>
+					<div className="container-gallery">
+						<div className="container-image">
 							{producstDemanded.length > 0 ?
 								producstDemanded.map((product, index) => (
-									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
-										<div className="categorie">
+									<div key={index}>
+										<img src={product.cover} alt={product?.name} />
+										{/* <div className="categorie">
 											<p>{product.category}</p>
-											<i className="fa fa-arrow-right"></i>
-										</div>
-									</li>
+										</div> */}
+									</div>
 								)) : <div className='no-product'>
 									<p>Aucun produit trouvé !</p>
 								</div>
 							}
-						</ul>
+						</div>
 					</div>
 				</div>
 				<div className="filter right-side">

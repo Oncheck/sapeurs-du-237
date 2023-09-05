@@ -11,6 +11,8 @@ import Divider from "./Divider";
 import { Modal } from "react-bootstrap"
 import { Gallery, Item } from "react-photoswipe-gallery";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import BackToTop from "./BackToTop";
+import emailjs from '@emailjs/browser'
 
 
 function Home() {
@@ -24,6 +26,7 @@ function Home() {
     const [show, setShow] = useState(false)
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [statusEmail, setStatusEmail] = useState(0)
 
     const handleClose = () => setShow(false);
   	
@@ -33,9 +36,19 @@ function Home() {
             setShow(true)
         } else {
             if (email.includes('@')) {
-                setMessage("Félicitations ! Vous êtes bien enregistrés parmi les abonnés de Sapeurs du 237")
-                setShow(true)
-                setEmail('')
+                setStatusEmail(1)
+                emailjs.send('service_xwsdc4i', 'template_98hlzyl', email, 'pqmHwLj6l2G7npMob')
+                .then(result => {
+                    console.log(result.text)
+                    setStatusEmail(2)
+                    setMessage("Félicitations ! Vous êtes bien enregistrés parmi les abonnés de Sapeurs du 237")
+                    setShow(true)
+                    setEmail('')
+                })
+                .catch(error => {
+                    console.log(error)
+                    setStatusEmail(3)
+                })
             } else {
                 setMessage('Veuillez entrer une adresse email valide')
                 setShow(true)
@@ -46,6 +59,9 @@ function Home() {
     return (
         <>
             <Banner /><br /><br /><br /><br />
+
+            <BackToTop />
+
             <div className="container-slides">
                 <ImageSlider />
             </div>
@@ -103,7 +119,7 @@ function Home() {
                             //         <i className="fa fa-arrow-right"></i>
                             //     </div>
                             // </li>
-                            <div>
+                            <div key={index}>
                                 <img src={product.cover} alt={product?.name} />
                                 <div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
                                     <p>{product.name}</p>
@@ -131,7 +147,13 @@ function Home() {
                 </div>
                 <div className="email">
                     <input type="email" placeholder="Votre Email" onChange={(e) => setEmail(e.target.value)} required />
-                    <button onClick={handleSubmit}>Envoyer</button>
+                    <button onClick={handleSubmit}>
+                        {
+                            statusEmail === 0 ? 'Envoyer' : 
+                            (statusEmail === 1 ? 'En cours...' : 
+                            (statusEmail === 2 ? 'Envoyé' : 'Echec !'))
+                        }
+                    </button>
                 </div>
                 <div className="title2">
                     <p>Vous pouvez aussi nous contacter sur 
@@ -151,7 +173,7 @@ function Home() {
                 </Modal.Body>
             </Modal>
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

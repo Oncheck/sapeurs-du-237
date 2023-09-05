@@ -18,24 +18,23 @@
 .container-gallery {
     max-width: 85%;
     margin: 20px auto;
-  }
+}
   
-  .container-gallery .container-image {
-    -moz-columns: 4 400px;
-         columns: 4 400px;
-    gap: 20px;
-  }
+.container-gallery .container-image {
+    -moz-columns: 4 250px;
+    columns: 4 250px;
+    gap: 30px;
+}
   
-  .container-gallery .container-image div {
+.container-gallery .container-image div {
     width: 100%;
     height: 100%;
-    position: relative;
     margin-bottom: 20px;
-  }
-  .container-gallery .container-image img {
+}
+.container-gallery .container-image img {
     border-radius: 5px;
     width: 100%;
-  }
+}
 .list-items, .products-items {
     list-style: none;
     max-width: 100%;
@@ -115,7 +114,8 @@
 }
 
 .btn-voir-plus {
-    width: 30%;
+    width: 20%;
+    max-width: 250px;
     height: 30px;
     border: 1px solid #ffcb45;
 	color: #000;
@@ -124,7 +124,7 @@
 	border-radius: 15px;
 	font-size: 18px;
     align-self: center;
-    margin: 0 35%;
+    margin-left: 40%;
 }
 .btn-voir-plus:hover {
 	background: #fff9ea;
@@ -134,9 +134,10 @@
 }
 
 .contact {
-    margin: 0 50px;
+    margin: 0 30%;
     text-align: center;
-    margin-bottom: 100px;
+    width: 500px;
+    max-width: 40%;
 }
 .contact h1 {
     font-size: 25px;
@@ -198,6 +199,10 @@
         font-size: 18px;
         margin: 0 15%;
     }
+    .contact {
+        margin: 0 20px;
+        width: 100%
+    }
     .contact .email button {
         margin-top: 10px;
     }
@@ -214,6 +219,10 @@
         width: 50%;
         margin: 0 25%;
         margin-top: 20px;
+    }
+    .contact {
+        margin: 0 20px;
+        width: 380px
     }
     .contact .email button {
         margin-top: 10px;

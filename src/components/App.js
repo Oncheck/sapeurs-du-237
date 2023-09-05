@@ -3,9 +3,9 @@ import Footer from './Footer'
 import ShoppingList from './ShoppingList'
 import { useParams, useNavigate } from 'react-router-dom';
 import { productList } from '../datas/productList';
-//import ProductItem from './ProductItem';
 import { useEffect } from 'react'
 import '../styles/Home.css';
+import BackToTop from './BackToTop'
 
 function App() {
 	const {name} = useParams()
@@ -13,6 +13,7 @@ function App() {
 	const productsByCategory = productList.filter(product => product.category === name)
 	
 	useEffect(() => {
+		document.title = 'Sapeurs du 237 - Catégorie : ' + {name}
 		window.scrollTo(0, 10)
 	})
 	
@@ -20,8 +21,11 @@ function App() {
 	return (
 		<>
 			<Banner /><br /><br /><br /><br /><br />
+
+			<BackToTop />
+
 			{name !== '' ? (
-				<div className="featured-products">
+				<div className="featured-products" style={{ marginTop: '30px' }}>
 					<h1>Catégorie : {name}</h1>
 					<div className="bloc-items">
 						<ul className="list-items">

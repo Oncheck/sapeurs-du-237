@@ -52,7 +52,7 @@ function SingleProduct() {
         })
 	}
 
-	function addToCart({id, name, price, cover}) {
+	/*function addToCart({id, name, price, cover}) {
 		const currentProductSaved = cart.find((product) => product.name === name)
 		if (currentProductSaved) {
 			const cartFilteredCurrentProduct = cart.filter(
@@ -68,7 +68,7 @@ function SingleProduct() {
 			localStorage.setItem('cart', JSON.stringify(cart))
 		}
 
-	}
+	}*/
 
     return (
         <>
@@ -78,8 +78,11 @@ function SingleProduct() {
 				<div className='produit'>
 					<div className='slider-left'>
 						<div className='container-slider'>
-							{/* <SliderSingleProduct slides={currentProduct.cover} /> */}
-							<img src={currentProduct.cover} width='100%' height='100%' alt={currentProduct?.name} />
+							{
+								currentProduct.images ?
+								<SliderSingleProduct slides={currentProduct.images} /> :
+								<img src={currentProduct.cover} width='100%' height='100%' alt={currentProduct?.name} />
+							}
 						</div>
 					</div>
 					<div className='slider-right'>
@@ -277,7 +280,7 @@ function SingleProduct() {
 								required
 							/>
 						</Form.Group>
-						{/* <Form.Group className='form-group mt-4'>
+						<Form.Group className='form-group mt-4'>
 							<Form.Label className='control-label'>Une photo de vous en vue latérale</Form.Label>
 							<Form.Control 
 								type='file' 
@@ -285,9 +288,9 @@ function SingleProduct() {
 								name='photo' 
 								required
 							/>
-						</Form.Group> */}
+						</Form.Group>
 						<Form.Group className='form-group mt-4'>
-							<Button variant="primary" type="submit">
+							<Button variant="primary" type="submit" style={{ width: '100%' }}>
 								{
                                     statusEmail === 0 ? 'Envoyer'
                                     : (statusEmail === 1 ? 'En cours...' 

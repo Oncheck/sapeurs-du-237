@@ -1,4 +1,5 @@
 .single-product {
+    max-width: 1000px;
     margin: 10px auto;
 }
 .produit {
@@ -105,10 +106,15 @@ hr {
     .slider-right {
         margin: 0 5%;
     }
+    .info-produit {
+        margin-top: -100px;
+    }
     .info-produit h2 {
         text-align: center;
     }
-    
+    .container-slider {
+        height: 80%;
+    }
 }
 
 @media (min-width: 421px) and (max-width: 710px) {

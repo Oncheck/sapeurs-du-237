@@ -28,6 +28,9 @@
 	.right-side {
 		margin: 0 auto;
 	}
+	.filter-search input, .filter-range input[type="range"] {
+		width: 90%;
+	}
 }
 @media (max-width: 900px) {
 	.page-products {
@@ -45,10 +48,10 @@
 		font-size: 28px !important;
 	}
 	input.input-control {
-		width: 50% !important;
+		width: 80% !important;
 	}
 	.filter-range .dropdown input[type="range"] {
-		width: 50% !important;
+		width: 80% !important;
 	}
 	.filter-categories ul li span {
 		font-size: 25px !important;
