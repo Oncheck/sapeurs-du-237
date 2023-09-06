@@ -1,24 +1,15 @@
-import costume_croise from '../assets/images/categories/Costume_Croisé.png'
+import robe_1 from '../assets/images/produits/Robes de mariées/1.png'
+import robe_2 from '../assets/images/produits/Robes de mariées/2.png'
+import robe_3 from '../assets/images/produits/Robes de mariées/3.png'
 
 export const productsMariage = [
     {
-        title: 'Lorem ipsum',
-        img: costume_croise,
-        description: 'Lorem ipsum dolor sit amet, consecteur. Lorem ipsum dolor sit amet, consecteur'
+        img: robe_1,
     },
     {
-        title: 'Lorem ipsum',
-        img: costume_croise,
-        description: 'Lorem ipsum dolor sit amet, consecteur. Lorem ipsum dolor sit amet, consecteur'
+        img: robe_2,
     },
     {
-        title: 'Lorem ipsum',
-        img: costume_croise,
-        description: 'Lorem ipsum dolor sit amet, consecteur. Lorem ipsum dolor sit amet, consecteur'
-    },
-    {
-        title: 'Lorem ipsum',
-        img: costume_croise,
-        description: 'Lorem ipsum dolor sit amet, consecteur. Lorem ipsum dolor sit amet, consecteur'
+        img: robe_3,
     }
 ]

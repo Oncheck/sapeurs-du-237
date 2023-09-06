@@ -22,34 +22,39 @@ function App() {
 		<>
 			<Banner /><br /><br /><br /><br /><br />
 
-			<BackToTop />
+			<div className='home'>
 
-			{name !== '' ? (
-				<div className="featured-products" style={{ marginTop: '30px' }}>
-					<h1>Catégorie : {name}</h1>
-					<div className="bloc-items">
-						<ul className="list-items">
-							{productsByCategory.map((product, index) => (
-								<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
-									<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
-										<p>{product.name}</p>
-										<i className="fa fa-arrow-right"></i>
+				<BackToTop />
+
+				{name !== '' ? (
+					<div className="featured-products" style={{ marginTop: '30px' }}>
+						<h1>Catégorie : {name}</h1>
+						<div className="container-gallery">
+							<div className="container-image">
+								{productsByCategory.map((product, index) => (
+									<div key={index}>
+										<img src={product.cover} alt={product?.name} />
+										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+											<p>{product.name}</p>
+											<i className="fa fa-arrow-right"></i>
+										</div>
 									</div>
-								</li>
-							))}
-						</ul>
+								))}
+							</div>
+						</div>
+						<button 
+							className="btn-voir-plus" 
+							type="button"
+							onClick={() => navigate('/products')}
+						>
+							Voir tous les produits
+						</button>
 					</div>
-					<button 
-						className="btn-voir-plus" 
-						type="button"
-						onClick={() => navigate('/products')}
-					>
-						Voir tous les produits
-					</button>
-				</div>
-				) : <ShoppingList />
-			}
-			
+					) : <ShoppingList />
+				}
+
+			</div>
+
 			<Footer />
 		</>
 	)

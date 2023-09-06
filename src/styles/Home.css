@@ -119,9 +119,6 @@
 }
 
 .btn-voir-plus {
-    width: 20%;
-    max-width: 250px;
-    height: 30px;
     border: 1px solid #ffcb45;
 	color: #000;
 	background: #ffcb45;
@@ -129,7 +126,7 @@
 	border-radius: 15px;
 	font-size: 18px;
     align-self: center;
-    margin-left: 40%;
+    margin: 0 auto;
 }
 .btn-voir-plus:hover {
 	background: #fff9ea;

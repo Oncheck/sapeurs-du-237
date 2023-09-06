@@ -5,13 +5,14 @@
     width: 100%;
     font-family: 'Readex Pro';
     background: 'aliceblue';
+    font-family: 'Readex Pro';
 }
 .banner-mariage, .banner-second {
     display: flex;
 }
 .banner-left, .banner-right {
     width: 50%;
-    height: 600px;
+    height: 500px;
 }
 .banner-second-left, .banner-second-right {
     width: 50%;
@@ -25,6 +26,8 @@
 }
 .banner-left {
     background-color: aliceblue;
+    text-align: center;
+    padding: 18% 5%;
 }
 .banner-right {
     background-color: #ffebb7;
@@ -55,8 +58,9 @@
 }
 .items-products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
+    align-items: center;
     grid-gap: 15px;
 }
 .product {
@@ -65,11 +69,11 @@
     margin: 0 auto;
 }
 .product img {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     margin-bottom: 20px;
 }
-.product button {
+.product button, .pub-description button {
     margin-bottom: 30px;
     border: none;
     background: #333;
@@ -95,4 +99,77 @@
     background-color: #ec7855;
     text-align: center;
     margin-left: 39%;
+}
+.carre-container {
+    max-width: 800px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+.carre {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    position: relative;
+    z-index: 2;
+}
+.carre-left {
+    background: #f78c6b;
+    width: 25%;
+    height: 50%;
+    margin-top: 25%;
+}
+.carre-right {
+    border: 4px solid #825f08;
+    width: 400px;
+    height: 200px;
+    z-index: 3;
+}
+.carre-center {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #825f08;
+    z-index: 5;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -43.5%;
+}
+.container-publicite {
+    display: flex;
+    max-width: 900px;
+    width: 900px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+}
+.pub-carre-container {
+    max-width: 60%;
+    width: 60%;
+    margin-right: 5%;
+}
+.pub-carre-container img {
+    width: 100%;
+    height: 100%;
+}
+.pub-description {
+    max-width: 35%;
+    width: 35%;
+    margin-left: 5%;
+}
+.pub-description p, .pub-description h3 {
+    text-align: left;
+}
+.pub-description button {
+    margin-left: -50%;
+}
+.contact-us {
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }

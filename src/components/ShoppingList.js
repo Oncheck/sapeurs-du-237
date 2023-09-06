@@ -32,11 +32,12 @@ function ShoppingList() {
 	return (
 		<>
 			<Banner /><br /><br /><br /><br />
+			
 
 			<BackToTop />
 
 			<div className='page-products'>
-				<div className="featured-products left-side">
+				<div className="featured-products left-side responsive-position-1">
 					<h1 style={{ textAlign: 'center', marginTop: '50px'}}>Tous nos produits</h1>
 					<div className="container-gallery">
 						<div className="container-image">
@@ -84,7 +85,7 @@ function ShoppingList() {
 						</div>
 					</div>
 				</div>
-				<div className="filter right-side">
+				<div className="filter right-side responsive-position-2">
 					<div className="filter-search">
 						<h3 className="title-filter">Rechercher un produit</h3>
 						<input 

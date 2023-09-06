@@ -2,7 +2,7 @@ import slide_1 from '../assets/images/slides/Bannière costume.jpg'
 import slide_2 from '../assets/images/slides/Bannière Photographe.jpg'
 import slide_3 from '../assets/images/slides/Bannière Service Traiteur.jpg'
 import slide_4 from '../assets/images/slides/Bannière Sapeurs.jpg'
-import slide_5 from '../assets/images/slides/Bannière Oncheck.jpeg'
+import slide_5 from '../assets/images/slides/Bannière Oncheck.jpg'
 
 export const slides = [
     {

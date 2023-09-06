@@ -31,6 +31,12 @@
 	.filter-search input, .filter-range input[type="range"] {
 		width: 90%;
 	}
+	.responsive-position-1 {
+		z-index: 2;
+	}
+	.responsive-position-2 {
+		z-index: 1;
+	}
 }
 @media (max-width: 900px) {
 	.page-products {
