@@ -126,13 +126,13 @@
 }
 .carre-right {
     border: 4px solid #825f08;
-    width: 400px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     z-index: 3;
 }
 .carre-center {
-    width: 700px;
-    height: 300px;
+    width: 87.5%;
+    height: 75%;
     border: 1px solid #825f08;
     z-index: 5;
     margin: 0 auto;
@@ -172,4 +172,54 @@
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 420px) {
+    .banner-mariage {
+        display: block;
+    }
+    .banner-left, .banner-right {
+        width: 100%;
+        height: 300px;
+    }
+    .experience span {
+        font-size: 15px;
+    }
+    .carre-container {
+        max-width: 600px;
+        width: 400px;
+        height: 400px;
+    }
+    .carre-center {
+        margin-top: -97%;
+        width: 80%;
+        height: 70%;
+    }
+    .container-publicite {
+        display: block;
+        max-width: 90%;
+        width: 90%;
+        margin: 50px auto;
+    }
+    .pub-carre-container {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 5%;
+    }
+    .pub-description {
+        max-width: 100%;
+        width: 100%;
+    }
+    .contact-us {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content-form {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
 }
