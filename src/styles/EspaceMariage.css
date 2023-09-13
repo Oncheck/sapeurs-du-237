@@ -92,13 +92,12 @@
 }
 .newsletter button {
     border: none;
-    width: 22%;
+    width: 40%;
     border-radius: 15px;
     height: 30px;
     color: white;
     background-color: #ec7855;
-    text-align: center;
-    margin-left: 39%;
+    margin: 0 auto;
 }
 .carre-container {
     max-width: 800px;
@@ -114,7 +113,6 @@
     width: 100%;
     height: 100%;
     justify-content: space-between;
-    /* border: 2px solid black; */
     position: relative;
     z-index: 2;
 }
@@ -167,15 +165,24 @@
 .pub-description button {
     margin-left: -50%;
 }
-.contact-us {
+.contact-us, .newsletter {
     width: 500px;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
 }
+.newsletter button {
+    margin-top: 30px;
+}
 
 /* Responsive Design */
-@media (max-width: 420px) {
+@media (max-width: 410px) {  
+    .newsletter {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media (max-width: 800px) {
     .banner-mariage {
         display: block;
     }
@@ -211,7 +218,7 @@
         max-width: 100%;
         width: 100%;
     }
-    .contact-us {
+    .contact-us, .newsletter {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
@@ -221,5 +228,8 @@
         max-width: 90%;
         width: 90%;
         margin: 0 auto;
+    }
+    .newsletter button {
+        margin-top: 30px;
     }
 }

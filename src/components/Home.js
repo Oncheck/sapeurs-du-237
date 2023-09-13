@@ -27,17 +27,22 @@ function Home() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [statusEmail, setStatusEmail] = useState(0)
+    const [form, setForm] = useState({email: email})
 
     const handleClose = () => setShow(false);
   	
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
         if (email === '') {
             setMessage('Veuillez entrer une adresse email valide')
             setShow(true)
         } else {
             if (email.includes('@')) {
+                setForm({email: email})
+                console.log(form)
                 setStatusEmail(1)
-                emailjs.send('service_xwsdc4i', 'template_98hlzyl', email, 'pqmHwLj6l2G7npMob')
+                emailjs.send('service_xwsdc4i', 'template_98hlzyl', form, 'pqmHwLj6l2G7npMob')
                 .then(result => {
                     console.log(result.text)
                     setStatusEmail(2)
@@ -148,20 +153,22 @@ function Home() {
                         <p>Vous recevrez une réduction de 20% si vous nous envoyez votre adresse mail</p>
                     </div>
                     <div className="email">
-                        <input type="email" placeholder="Votre Email" onChange={(e) => setEmail(e.target.value)} required />
-                        <button onClick={handleSubmit}>
-                            {
-                                statusEmail === 0 ? 'Envoyer' : 
-                                (statusEmail === 1 ? 'En cours...' : 
-                                (statusEmail === 2 ? 'Envoyé' : 'Echec !'))
-                            }
-                        </button>
+                        <form onSubmit={handleSubmit}>
+                            <input type="email" value={email} placeholder="Votre Email" onChange={(e) => setEmail(e.target.value)} required />
+                            <button type="submit">
+                                {
+                                    statusEmail === 0 ? 'Envoyer' : 
+                                    (statusEmail === 1 ? 'En cours...' : 
+                                    (statusEmail === 2 ? 'Envoyé' : 'Echec !'))
+                                }
+                            </button>
+                        </form>
                     </div>
                     <div className="title2">
                         <p>Vous pouvez aussi nous contacter sur 
                             <i style={{color: '#075e54', fontWeight: 'bold', margin: '0 5px'}} className="fa fa-whatsapp"></i> 
-                            en cliquant <Link>ici </Link>
-                            ou par <i className="fa fa-phone"></i><Link> ici</Link>
+                            en cliquant <Link to="https://wa.me/491795273527" target="_blank">ici </Link>
+                            ou par <i className="fa fa-phone"></i><Link to="tel:+491795273527"> ici</Link>
                         </p>
                     </div>
                 </div>

@@ -51,7 +51,7 @@
 		z-index: 10;
 		height: 30%;
 		width: 100%;
-		transition: all .8s ease-out;
+		transition: all .8s ease-in-out;
 	}
 	.show-menu .banner-img {
 		margin-top: -30px;

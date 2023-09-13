@@ -33,16 +33,15 @@ const Contact = () => {
         .then(result => {
             setStatusEmail(2)
             console.log(result.text)
+            setEmail('')
+            setNom('')
+            setTel('')
+            setMessage('')
         })
         .catch(error => {
             setStatusEmail(3)
             console.log(error)
         })
-        
-        setEmail('')
-        setNom('')
-        setTel('')
-        setMessage('')
     }
 
     useEffect(() => {
@@ -79,10 +78,7 @@ const Contact = () => {
                         </div>
                         <h2>Téléphone</h2>
                         <p>
-                            Allemagne : <Link to='tel:+4912354512367'>+49 1235 4512367</Link>
-                        </p>
-                        <p>
-                            Cameroun : <Link to='tel:+237699999999'>+237 699 999 999</Link>
+                            Allemagne : <Link to='tel:+491795273527'>+49 1795 273527</Link>
                         </p>
                     </div>
                 </div>
@@ -97,20 +93,20 @@ const Contact = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="row input">
                             <div className="col-lg-6">
-                                <input type="text" onChange={(e) => setNom(e.target.value)} className="form-control" placeholder="Votre Nom" required />
+                                <input type="text" value={nom} onChange={(e) => setNom(e.target.value)} className="form-control" placeholder="Votre Nom" required />
                             </div>
                             <div className="col-lg-6">
-                                <input type="tel" onChange={(e) => setTel(e.target.value)} className="form-control" placeholder="Votre Téléphone" required />
+                                <input type="tel" value={tel} onChange={(e) => setTel(e.target.value)} className="form-control" placeholder="Votre Téléphone" required />
                             </div>
                         </div>
                         <div className="row input">
                             <div className="col-lg-6">
-                                <input type="email" onChange={(e) => setEmail(e.target.value)} className="form-control" placeholder="Votre Email" required />
+                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" placeholder="Votre Email" required />
                             </div>
                         </div>
                         <div className="row input">
                             <div className="col-lg-12">
-                                <textarea onChange={(e) => setMessage(e.target.value)} className="form-control" rows={5} placeholder="Votre Message" required></textarea>
+                                <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="form-control" rows={5} placeholder="Votre Message" required></textarea>
                             </div>
                         </div>
                         <div className="input">
