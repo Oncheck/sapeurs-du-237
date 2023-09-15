@@ -99,7 +99,7 @@ function EspaceMariage() {
                         </div>
                     </div>
                     <div className="how-we-do">
-                        <div className="title">
+                        {/* <div className="title">
                             <h3>How we do it</h3>
                             <p>Lorem ipsum dolor sit amet, consecteur</p>
                         </div>
@@ -109,9 +109,15 @@ function EspaceMariage() {
                                 <div className="carre-right"></div>
                             </div>
                             <div className="carre-center"></div>
-                        </div>
+                        </div> */}
                         <div className="banner-second">
-                            <div className="banner-second-left"></div>
+                            <div className="banner-second-left">
+                                <div>
+                                    <h1>Spécial offre</h1>
+                                    <h1 id="percent">20%</h1>
+                                    <p>Remise sur ta première commande</p>
+                                </div>
+                            </div>
                             <div className="banner-second-right"></div>
                         </div>
                     </div>

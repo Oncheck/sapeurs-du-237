@@ -10,9 +10,16 @@
 .banner-mariage, .banner-second {
     display: flex;
 }
+.banner-second {
+    margin-top: 100px;
+}
 .banner-left, .banner-right {
     width: 50%;
     height: 500px;
+}
+.banner-right {
+    background-image: url('../../public/assets/espacemariage_photocentral.jpeg');
+    background-size: cover;
 }
 .banner-second-left, .banner-second-right {
     width: 50%;
@@ -20,6 +27,21 @@
 }
 .banner-second-left {
     background-color: #f6c64e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-second-left h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+.banner-second-left #percent {
+    font-size: 80px;
+}
+.banner-second-left p {
+    font-size: 25px;
+    text-align: center;
 }
 .banner-second-right {
     background-color: #ffebb7;
@@ -179,6 +201,13 @@
 @media (max-width: 410px) {  
     .newsletter {
         margin-bottom: 100px !important;
+    }
+    .banner-second {
+        display: inline-block;
+        width: 100%;
+    }
+    .banner-second-left, .banner-second-right {
+        width: 100%;
     }
 }
 
