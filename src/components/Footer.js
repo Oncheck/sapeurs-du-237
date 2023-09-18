@@ -1,9 +1,9 @@
 import '../styles/Footer.css'
 import logo from '../assets/images/logo.png'
-import { Link } from 'react-router-dom'
+import { Link, redirect, useNavigate } from 'react-router-dom'
 
 function Footer() {
-
+	const navigate = useNavigate()
 	
 	return (
 		<footer className='footer'>
@@ -18,13 +18,19 @@ function Footer() {
 					</p>
 					<div className='footer-social'>
 						<div className='footer-social-icon'>
-							<i className='fa fa-instagram'></i>
+							<Link to={'https://instagram.com'} target='_blank' style={{ color: '#c13584'}}>
+								<i className='fa fa-instagram'></i>
+							</Link>
 						</div>
 						<div className='footer-social-icon'>
-							<i className='fa fa-facebook'></i>
+							<Link to={'https://facebook.com'} target='_blank' style={{ color: '#3b5998'}}>
+								<i className='fa fa-facebook'></i>
+							</Link>
 						</div>
 						<div className='footer-social-icon'>
-							<i className='fa fa-whatsapp'></i>
+							<Link to={'https://wa.me/491795273527'} target='_blank' style={{ color: 'green'}}>
+								<i className='fa fa-whatsapp'></i>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -42,8 +48,8 @@ function Footer() {
 				<div className='footer-about'>
 					<h4>Get in touch</h4>
 					<ul>
-						<li><Link to='mailto:sapeurdu237@yahoo.com'>sapeurdu237@yahoo.com</Link></li>
-						<li><Link to='tel:+4912354512367'>+49 1235 4512367</Link></li>
+						<li><Link to='mailto:sapeur237@yahoo.com'>sapeur237@yahoo.com</Link></li>
+						<li><Link to='tel:+491795273527'>+49 1795 273527</Link></li>
 					</ul>
 				</div>
 			</div>

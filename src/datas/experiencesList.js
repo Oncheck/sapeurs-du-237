@@ -1,18 +1,18 @@
 export const experiences = [
     {
-        value: 3000,
+        value: 30,
         slug: 'Packages Sold'
     },
     {
-        value: 5000,
-        slug: 'Bouquet Sold'
+        value: 2,
+        slug: 'Countries'
     },
     {
-        value: 7000,
+        value: 105,
         slug: 'Happy Clients'
     },
     {
-        value: 10,
+        value: 2,
         slug: 'Years of Experience'
     }
 ]

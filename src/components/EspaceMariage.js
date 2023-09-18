@@ -134,15 +134,15 @@ function EspaceMariage() {
                         </div>
                     </div>
                     <div className="container-publicite">
-                        <div className="pub-carre-container">
-                            <img src={photographe} alt="bouquet de fleur" />
-                        </div>
-                        <div className="pub-description">
+                        <div className="pub-description" style={{ marginRight: '50px'}}>
                             <div className="title">
                                 <h3>Photographe qualifié pour vos cérémonies</h3>
                                 <p>Un couple élégant et charismatique, ça donne envie de faire des photos avec! Notre photographe professionnel est à votre service pour toutes vos prestations: films de mariage, reportages, vidéos, photos avec drônes, fiançailles, etc.</p>
                                 <button>Read more</button>
                             </div>
+                        </div>
+                        <div className="pub-carre-container">
+                            <img src={photographe} alt="bouquet de fleur" />
                         </div>
                     </div>
                     <div className="container-publicite">
@@ -158,16 +158,16 @@ function EspaceMariage() {
                         </div>
                     </div>
                     <div className="container-publicite">
-                        <div className="pub-carre-container">
-                            <img src={traiteur} alt="bouquet de fleur" />
-                        </div>
-                        <div className="pub-description">
+                        <div className="pub-description" style={{ marginRight: '50px'}}>
                             <div className="title">
                                 <h3>Service traiteur</h3>
                                 <p>Si vous êtes en Allemagne, France, Suisse, nous vous proposons un service traiteur international de très haute qualité !</p>
-                                <p>Pour toute question, contactez le service client au +49 179 5273527</p>
+                                <p>Pour toute question, contactez le service client au +49 1795 273527</p>
                                 <button>Read more</button>
                             </div>
+                        </div>
+                        <div className="pub-carre-container">
+                            <img src={traiteur} alt="bouquet de fleur" />
                         </div>
                     </div>
                     <div className="contact-us">

@@ -45,6 +45,8 @@
 }
 .banner-second-right {
     background-color: #ffebb7;
+    background-image: url('../assets/images/offer.jpg');
+    background-size: cover;
 }
 .banner-left {
     background-color: aliceblue;
