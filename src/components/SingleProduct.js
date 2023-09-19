@@ -20,7 +20,7 @@ function SingleProduct() {
 	const [commande, setCommande] = useState({})
 	const currentProduct = productList.find(product => product.name === param.name)
 	const savedCart = localStorage.getItem('cart')
-	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
+	//const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 	const navigate = useNavigate()
 	const [statusEmail, setStatusEmail] = useState(0)
 
@@ -284,7 +284,7 @@ function SingleProduct() {
 								required
 							/>
 						</Form.Group>
-						<Form.Group className='form-group mt-4'>
+						{/* <Form.Group className='form-group mt-4'>
 							<Form.Label className='control-label'>Une photo de vous en vue latérale</Form.Label>
 							<Form.Control 
 								type='file' 
@@ -292,7 +292,7 @@ function SingleProduct() {
 								name='photo' 
 								required
 							/>
-						</Form.Group>
+						</Form.Group> */}
 						<Form.Group className='form-group mt-4'>
 							<Button variant="primary" type="submit" style={{ width: '100%' }}>
 								{

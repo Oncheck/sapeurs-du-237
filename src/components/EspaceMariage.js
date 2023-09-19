@@ -8,37 +8,28 @@ import photographe from '../assets/images/slides/Bannière Photographe.jpg'
 import site_web from '../assets/images/slides/Bannière Oncheck.jpg'
 import vetement from '../assets/images/slides/Bannière costume.jpg'
 import traiteur from '../assets/images/slides/Bannière Service Traiteur.jpg'
+import banner_right from '../assets/images/offer.jpg'
 import { useEffect, useState } from "react";
 import emailjs from '@emailjs/browser'
 
 
 function EspaceMariage() {
-    const [nom, setNom] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
-    const [form, setForm] = useState({
-        nom: nom,
-        email: email,
-        message: message
-    })
+    const [form, setForm] = useState({})
     const [statusEmail, setStatusEmail] = useState(0)
 
+    const handleChange = ({currentTarget}) => {
+		const {name, value} = currentTarget
+		setForm({...form, [name]: value})
+	}
     const handleSubmit = (e) => {
         e.preventDefault()
-        setForm({
-            nom: nom,  
-            email: email, 
-            message: message
-        })
         console.log(form)
         setStatusEmail(1)
         emailjs.send('service_xwsdc4i', 'template_98hlzyl', form, 'pqmHwLj6l2G7npMob')
         .then(result => {
             setStatusEmail(2)
             console.log(result.text)
-            setEmail('')
-            setNom('')
-            setMessage('')
+            setForm({})
         })
         .catch(error => {
             setStatusEmail(3)
@@ -118,7 +109,9 @@ function EspaceMariage() {
                                     <p>Remise sur ta première commande</p>
                                 </div>
                             </div>
-                            <div className="banner-second-right"></div>
+                            <div className="banner-second-right">
+                                <img src={banner_right} />
+                            </div>
                         </div>
                     </div>
                     <div className="container-publicite">
@@ -176,7 +169,7 @@ function EspaceMariage() {
                     </div>
                     <div className="newsletter">
                         <div className="title">
-                            <h3>Subscribe to our newsletter</h3>
+                            <h3>Souscrivez à notre newsletter</h3>
                             <p>ça vous interesserait de recevoir régulièrement des informations sur nos différents service ? Alors prenez quelques minutes pour remplir ce formulaire.</p>
                         </div>
                         <div className="content-form">
@@ -186,9 +179,9 @@ function EspaceMariage() {
                                         <input 
                                             className="form-control" 
                                             type="text" 
-                                            value={nom} 
-                                            onChange={(e) => setNom(e.target.value)} 
-                                            placeholder="Your Name" 
+                                            name="nom"
+                                            onChange={handleChange} 
+                                            placeholder="Votre Nom" 
                                             required 
                                         />
                                     </div>
@@ -198,9 +191,9 @@ function EspaceMariage() {
                                         <input 
                                             className="form-control" 
                                             type="email" 
-                                            value={email} 
-                                            onChange={(e) => setEmail(e.target.value)} 
-                                            placeholder="Your Mail" 
+                                            name="email" 
+                                            onChange={handleChange} 
+                                            placeholder="Votre E-Mail" 
                                             required 
                                         />
                                     </div>
@@ -208,11 +201,11 @@ function EspaceMariage() {
                                 <div className="row">
                                     <div className="col-lg-12 input-item">
                                         <textarea 
-                                            className="form-control" 
-                                            value={message} 
-                                            onChange={(e) => setMessage(e.target.value)} 
+                                            className="form-control"
+                                            name="message"
+                                            onChange={handleChange} 
                                             rows={4} 
-                                            placeholder="Your Message"
+                                            placeholder="Votre Message"
                                         ></textarea>
                                     </div>
                                 </div>
@@ -220,10 +213,10 @@ function EspaceMariage() {
                                     <div className="col-lg-12">
                                         <button type="submit">
                                             {
-                                                statusEmail === 0 ? 'Send message'
-                                                : (statusEmail === 1 ? 'In progress...' 
-                                                : (statusEmail === 2 ? 'Sent !' 
-                                                : 'Error !'))
+                                                statusEmail === 0 ? 'Envoyer'
+                                                : (statusEmail === 1 ? 'Traitement...' 
+                                                : (statusEmail === 2 ? 'Envoyé !' 
+                                                : 'Erreur !'))
                                             }
                                         </button>
                                     </div>

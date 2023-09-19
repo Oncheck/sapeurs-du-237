@@ -24,22 +24,20 @@ function Home() {
     })
 
     const [show, setShow] = useState(false)
-    const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [statusEmail, setStatusEmail] = useState(0)
-    const [form, setForm] = useState({email: email})
+    const [form, setForm] = useState({})
 
     const handleClose = () => setShow(false);
-  	
+
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (email === '') {
+        if (form.email === '') {
             setMessage('Veuillez entrer une adresse email valide')
             setShow(true)
         } else {
-            if (email.includes('@')) {
-                setForm({email: email})
+            if (form.email.includes('@')) {
                 console.log(form)
                 setStatusEmail(1)
                 emailjs.send('service_xwsdc4i', 'template_98hlzyl', form, 'pqmHwLj6l2G7npMob')
@@ -48,7 +46,7 @@ function Home() {
                     setStatusEmail(2)
                     setMessage("Félicitations ! Vous êtes bien enregistrés parmi les abonnés de Sapeurs du 237")
                     setShow(true)
-                    setEmail('')
+                    setForm({})
                 })
                 .catch(error => {
                     console.log(error)
@@ -154,7 +152,7 @@ function Home() {
                     </div>
                     <div className="email">
                         <form onSubmit={handleSubmit}>
-                            <input type="email" value={email} placeholder="Votre Email" onChange={(e) => setEmail(e.target.value)} required />
+                            <input type="email" placeholder="Votre Email" onChange={(e) => setForm({email: e.target.value})} required />
                             <button type="submit">
                                 {
                                     statusEmail === 0 ? 'Envoyer' : 
