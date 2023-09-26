@@ -95,6 +95,7 @@
     width: 100%;
     box-shadow: 3px 3px 3px gray;
     margin: 0 auto;
+    height: 550px !important;
 }
 .product img {
     width: 300px;

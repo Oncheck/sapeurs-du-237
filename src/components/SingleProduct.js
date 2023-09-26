@@ -53,23 +53,6 @@ function SingleProduct() {
         })
 	}
 
-	/*function addToCart({id, name, price, cover}) {
-		const currentProductSaved = cart.find((product) => product.name === name)
-		if (currentProductSaved) {
-			const cartFilteredCurrentProduct = cart.filter(
-				(product) => product.name !== name
-			)
-			updateCart([
-				...cartFilteredCurrentProduct,
-				{ id, name, price, cover, inCart: currentProductSaved.inCart + 1 }
-			])
-			localStorage.setItem('cart', JSON.stringify(cartFilteredCurrentProduct))
-		} else {
-			updateCart([...cart, { id, name, price, cover, inCart: 1 }])
-			localStorage.setItem('cart', JSON.stringify(cart))
-		}
-
-	}*/
 
     return (
         <>
@@ -84,7 +67,7 @@ function SingleProduct() {
 							{
 								currentProduct.images ?
 								<SliderSingleProduct slides={currentProduct.images} /> :
-								<img src={currentProduct.cover} width='100%' height='100%' alt={currentProduct?.name} />
+								<img src={currentProduct.cover} width='100%' height='80%' alt={currentProduct?.name} />
 							}
 						</div>
 					</div>

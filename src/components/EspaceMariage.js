@@ -79,11 +79,9 @@ function EspaceMariage() {
                                         <img src={product.img} alt='robe de mariée' />
                                         <h6 style={{fontWeight: 'bold'}}>Nous vous aidons à concevoir</h6>
                                         <ul>
-                                            <li>Vos robes de mariées à dentelles, voiles, ou personnalisées en fonction de choix. Nos équipes vous aideront à matérialiser vos idées en concept unique d’artiste. </li>
-                                            <li>Vos robes sont conçues sur-mesure.</li>
-                                            <li>Pour vos prises de mesures, design, conseil et devis, prenez rendez-vous avec une de nos conseillères.</li>
+                                            <li>{product.text}</li>
                                         </ul>
-                                        <button>Read more</button>
+                                        {/* <button>Read more</button> */}
                                     </div>
                                 ))
                             }

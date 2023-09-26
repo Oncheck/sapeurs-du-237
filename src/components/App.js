@@ -27,20 +27,19 @@ function App() {
 				<BackToTop />
 
 				{name !== '' ? (
-					<div className="featured-products" style={{ marginTop: '30px' }}>
+					<div className="home-categories" style={{ marginTop: '30px' }}>
 						<h1>Catégorie : {name}</h1>
-						<div className="container-gallery">
-							<div className="container-image">
+						<div className="bloc-items">
+							<ul className="list-items">
 								{productsByCategory.map((product, index) => (
-									<div key={index}>
-										<img src={product.cover} alt={product?.name} />
+									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
 										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
-									</div>
+									</li>
 								))}
-							</div>
+							</ul>
 						</div>
 						<button 
 							className="btn-voir-plus" 

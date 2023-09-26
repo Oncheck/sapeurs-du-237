@@ -246,12 +246,12 @@ export const productList = [
     },
     {
         id: 6,
-        name: 'Mode Makepe',
+        name: 'Mode Tambafia (Ngola)',
         category: 'Costumes croisés',
-        cover: croise_3,
+        cover: croise_7,
         description : {
-            desc: 'Costume croisé 6 boutons couleurs et 2 poches passepoilées.',
-            slug: "Makepe : c’est une histoire d’éclat !!!",
+            desc: 'Costume croisé, bleu nuit avec rayures blanches ou rouges, assortie avec 6 boutons couleurs.',
+            slug: "Tambafia à Yaoundé est l’un des Fiefs des M’Bagandô (tous ceux qui se battent dans la vie) !!!",
             tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
         color: 'green',
@@ -272,12 +272,12 @@ export const productList = [
     },
     {
         id: 10,
-        name: 'Mode Tambafia (Ngola)',
+        name: 'Mode Makepe',
         category: 'Costumes croisés',
-        cover: croise_7,
+        cover: croise_3,
         description : {
-            desc: 'Costume croisé, bleu nuit avec rayures blanches ou rouges, assortie avec 6 boutons couleurs.',
-            slug: "Tambafia à Yaoundé est l’un des Fiefs des M’Bagandô (tous ceux qui se battent dans la vie) !!!",
+            desc: 'Costume croisé 6 boutons couleurs et 2 poches passepoilées.',
+            slug: "Makepe : c’est une histoire d’éclat !!!",
             tissu: 'Moers (60% Viscose, 25% Coton, 15% Polyester), Super 140.'
         },
         color: 'green',
