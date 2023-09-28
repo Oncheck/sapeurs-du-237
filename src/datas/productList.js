@@ -63,6 +63,10 @@ import chemise_6 from '../assets/images/produits/Chemises/2_1.png'
 import chemise_7 from '../assets/images/produits/Chemises/2_2.png'
 import chemise_8 from '../assets/images/produits/Chemises/2_3.png'
 import chemise_9 from '../assets/images/produits/Chemises/2_4.png'
+import costume_2b_1 from '../assets/images/produits/Costumes 2 boutons/1.png'
+import costume_2b_2 from '../assets/images/produits/Costumes 2 boutons/2.png'
+import costume_2b_3 from '../assets/images/produits/Costumes 2 boutons/3.png'
+import costume_2b_4 from '../assets/images/produits/Costumes 2 boutons/4.png'
 
 export const productList = [
     {
@@ -382,8 +386,8 @@ export const productList = [
     },
     {
         id: 20,
-        name: 'Chaussure 1',
-        category: 'Chaussures',
+        name: 'Derby Cuir homme 1',
+        category: 'Derby Cuir homme',
         cover: chaussure_1_1,
         images: [chaussure_1_1, chaussure_1_2, chaussure_2_1, chaussure_2_2, chaussure_3_1, chaussure_3_2],
         prix: 60,
@@ -397,8 +401,8 @@ export const productList = [
     },
     {
         id: 21,
-        name: 'Chaussure 2',
-        category: 'Chaussures',
+        name: 'Mocassins Messieurs 1',
+        category: 'Mocassins Messieurs',
         cover: chaussure_4,
         images: [chaussure_4, chaussure_5],
         prix: 60,
@@ -412,8 +416,8 @@ export const productList = [
     },
     {
         id: 22,
-        name: 'Chaussure 3',
-        category: 'Chaussures',
+        name: 'Mocassins Messieurs 2',
+        category: 'Mocassins Messieurs',
         cover: chaussure_6,
         images: [chaussure_6, chaussure_7, chaussure_8],
         prix: 120,
@@ -427,8 +431,8 @@ export const productList = [
     },
     {
         id: 23,
-        name: 'Chaussure 4',
-        category: 'Chaussures',
+        name: 'Derby Cuir homme 2',
+        category: 'Derby Cuir homme',
         cover: chaussure_9,
         prix: 150,
         description : {
@@ -441,8 +445,8 @@ export const productList = [
     },
     {
         id: 24,
-        name: 'Chaussure 5',
-        category: 'Chaussures',
+        name: 'Derby Cuir homme 3',
+        category: 'Derby Cuir homme',
         cover: chaussure_10,
         images: [chaussure_10, chaussure_11, chaussure_12, chaussure_13, chaussure_14],
         prix: 160,
@@ -579,6 +583,50 @@ export const productList = [
         images: [accessoire_1, accessoire_2, accessoire_3, accessoire_4],
         description: {
             desc: ''
+        }
+    },
+    {
+        id: 34,
+        name: 'Mode « El Mignonte »',
+        category: 'Costumes 2 boutons',
+        cover: costume_2b_1,
+        description: {
+            desc: 'Costume croisé 1 bouton et 2 poches passepoilées en toute élégance',
+            slug: 'Pour un Design unique, et un charisme parfait !!!',
+            tissu: 'Moers (60%Viscose, 25%coton, 15%polyester), Super 140, Super 180'
+        }
+    },
+    {
+        id: 35,
+        name: 'Mode « Les Ministrables »',
+        category: 'Costumes 2 boutons',
+        cover: costume_2b_4,
+        description: {
+            desc: 'Costume 2 boutons et 3 poches passepoilées en toute éléganc',
+            slug: 'Sentez-vous dans la peau d’un Ministre !!! Inspirez fraîcheur et respect !',
+            tissu: 'Moers (60%Viscose, 25%coton, 15%polyester), Super 140, Super 180'
+        }
+    },
+    {
+        id: 36,
+        name: 'Mode « King of Scotland »',
+        category: 'Costumes 2 boutons',
+        cover: costume_2b_3,
+        description: {
+            desc: 'Costume 3 pièces au style des Rois d’Ecosse.',
+            slug: 'L’élégance à l’écossaise !!!',
+            tissu: 'Super 140, Super 180. '
+        }
+    },
+    {
+        id: 37,
+        name: 'Mode « du Chancelier »',
+        category: 'Costumes 2 boutons',
+        cover: costume_2b_2,
+        description: {
+            desc: 'Costume 3 pièces, avec cols larges',
+            slug: 'Tel un chancelier allemand, imposez respect et charisme !!!',
+            tissu: 'Moers (60%Viscose, 25%coton, 15%polyester), Super 140, Super 180, et Polyester.'
         }
     }
 ];
