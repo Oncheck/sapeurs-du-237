@@ -19,8 +19,6 @@ function SingleProduct() {
 	const [show, setShow] = useState(false);
 	const [commande, setCommande] = useState({})
 	const currentProduct = productList.find(product => product.name === param.name)
-	const savedCart = localStorage.getItem('cart')
-	//const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart) : [])
 	const navigate = useNavigate()
 	const [statusEmail, setStatusEmail] = useState(0)
 
@@ -102,13 +100,6 @@ function SingleProduct() {
 						>
 							<i class="fa fa-money" aria-hidden="true"></i> Commander
 						</button>
-						{/* <button 
-							className="btn-card" 
-							type="button"
-							onClick={() => addToCart(currentProduct.id, currentProduct.name, currentProduct.price, currentProduct.cover)}
-						>
-							<i class="fa fa-money" aria-hidden="true"></i> Ajouter au panier
-						</button> */}
 						<p className='txt-contact'>ou contactez le vendeur dès maintenant</p>
 						<button
 							className='btn-contact'

@@ -100,12 +100,15 @@ hr {
         display: inline-block;
         width: 100%;
     }
+    .slider-left {
+        height: 80%;
+    }
     .slider-left, .slider-right {
         width: 90%;
     }
     .slider-right {
         margin: 0 5%;
-        margin-top: -100px;
+        margin-top: -10px;
     }
     .info-produit h2 {
         text-align: center;
