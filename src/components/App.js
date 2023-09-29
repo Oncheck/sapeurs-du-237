@@ -22,7 +22,7 @@ function App() {
 		<>
 			<Banner /><br /><br /><br /><br /><br />
 
-			<div className='home'>
+			<div className='home' style={{ maxWidth: '1000px', margin: '0 auto' }}>
 
 				<BackToTop />
 

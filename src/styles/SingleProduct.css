@@ -1,10 +1,12 @@
 .single-product {
-    max-width: 1000px;
-    margin: 10px auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .produit {
     display: flex;
     justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .slider-left {
     width: 50%;
