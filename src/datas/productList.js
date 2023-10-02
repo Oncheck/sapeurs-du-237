@@ -12,7 +12,8 @@ import demande_11 from '../assets/images/produits/A la demande/11.png'
 import demande_12 from '../assets/images/produits/A la demande/12.png'
 import demande_13 from '../assets/images/produits/A la demande/13.png'
 import demande_14 from '../assets/images/produits/A la demande/14.png'
-import croise_1 from '../assets/images/produits/Costumes croisés/1.png'
+import croise_1_1 from '../assets/images/produits/Costumes croisés/8.png'
+import croise_1_2 from '../assets/images/produits/Costumes croisés/9.png'
 import croise_2 from '../assets/images/produits/Costumes croisés/2.png'
 import croise_3 from '../assets/images/produits/Costumes croisés/3.png'
 import croise_4 from '../assets/images/produits/Costumes croisés/4.png'
@@ -227,7 +228,8 @@ export const productList = [
         id: 4,
         name: 'Mode Deido',
         category: 'Costumes croisés',
-        cover: croise_1,
+        cover: croise_1_1,
+        images: [croise_1_1, croise_1_2],
         description : {
             desc: 'Costume croisé 6 boutons avec revers de pantalon surélevé.',
             slug: "Vivez toute l'élégance des gars de Deido !!",
@@ -328,7 +330,7 @@ export const productList = [
     },
     {
         id: 15,
-        name: 'Smoking Homme 1',
+        name: 'Smoking Homme',
         category: 'Costumes de Mariage',
         cover: mariage_3,
         images: [mariage_3, mariage_4],
@@ -340,7 +342,7 @@ export const productList = [
     },
     {
         id: 16,
-        name: 'Smoking Homme 2',
+        name: 'Smoking Homme',
         category: 'Costume de mariage',
         cover: mariage_5,
         description : {
@@ -351,7 +353,7 @@ export const productList = [
     },
     {
         id: 17,
-        name: 'Smoking Homme 3',
+        name: 'Smoking Homme',
         category: 'Costume de mariage',
         cover: mariage_6,
         description : {
@@ -362,7 +364,7 @@ export const productList = [
     },
     {
         id: 18,
-        name: 'MOdèle 1 « 237 »',
+        name: 'Modèle « 237 »',
         category: 'Costume de mariage',
         cover: mariage_7,
         description : {
@@ -374,7 +376,7 @@ export const productList = [
     },
     {
         id: 19,
-        name: 'MOdèle 2 « 237 »',
+        name: 'Modèle « 237 »',
         category: 'Costume de mariage',
         cover: mariage_9,
         description : {
@@ -386,7 +388,7 @@ export const productList = [
     },
     {
         id: 20,
-        name: 'Derby Cuir homme 1',
+        name: 'Derby Cuir homme',
         category: 'Derby Cuir homme',
         cover: chaussure_1_1,
         images: [chaussure_1_1, chaussure_1_2, chaussure_2_1, chaussure_2_2, chaussure_3_1, chaussure_3_2],
@@ -401,7 +403,7 @@ export const productList = [
     },
     {
         id: 21,
-        name: 'Mocassins Messieurs 1',
+        name: 'Mocassins Messieurs',
         category: 'Mocassins Messieurs',
         cover: chaussure_4,
         images: [chaussure_4, chaussure_5],
@@ -416,7 +418,7 @@ export const productList = [
     },
     {
         id: 22,
-        name: 'Mocassins Messieurs 2',
+        name: 'Mocassins Messieurs',
         category: 'Mocassins Messieurs',
         cover: chaussure_6,
         images: [chaussure_6, chaussure_7, chaussure_8],
@@ -431,7 +433,7 @@ export const productList = [
     },
     {
         id: 23,
-        name: 'Derby Cuir homme 2',
+        name: 'Derby Cuir homme',
         category: 'Derby Cuir homme',
         cover: chaussure_9,
         prix: 150,
@@ -445,7 +447,7 @@ export const productList = [
     },
     {
         id: 24,
-        name: 'Derby Cuir homme 3',
+        name: 'Derby Cuir homme',
         category: 'Derby Cuir homme',
         cover: chaussure_10,
         images: [chaussure_10, chaussure_11, chaussure_12, chaussure_13, chaussure_14],
@@ -538,7 +540,7 @@ export const productList = [
     },
     {
         id: 31,
-        name: 'Chemise 1',
+        name: 'Chemise',
         category: 'Chemises',
         cover: chemise_1,
         sur_mesure: 70,
@@ -551,7 +553,7 @@ export const productList = [
     },
     {
         id: 32,
-        name: 'Chemise 2',
+        name: 'Chemise',
         category: 'Chemises',
         cover: chemise_6,
         sur_mesure: 70,
