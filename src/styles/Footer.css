@@ -1,0 +1,120 @@
+.footer {
+	background: #fff9ea;
+	font-family: 'Readex Pro';
+	margin-top: 100px;
+}
+.footer-top {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.footer-about {
+	display: inline-block;
+	width: 20%;
+	margin-top: -20px;
+}
+.footer-about:nth-child(1) {
+	width: 40%;
+}
+.footer-about img {
+	width: 200px;
+}
+.footer-about p {
+	font-size: 18px;
+	margin-top: -60px;
+	color: #333;
+}
+.footer-about h4 {
+	margin-left: 30px;
+	text-decoration: underline;
+}
+.footer-about ul {
+	list-style: none;
+}
+.footer-about ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #333;
+}
+.footer-about ul li a:hover, .footer-bottom p a:hover {
+	text-decoration: underline;
+	color: #ffcb45;
+	transition: all 0.3 ease-in-out;
+}
+
+.footer-social {
+	margin-top: 10px;
+	display: flex;
+	margin-left: 40px;
+}
+.footer-social .footer-social-icon {
+	margin-right: 15px;
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.footer-social .footer-social-icon:hover {
+	background: #ffcb45;
+	cursor: pointer;
+}
+
+hr {
+    border-top: 3px solid black !important;
+    color: black;
+    margin-top: 30px !important;
+	width: 80%;
+	margin-left: 10% !important;
+}
+.footer-bottom {
+	text-align: center;
+	padding-bottom: 5px;
+}
+.footer-bottom p {
+	font-size: 20px;
+}
+.footer-bottom p a {
+	text-decoration: none;
+	color: #ffcb45;
+	font-weight: bold;
+}
+.footer-about:nth-child(3) {
+	margin-top: -70px;
+}
+
+/* Responsive design */
+@media (max-width: 970px) {
+	.footer {
+		display: block;
+	}
+	.footer-top {
+		display: inline-block;
+    	width: 90%;
+		margin: 0 5%;
+    	margin-top: -20px;
+	}
+	.footer-about {
+		display: inline-block;
+		width: 80%;
+		margin-bottom: 50px;
+	}
+	.footer-about img {
+		margin-left: -50px;
+	}
+	.footer-about:nth-child(1) {
+		width: 80%;
+		margin-left: 25px;
+	}
+	.footer-about:nth-child(3) {
+		margin-top: -30px;
+	}
+	.footer-social {
+		margin: 0;
+	}
+}

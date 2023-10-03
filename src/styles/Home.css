@@ -1,0 +1,244 @@
+.home {
+    max-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-slides {
+    width: 100%;
+    height: 80%;
+    margin: 40px auto;
+    border-radius: 30px;
+}
+
+.home-categories h1, .featured-products h1 {
+    font-family: 'Readex Pro';
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.bloc-items {
+    margin: 30px 0;
+}
+
+.container-gallery {
+    max-width: 85%;
+    margin: 20px auto;
+}
+  
+.container-gallery .container-image {
+    -moz-columns: 4 250px;
+    columns: 4 250px;
+    gap: 30px;
+}
+  
+.container-gallery .container-image div {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.container-gallery .container-image img {
+    border-radius: 5px;
+    width: 100%;
+}
+.list-items, .products-items {
+    list-style: none;
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    justify-content: center;
+    grid-gap: 15px;
+}
+.products-items li {
+    width: 250px;
+    height: 300px;
+    background-color: #fff9ea;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.list-items li {
+    width: 250px;
+    height: 300px;
+    background-color: #fff9ea;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.list-items li .categorie:hover, .container-image .categorie:hover {
+    background: #ffcb45;
+    color: white;
+    cursor: pointer;
+}
+.list-items li .categorie, .container-image .categorie {
+    display: flex;
+    align-items: center;
+    background: #fff9ea;
+    color: black;
+    border-radius: 15px;
+    justify-content: center;
+    width: 80%;
+}
+.list-items li .categorie p, .container-image .categorie p {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.products-items .product-img {
+	width: 250px;
+    height: 300px;
+	border-radius: 5%;
+}
+.product .product-name {
+    margin-top: 1px;
+}
+.product .product-category {
+    color: #f3160f;
+    margin-top: -20px;
+}
+.product > .line-2 p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+.product .line-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.product > .line-2 > span {
+    font-size: '12px';
+    margin-top: 15px;
+    background: '#ffcb45';
+    color: #ffcb45;
+}
+.product > .line-2 {
+    margin-top: -30px;
+}
+
+.btn-voir-plus {
+    border: 1px solid #ffcb45;
+	color: #000;
+	background: #ffcb45;
+	height: 40px;
+	border-radius: 15px;
+	font-size: 18px;
+    align-self: center;
+    margin: 0 auto;
+}
+.btn-voir-plus:hover {
+	background: #fff9ea;
+	color: black;
+	transition: all 0.5 ease-out;
+	cursor: pointer;
+}
+
+.contact-home {
+    margin: 0 25% !important;
+    text-align: center;
+    width: 50% !important;
+    max-width: 800px;
+}
+.contact-home h1 {
+    font-size: 25px;
+    font-family: 'Readex Pro';
+}
+.contact-home p {
+    font-size: 20px;
+    font-family: 'Readex Pro';
+}
+.contact-home a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.contact-home a:hover {
+    color: #ffcb45;
+}
+.contact-home .email {
+    position: relative;
+}
+.contact-home .email input {
+    max-width: 100%;
+    width: 350px;
+    height: 35px;
+    margin-right: 20px;
+    border: none;
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.contact-home .email button {
+    height: 35px;
+    width: 90px;
+    color: white;
+    background: #ffcb45;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.title2 {
+    margin-top: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .home {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-slides {
+        width: 100%;
+        height: 50%;
+    }
+    .btn-voir-plus {
+        width: 70%;
+        height: 50px;
+        border: 1px solid #ffcb45;
+        color: #000;
+        background: #ffcb45;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 18px;
+        margin: 0 15%;
+    }
+    .contact-home {
+        margin: 0 auto !important;
+        text-align: center !important;
+        width: 90% !important;
+        margin-bottom: 100px !important;
+    }
+    .contact-home .email button {
+        margin-top: 10px;
+    }
+    .footer {
+        margin-top: -30px;
+    }
+}
+@media (min-width: 401px) {
+    .home {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-slides {
+        width: 100%;
+        height: 50%;
+    }
+    .btn-voir-plus {
+        width: 50%;
+        margin: 0 25%;
+        margin-top: 20px;
+    }
+    .contact-home {
+        margin: 0 auto !important;
+        text-align: center !important;
+        width: 90% !important;
+        margin-bottom: 100px !important;
+    }
+    .contact-home .email button {
+        margin-top: 10px;
+    }
+}

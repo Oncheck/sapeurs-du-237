@@ -1,0 +1,227 @@
+.banner {
+	width: 100%;
+	height: 100px;
+	background-color: #fff9ea;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: -5px 30px 30px -30px gray;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.banner-img .banner-img-logo {
+	width: 200px;
+	cursor: pointer;
+}
+.banner-links {
+	margin-right: 30px;
+}
+.banner-link {
+	margin-right: 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+.banner-link:hover {
+	text-decoration: underline;
+	color: #ffcb45;
+}
+.banner-links span {
+	background-color: #ffcb45;
+	font-size: 15px;
+	border-radius: 50%;
+}
+.banner-links i {
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.btn-menu {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.show-menu {
+		background-color: #fff9ea;
+		display: flex;
+		box-shadow: -5px 30px 30px -30px gray;
+		position: fixed;
+		top: 0;
+		z-index: 10;
+		height: 30%;
+		width: 100%;
+		transition: all .8s ease-in-out;
+	}
+	.show-menu .banner-img {
+		margin-top: -30px;
+	}
+	.show-menu .banner-links {
+		visibility: visible;
+		margin-left: 20%;
+		margin-top: 100px;
+	}
+	.show-menu .banner-links .banner-link {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.show-menu .btn-menu {
+		margin-top: 50px;
+	}
+	.show-menu .btn-menu .btn-menu-bar::before {
+		transform: rotate(45deg)
+	}
+	.show-menu .btn-menu .btn-menu-bar {
+		background: transparent;
+	}
+	.show-menu .btn-menu .btn-menu-bar::after {
+		transform: rotate(-45deg);
+	}
+	.banner-img {
+		width: 200px;
+		cursor: pointer;
+	}
+	.banner-links {
+		visibility: hidden;
+		justify-content: center;
+		align-items: center;
+	}
+	.banner-link {
+		display: block;
+	}
+	.btn-menu {
+		visibility: visible;
+		display: block;
+		position: fixed;
+		right: 25px;
+		border: none;
+		background-color: transparent;
+	}
+	.btn-menu:hover {
+		cursor: pointer;
+	}
+	.btn-menu-bar,
+	.btn-menu-bar::before,
+	.btn-menu-bar::after {
+		display: block;
+		width: 40px;
+		height: 3px;
+		position: relative;
+		border-radius: 3px;
+		background: #ffcb45;
+		transition:  all .5s ease-in-out;
+	}
+	.btn-menu-bar::before,
+	.btn-menu-bar::after {
+		content: "";
+		position: absolute;
+	}
+	.btn-menu-bar::before {
+		transform: translateY(-12px);
+	}
+	.btn-menu-bar::after {
+		transform: translateY(12px);
+	}
+	.show-menu .slideInDown-1 {
+		transition: all 1s ease-out;
+	}
+	.show-menu .slideInDown-2 {
+		transition: all 1.1s ease-out;
+	}
+	.show-menu .slideInDown-3 {
+		transition: all 1.2s ease-out;
+	}
+	.show-menu .slideInDown-4 {
+		transition: all 1.3s ease-out;
+	}
+}
+
+@media (max-width: 420px) {
+	.show-menu {
+		background-color: #fff9ea;
+		display: flex;
+		box-shadow: -5px 30px 30px -30px gray;
+		position: fixed;
+		top: 0;
+		z-index: 10;
+		height: 80%;
+		width: 100%;
+		transition: all .8s ease-in-out;
+	}
+	.show-menu .banner-img {
+		margin-top: -30px;
+	}
+	.show-menu .banner-links {
+		margin-top: 40%;
+		width: 50%;
+		margin-left: -25%;
+	}
+	.show-menu .banner-links .banner-link {
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.show-menu .btn-menu {
+		margin-top: 50px;
+	}
+	.show-menu .btn-menu .btn-menu-bar::before {
+		transform: rotate(45deg)
+	}
+	.show-menu .btn-menu .btn-menu-bar {
+		background: transparent;
+	}
+	.show-menu .btn-menu .btn-menu-bar::after {
+		transform: rotate(-45deg);
+	}
+	.banner-img {
+		width: 200px;
+		cursor: pointer;
+	}
+	.banner-link {
+		display: block;
+	}
+	.btn-menu {
+		visibility: visible;
+		display: block;
+		position: fixed;
+		right: 25px;
+		border: none;
+		background-color: transparent;
+	}
+	.btn-menu:hover {
+		cursor: pointer;
+	}
+	.btn-menu-bar,
+	.btn-menu-bar::before,
+	.btn-menu-bar::after {
+		display: block;
+		width: 40px;
+		height: 3px;
+		position: relative;
+		border-radius: 3px;
+		background: #ffcb45;
+		transition:  all .5s ease-in-out;
+	}
+	.btn-menu-bar::before,
+	.btn-menu-bar::after {
+		content: "";
+		position: absolute;
+	}
+	.btn-menu-bar::before {
+		transform: translateY(-12px);
+	}
+	.btn-menu-bar::after {
+		transform: translateY(12px);
+	}
+	.show-menu .slideInDown-1 {
+		transition: all 1s ease-out;
+	}
+	.show-menu .slideInDown-2 {
+		transition: all 1.1s ease-out;
+	}
+	.show-menu .slideInDown-3 {
+		transition: all 1.2s ease-out;
+	}
+	.show-menu .slideInDown-4 {
+		transition: all 1.3s ease-out;
+	}
+}

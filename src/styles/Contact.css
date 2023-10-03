@@ -1,0 +1,160 @@
+.contact {
+    margin-top: 50px;
+    font-family: 'Readex Pro';
+}
+.contact h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.card-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 20px auto;
+    max-width: 1200px;
+    margin-bottom: 50px;
+}
+.card-contact .item-contact {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 45px 30px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px gray;
+}
+.card-contact .item-contact .icon {
+    width: 60px;
+    height: 60px;
+    background: #fff9ea;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-contact .item-contact .icon i {
+    font-size: 25px;
+}
+.card-contact .item-contact h2 {
+    font-size: 25px;
+    text-align: center;
+}
+.card-contact .item-contact p {
+    color: gray;
+    font-size: 18px;
+    text-align: center;
+}
+.card-contact .item-contact a {
+    text-decoration: none;
+    color: black;
+}
+.card-contact .item-contact a:hover {
+    color: #ffcb45;
+}
+
+.content-form {
+    margin-top: 50px;
+    font-family: 'Readex Pro';
+    margin-bottom: 200px;
+}
+.content-header {
+    display: block;
+}
+.content-header h1 {
+    text-align: center;
+}
+.content-header p {
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+.form {
+    max-width: 1200px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px gray;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+.form form {
+    margin: 20px 50px;
+    width: 1000px;
+}
+form .input {
+    margin-bottom: 30px;
+}
+form .btn-submit {
+    width: 30%;
+    background: #ffcb45;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 35%;
+    color: #f2f2f2;
+}
+form .btn-submit:hover {
+    background: #fff9ea;
+    border: 1px solid #ffcb45;
+}
+
+
+/* Responsive design */
+@media (max-width: 420px) {
+    .contact {
+        font-family: 'Readex Pro';
+        margin: 50px auto;
+        margin-bottom: 150px!important;
+    }
+    .contact h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .card-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    .card-contact .item-contact {
+        width: 80%;
+        margin-bottom: 50px;
+        border-radius: 35px;
+    }
+    .content-form {
+        width: 100%;
+        margin-top: 150px;
+    }
+    .input button {
+        width: 70%;
+        margin: 0 15%;
+    }
+    .input .col-lg-6:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .input textarea {
+        margin-top: -30px;
+    }
+}
+@media (max-width: 920px) {
+    .contact {
+        margin-bottom: 150px!important;
+    }
+    .card-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    .card-contact .item-contact {
+        width: 80%;
+        margin-bottom: 50px;
+        border-radius: 35px;
+    }
+    .content-form {
+        margin-top: 150px;
+    }
+    .input .col-lg-6:nth-child(1) {
+        margin-bottom: 30px;
+    }
+    .input textarea {
+        margin-top: -30px;
+    }
+}

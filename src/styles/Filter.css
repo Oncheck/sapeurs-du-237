@@ -1,0 +1,84 @@
+.filter {
+	background-color: #f2f2f2;
+	padding: 32px;
+	width: 300px;
+	height: 600px;
+    font-family: 'Readex Pro';
+	margin-bottom: 30px;
+}
+
+.filter-search input {
+    padding: 12px 15px;
+    color: #888;
+    font-size: 13px;
+    width: 225px;
+    background: none;
+    letter-spacing: 1px;
+    border-radius: 15px;
+	margin-left: 25px;
+}
+h3.title-filter {
+	color: #181c27;
+	margin-bottom: 20px;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+
+.filter-range {
+    margin-top: 30px;
+}
+.filter-range .dropdown {
+	margin-top: -10px;
+	margin-left: 25px;
+}
+.filter-range .dropdown input[type="range"] {
+    width: 225px;
+    background: gray;
+}
+.filter-range .dropdown input[type="range"]::-webkit-slider-runnable-track {
+    color: #ffcb45;
+}
+ul.dropdown {
+	margin: 0;
+	position: relative;
+    list-style: none;
+}
+
+
+.filter-categories ul li {
+    display: inline-block;
+	width: 100%;
+	margin-bottom: 6px;
+}
+
+input.checked {
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+}
+
+.filter-categories ul li span {
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 1px;
+	margin-left: 3px;
+	vertical-align: top;
+}
+
+.filter-categories ul button {
+	width: 225px;
+	margin-top: 10px;
+	height: 30px;
+	font-size: 18px;
+}
+
+.filter-categories {
+	margin-top: 18px;
+}
+
+@media (max-width: 420px) {
+	.filter {
+		height: 700px;
+	}
+}

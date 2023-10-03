@@ -1,0 +1,270 @@
+.espace-mariage {
+    margin-top: 100px !important;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Readex Pro';
+    background: 'aliceblue';
+    font-family: 'Readex Pro';
+}
+.banner-mariage, .banner-second {
+    display: flex;
+}
+.banner-second {
+    margin-top: 100px;
+}
+.banner-left, .banner-right {
+    width: 50%;
+    height: 500px;
+}
+.banner-right {
+    background-image: url('../../public/assets/espacemariage_photocentral.jpeg');
+    background-size: cover;
+}
+.banner-second-left, .banner-second-right {
+    width: 50%;
+    height: 300px;
+}
+.banner-second-left {
+    background-color: #f6c64e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-second-left h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+.banner-second-left #percent {
+    font-size: 80px;
+}
+.banner-second-left p {
+    font-size: 25px;
+    text-align: center;
+}
+.banner-second-right {
+    background-color: #ffebb7;
+    background-size: cover;
+}
+.banner-second-right img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.banner-left {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 18% 5%;
+}
+.banner-right {
+    background-color: #ffebb7;
+}
+.experiences {
+    background-color: #825f08;
+    height: 150px;
+    display: flex;
+}
+.experiences > .experience {
+    width: 20%;
+    margin-left: 40px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: white;
+}
+.experiences > .experience span {
+    font-size: 25px;
+}
+.title {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.title h3 {
+    text-transform: capitalize;
+}
+.items-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 15px;
+}
+.product {
+    width: 100%;
+    box-shadow: 3px 3px 3px gray;
+    margin: 0 auto;
+}
+.product img {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+.product button, .pub-description button {
+    margin-bottom: 30px;
+    border: none;
+    background: #333;
+    border-radius: 15px;
+    color: white;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+}
+.content-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.input {
+    margin-bottom: 30px;
+}
+.newsletter button {
+    border: none;
+    width: 40%;
+    border-radius: 15px;
+    height: 30px;
+    color: white;
+    background-color: #ec7855;
+    margin: 0 auto;
+}
+.carre-container {
+    max-width: 800px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+.carre {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+.carre-left {
+    background: #f78c6b;
+    width: 25%;
+    height: 50%;
+    margin-top: 25%;
+}
+.carre-right {
+    border: 4px solid #825f08;
+    width: 50%;
+    height: 50%;
+    z-index: 3;
+}
+.carre-center {
+    width: 87.5%;
+    height: 75%;
+    border: 1px solid #825f08;
+    z-index: 5;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -43.5%;
+}
+.container-publicite {
+    display: flex;
+    max-width: 900px;
+    width: 900px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: center;
+}
+.pub-carre-container {
+    max-width: 60%;
+    width: 60%;
+    margin-right: 5%;
+}
+.pub-carre-container img {
+    width: 100%;
+    height: 100%;
+}
+.pub-description {
+    max-width: 35%;
+    width: 35%;
+    margin-left: 5%;
+}
+.pub-description p, .pub-description h3 {
+    text-align: left;
+}
+.pub-description button {
+    margin-left: -50%;
+}
+.contact-us, .newsletter {
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter button {
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 410px) {  
+    .newsletter {
+        margin-bottom: 100px !important;
+    }
+    .banner-second {
+        display: inline-block;
+        width: 100%;
+    }
+    .banner-second-left, .banner-second-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner-mariage {
+        display: block;
+    }
+    .banner-left, .banner-right {
+        width: 100%;
+        height: 300px;
+    }
+    .experience span {
+        font-size: 15px;
+    }
+    .carre-container {
+        max-width: 600px;
+        width: 400px;
+        height: 400px;
+    }
+    .carre-center {
+        margin-top: -97%;
+        width: 80%;
+        height: 70%;
+    }
+    .container-publicite {
+        display: block;
+        max-width: 90%;
+        width: 90%;
+        margin: 50px auto;
+    }
+    .pub-carre-container {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 5%;
+    }
+    .pub-description {
+        max-width: 100%;
+        width: 100%;
+    }
+    .contact-us, .newsletter {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .content-form {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .newsletter button {
+        margin-top: 30px;
+    }
+}

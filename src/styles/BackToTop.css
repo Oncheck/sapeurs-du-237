@@ -1,0 +1,32 @@
+.container-back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #ffcb45;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999999;
+}
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    background: #fff9ea;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-to-top i {
+    font-size: 25px;
+}
+.container-back-to-top:hover {
+    background: #FFF9EA;
+}
+.container-back-to-top:hover .back-to-top {
+    background: #ffcb45;
+}
