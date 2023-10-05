@@ -33,7 +33,7 @@ function App() {
 							<ul className="list-items">
 								{productsByCategory.map((product, index) => (
 									<li key={index} style={{background: `url(${product.cover})`, backgroundSize: 'cover'}}>
-										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>

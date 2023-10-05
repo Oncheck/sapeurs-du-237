@@ -45,7 +45,7 @@ function ShoppingList() {
 								products.slice(0, rangeValue).map((product, index) => (
 									<div key={index}>
 										<img src={product.cover} alt={product?.name} />
-										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
@@ -56,7 +56,7 @@ function ShoppingList() {
 								productsRange.slice(0, rangeValue).map((product, index) => (
 									<div key={index}>
 										<img src={product.cover} alt={product?.name} />
-										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>

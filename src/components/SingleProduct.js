@@ -15,10 +15,10 @@ import emailjs from '@emailjs/browser'
 import BackToTop from './BackToTop';
 
 function SingleProduct() {
-	const param = useParams()
+	const {id} = useParams()
 	const [show, setShow] = useState(false);
 	const [commande, setCommande] = useState({})
-	const currentProduct = productList.find(product => product.name === param.name)
+	const currentProduct = productList.find(product => product.id === parseInt(id))
 	const navigate = useNavigate()
 	const [statusEmail, setStatusEmail] = useState(0)
 
@@ -65,7 +65,7 @@ function SingleProduct() {
 							{
 								currentProduct.images ?
 								<SliderSingleProduct slides={currentProduct.images} /> :
-								<img src={currentProduct.cover} width='100%' height='80%' alt={currentProduct?.name} />
+								<img src={currentProduct.cover} width='100%' height='100%' alt={currentProduct?.name} />
 							}
 						</div>
 					</div>
@@ -122,7 +122,7 @@ function SingleProduct() {
 								similarProducts.map((product, index) => (
 									<div key={index}>
 										<img src={product.cover} alt={product?.name} />
-										<div className="categorie" onClick={() => navigate(`/products/${product.name}`)}>
+										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>
 											<i className="fa fa-arrow-right"></i>
 										</div>
@@ -143,7 +143,7 @@ function SingleProduct() {
 				</Modal.Header>
 				<Modal.Body>
 					<Card style={{marginTop: '-10px'}}>
-						<Card.Title style={{textAlign: 'center', marginTop: '10px'}}>Ces mesures doivent être enregistrées en cm²</Card.Title>
+						<Card.Title style={{textAlign: 'center', marginTop: '10px'}}>Ces mesures doivent être enregistrées en cm</Card.Title>
 						<Card.Body>
 							<img src={guide} alt='consigne' width={'100%'} height={'100%'} />
 						</Card.Body>

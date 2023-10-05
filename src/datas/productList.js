@@ -343,7 +343,7 @@ export const productList = [
     {
         id: 16,
         name: 'Smoking Homme',
-        category: 'Costume de mariage',
+        category: 'Costumes de Mariage',
         cover: mariage_5,
         description : {
             desc: 'Elégant Smoking style « Los Angeles », avec 6 boutons couleurs uniformes, assorti de 2 fentes avant.',
@@ -354,7 +354,7 @@ export const productList = [
     {
         id: 17,
         name: 'Smoking Homme',
-        category: 'Costume de mariage',
+        category: 'Costumes de Mariage',
         cover: mariage_6,
         description : {
             desc: 'Chic Smoking 3 pièces anglais avec gilet à 6 boutons',
@@ -365,7 +365,7 @@ export const productList = [
     {
         id: 18,
         name: 'Modèle « 237 »',
-        category: 'Costume de mariage',
+        category: 'Costumes de Mariage',
         cover: mariage_7,
         description : {
             desc: 'Costume Modèle « La BeaugarçonMania 237 ».',
@@ -377,7 +377,7 @@ export const productList = [
     {
         id: 19,
         name: 'Modèle « 237 »',
-        category: 'Costume de mariage',
+        category: 'Costumes de Mariage',
         cover: mariage_9,
         description : {
             desc: 'Costume Modèle « La BeaugarçonMania 237 ».',

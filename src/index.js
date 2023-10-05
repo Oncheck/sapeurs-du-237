@@ -18,7 +18,7 @@ ReactDOM.render(
         <Route exact path='/home' element={<Home />}></Route>
         <Route exact path='/category/:name' element={<App />}></Route>
         <Route exact path='/products' element={<ShoppingList />}></Route>
-        <Route exact path='/products/:name' element={<SingleProduct />}></Route>
+        <Route exact path='/products/:id' element={<SingleProduct />}></Route>
         <Route exact path='/cart' element={<Cart />}></Route>
         <Route exact path='/contact' element={<Contact />}></Route>
         <Route exact path='/espace-mariage' element={<EspaceMariage />}></Route>
