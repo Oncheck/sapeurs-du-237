@@ -14,12 +14,14 @@
 
 .container-slider {
     width: 100%;
-    height: 90%;
+    height: 70%;
     margin: 50px 20px;
     border-radius: 10px;
 }
 .container-slider img {
     border-radius: 10px;
+    width: 100%;
+    height: 90%;
 }
 .slider-right {
     width: 50%;
@@ -105,13 +107,16 @@ hr {
     }
     .slider-right {
         margin: 0 5%;
-        margin-top: -100px;
+        margin-top: -300px;
     }
     .info-produit h2 {
         text-align: center;
     }
     .container-slider {
         height: 80%;
+    }
+    .container-slider img {
+        height: 70%;
     }
 }
 
