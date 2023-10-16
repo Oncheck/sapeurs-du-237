@@ -364,7 +364,7 @@ export const productList = [
     },
     {
         id: 18,
-        name: 'Modèle « 237 »',
+        name: 'Mode « 237 »',
         category: 'Costumes de Mariage',
         cover: mariage_7,
         description : {
@@ -376,7 +376,7 @@ export const productList = [
     },
     {
         id: 19,
-        name: 'Modèle « 237 »',
+        name: 'Mode « 237 »',
         category: 'Costumes de Mariage',
         cover: mariage_9,
         description : {
