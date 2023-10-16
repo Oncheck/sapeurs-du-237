@@ -488,14 +488,14 @@ export const productList = [
     },
     {
         id: 27,
-        name: 'Chemise africaine « Les Montagnards »',
+        name: 'Chemise africaine « Abidjan »',
         category: 'Chemises africaines',
-        cover: chemise_africaine_3,
-        prix: 'à partir de 60',
+        cover: chemise_africaine_4,
+        prix: 'à partir de 45',
         description : {
-            desc: 'Chemise africaine personnalisée style « Les Montagnards ». Longues manches avec fermetures à manchettes au niveau du poignet, et col rond.',
+            desc: 'Chemise africaine personnalisée style « Abidjan ». Longues manches avec fermetures à manchettes au niveau du poignet, et col rond.',
             slug: 'La personnalisation se fait avec vos initiaux. Exemple : Votre nom :  James Andrew Kotto. Initiaux personnalisés au niveau de la poitrine : J.A.K',
-            tissu: 'Mélange N’dôp et Basin'
+            tissu: 'Mélange coton et Basin'
         },
         inCart: 0
     },

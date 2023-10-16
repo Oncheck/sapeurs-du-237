@@ -120,7 +120,7 @@ function SingleProduct() {
 						<div className="container-image">
 							{similarProducts.length > 1 ?
 								similarProducts.map((product, index) => (
-									<div key={index}>
+									<div key={index} onClick={() => navigate(`/products/${product.id}`)} className='hover-image'>
 										<img src={product.cover} alt={product?.name} />
 										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>

@@ -43,7 +43,7 @@ function ShoppingList() {
 						<div className="container-image">
 							{activeCategory === '' ? (
 								products.slice(0, rangeValue).map((product, index) => (
-									<div key={index}>
+									<div key={index} onClick={() => navigate(`/products/${product.id}`)} className='hover-image'>
 										<img src={product.cover} alt={product?.name} />
 										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>
@@ -54,7 +54,7 @@ function ShoppingList() {
 							) : (
 								productsRange.length > 0 ?
 								productsRange.slice(0, rangeValue).map((product, index) => (
-									<div key={index}>
+									<div key={index} onClick={() => navigate(`/products/${product.id}`)} className='hover-image'>
 										<img src={product.cover} alt={product?.name} />
 										<div className="categorie" onClick={() => navigate(`/products/${product.id}`)}>
 											<p>{product.name}</p>
@@ -74,9 +74,6 @@ function ShoppingList() {
 								producstDemanded.map((product, index) => (
 									<div key={index}>
 										<img src={product.cover} alt={product?.name} />
-										{/* <div className="categorie">
-											<p>{product.category}</p>
-										</div> */}
 									</div>
 								)) : <div className='no-product'>
 									<p>Aucun produit trouvé !</p>

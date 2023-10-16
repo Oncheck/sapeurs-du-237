@@ -88,6 +88,13 @@
     margin-top: 15px;
 }
 
+.hover-image img {
+    transition: transform 0.8s;
+}
+.hover-image:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .products-items .product-img {
 	width: 250px;
     height: 300px;
