@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f095adc0.css",
-    "main.js": "/static/js/main.b13740db.js",
+    "main.css": "/static/css/main.1f92990c.css",
+    "main.js": "/static/js/main.1f9a5a31.js",
     "static/media/1.png": "/static/media/1.be12a87bef866748a4e9.png",
     "static/media/14.png": "/static/media/14.1fd6da6326ffd8d05c7a.png",
     "static/media/13.png": "/static/media/13.1095581abd7ae169e6fa.png",
@@ -48,7 +48,7 @@
     "static/media/2_4.png": "/static/media/2_4.ebe9288d8d390b897cc3.png",
     "static/media/Bannière Service Traiteur.jpg": "/static/media/Bannière Service Traiteur.4cb11623cba48a7192f2.jpg",
     "static/media/2_3.png": "/static/media/2_3.0289f866b8d0b8c00faa.png",
-    "static/media/services-onc_mariage.jpeg": "/static/media/services-onc_mariage.e4a9c4793124e831bf59.jpeg",
+    "static/media/service-oncheck_mariage.jpeg": "/static/media/service-oncheck_mariage.9c1dc653200bb6add117.jpeg",
     "static/media/2_2.png": "/static/media/2_2.2cf16a776990f28f662a.png",
     "static/media/Bannière Photographe.jpg": "/static/media/Bannière Photographe.b0e8c534da2850f2caa7.jpg",
     "static/media/Bannière costume.jpg": "/static/media/Bannière costume.667d3e05adaa62ba928a.jpg",
@@ -57,11 +57,11 @@
     "static/media/offer.jpg": "/static/media/offer.4e0b1b920f7734cf5502.jpg",
     "static/media/logo.png": "/static/media/logo.539eea425416e7a253d8.png",
     "index.html": "/index.html",
-    "main.f095adc0.css.map": "/static/css/main.f095adc0.css.map",
-    "main.b13740db.js.map": "/static/js/main.b13740db.js.map"
+    "main.1f92990c.css.map": "/static/css/main.1f92990c.css.map",
+    "main.1f9a5a31.js.map": "/static/js/main.1f9a5a31.js.map"
   },
   "entrypoints": [
-    "static/css/main.f095adc0.css",
-    "static/js/main.b13740db.js"
+    "static/css/main.1f92990c.css",
+    "static/js/main.1f9a5a31.js"
   ]
 }

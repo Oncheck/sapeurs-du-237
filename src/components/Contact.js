@@ -62,7 +62,7 @@ const Contact = () => {
                             <i className="fa fa-map"></i>
                         </div>
                         <h2>Adresse</h2>
-                        <p>Nous sommes dans deux pays actuellement: le Cameroun et l'Allemange</p>
+                        <p>Nous livrons à l'international</p>
                     </div>
                     <div className="item-contact">
                         <div className="icon">

@@ -12,7 +12,7 @@ import BackToTop from './BackToTop'
 function ShoppingList() {
 	const [activeCategory, setActiveCategory] = useState('')
 	const [search, setSearch] = useState('')
-	const [rangeValue, setRangeValue] = useState(8)
+	const [rangeValue, setRangeValue] = useState(32)
 	const categories = categoriesList.filter(categories => categories.nom !== "Tenues d'apparâts (à la demande)")
 	const products = productList.filter(products => products.category !== "Tenues d'apparâts (à la demande)")
 	const producstDemanded = productList.filter(products => products.category === "Tenues d'apparâts (à la demande)")

@@ -5,13 +5,12 @@ import { experiences } from "../datas/experiencesList";
 import { productsMariage } from "../datas/productsMariageList"
 import BackToTop from "./BackToTop";
 import photographe from '../assets/images/slides/Bannière Photographe.jpg'
-import site_web from '../assets/images/slides/services-onc_mariage.jpeg'
+import site_web from '../assets/images/slides/service-oncheck_mariage.jpeg'
 import vetement from '../assets/images/slides/Bannière costume.jpg'
 import traiteur from '../assets/images/slides/Bannière Service Traiteur.jpg'
 import banner_right from '../assets/images/offer.jpg'
 import { useEffect, useState } from "react";
 import emailjs from '@emailjs/browser'
-
 
 function EspaceMariage() {
     const [form, setForm] = useState({})

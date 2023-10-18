@@ -68,6 +68,7 @@ import costume_2b_1 from '../assets/images/produits/Costumes 2 boutons/1.png'
 import costume_2b_2 from '../assets/images/produits/Costumes 2 boutons/2.png'
 import costume_2b_3 from '../assets/images/produits/Costumes 2 boutons/3.png'
 import costume_2b_4 from '../assets/images/produits/Costumes 2 boutons/4.png'
+import costume_2b_5 from '../assets/images/produits/Costumes 2 boutons/5.png'
 
 export const productList = [
     {
@@ -498,7 +499,7 @@ export const productList = [
             tissu: 'Mélange coton et Basin'
         },
         inCart: 0
-    },
+    },/*
     {
         id: 28,
         name: 'Chemise africaine « Abidjan »',
@@ -511,7 +512,7 @@ export const productList = [
             tissu: 'Mélange coton et Basin'
         },
         inCart: 0
-    },
+    },*/
     {
         id: 29,
         name: 'Chemise africaine « Lamidot »',
@@ -603,6 +604,7 @@ export const productList = [
         name: 'Mode « Les Ministrables »',
         category: 'Costumes 2 boutons',
         cover: costume_2b_4,
+        images: [costume_2b_4, costume_2b_5],
         description: {
             desc: 'Costume 2 boutons et 3 poches passepoilées en toute éléganc',
             slug: 'Sentez-vous dans la peau d’un Ministre !!! Inspirez fraîcheur et respect !',
