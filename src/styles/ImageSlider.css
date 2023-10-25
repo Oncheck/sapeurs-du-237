@@ -32,8 +32,8 @@
     top: 50%;
     transform: translate(0, -50%);
     left: 10%;
-    font-size: 45px;
-    color: #fff9ea;
+    font-size: 55px;
+    color: black;
     z-index: 1;
     cursor: pointer;
 }
@@ -42,8 +42,8 @@
     top: 50%;
     transform: translate(0, -50%);
     right: 10%;
-    font-size: 45px;
-    color: #fff9ea;
+    font-size: 55px;
+    color: black;
     z-index: 1;
     cursor: pointer;
 }
@@ -124,9 +124,11 @@
         font-size: 25px;
     }
     .left-arrow {
-        left: 5%;
+        left: 10%;
+        top: 40% !important;
     }
     .right-arrow {
-        right: 5%;
+        right: 10%;
+        top: 40% !important;
     }
 }
