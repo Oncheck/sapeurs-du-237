@@ -18,12 +18,8 @@ export const categoriesList = [
         image: costume_croise
     },
     {
-        nom: 'Chemises africaines',
-        image: chemise_africaine
-    },
-    {
         nom: 'Chemises',
-        image: chemise_sur_mesure
+        image: chemise_africaine
     },
     {
         nom: 'Accessoires',

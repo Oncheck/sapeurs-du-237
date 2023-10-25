@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f92990c.css",
-    "main.js": "/static/js/main.1f9a5a31.js",
+    "main.css": "/static/css/main.313eb697.css",
+    "main.js": "/static/js/main.9e5a2a09.js",
     "static/media/1.png": "/static/media/1.be12a87bef866748a4e9.png",
     "static/media/14.png": "/static/media/14.1fd6da6326ffd8d05c7a.png",
     "static/media/13.png": "/static/media/13.1095581abd7ae169e6fa.png",
@@ -12,13 +12,13 @@
     "static/media/2.png": "/static/media/2.ed9c75d54f6ca3fc626c.png",
     "static/media/7.png": "/static/media/7.65c39b81e8af6d6938f5.png",
     "static/media/1_5.png": "/static/media/1_5.8f8fb6a9fc9198fe4b72.png",
-    "static/media/4.png": "/static/media/4.27045f9462ab3a0be2ba.png",
     "static/media/6.png": "/static/media/6.65e458beae4a3491b0ec.png",
     "static/media/10.png": "/static/media/10.124087c575b0b74c5df2.png",
     "static/media/8.png": "/static/media/8.e805900972546e877de5.png",
     "static/media/3_2.png": "/static/media/3_2.88412de025bcdd7931d2.png",
     "static/media/3_6.png": "/static/media/3_6.7913936cda8c18ac9f58.png",
     "static/media/9.png": "/static/media/9.7b0619c2cfadf88cfc15.png",
+    "static/media/4.png": "/static/media/4.27045f9462ab3a0be2ba.png",
     "static/media/Costume_Mariage.png": "/static/media/Costume_Mariage.d5de0e25b8b10bd62ef0.png",
     "static/media/A_la_demande.png": "/static/media/A_la_demande.cfa03d09fb34e6de64cd.png",
     "static/media/11.png": "/static/media/11.502e8210d03f270cc99d.png",
@@ -57,11 +57,11 @@
     "static/media/offer.jpg": "/static/media/offer.4e0b1b920f7734cf5502.jpg",
     "static/media/logo.png": "/static/media/logo.539eea425416e7a253d8.png",
     "index.html": "/index.html",
-    "main.1f92990c.css.map": "/static/css/main.1f92990c.css.map",
-    "main.1f9a5a31.js.map": "/static/js/main.1f9a5a31.js.map"
+    "main.313eb697.css.map": "/static/css/main.313eb697.css.map",
+    "main.9e5a2a09.js.map": "/static/js/main.9e5a2a09.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f92990c.css",
-    "static/js/main.1f9a5a31.js"
+    "static/css/main.313eb697.css",
+    "static/js/main.9e5a2a09.js"
   ]
 }

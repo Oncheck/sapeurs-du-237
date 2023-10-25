@@ -464,7 +464,7 @@ export const productList = [
     {
         id: 25,
         name: 'Chemise africaine Muna « Sawa »',
-        category: 'Chemises africaines',
+        category: 'Chemises',
         cover: chemise_africaine_1,
         prix: 'à partir de 50',
         description : {
@@ -477,7 +477,7 @@ export const productList = [
     {
         id: 26,
         name: 'Chemise africaine « Bantu »',
-        category: 'Chemises africaines',
+        category: 'Chemises',
         cover: chemise_africaine_2,
         prix: 'à partir de 50',
         description : {
@@ -490,7 +490,7 @@ export const productList = [
     {
         id: 27,
         name: 'Chemise africaine « Abidjan »',
-        category: 'Chemises africaines',
+        category: 'Chemises',
         cover: chemise_africaine_4,
         prix: 'à partir de 45',
         description : {
@@ -503,7 +503,7 @@ export const productList = [
     {
         id: 28,
         name: 'Chemise africaine « Abidjan »',
-        category: 'Chemises africaines',
+        category: 'Chemises',
         cover: chemise_africaine_4,
         prix: 'à partir de 45',
         description : {
@@ -516,7 +516,7 @@ export const productList = [
     {
         id: 29,
         name: 'Chemise africaine « Lamidot »',
-        category: 'Chemises africaines',
+        category: 'Chemises',
         cover: chemise_africaine_5,
         prix: 'à partir de 60',
         description : {
@@ -529,7 +529,7 @@ export const productList = [
     {
         id: 30,
         name: 'Chemise africaine « Kribienne »',
-        category: 'Chemises africaines',
+        category: 'Chemises',
         cover: chemise_africaine_6,
         prix: 'à partir de 50',
         description : {
