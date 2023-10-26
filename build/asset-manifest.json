@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.562fc8fe.css",
-    "main.js": "/static/js/main.759ae149.js",
+    "main.js": "/static/js/main.1c50c8bf.js",
     "static/media/1.png": "/static/media/1.be12a87bef866748a4e9.png",
     "static/media/14.png": "/static/media/14.1fd6da6326ffd8d05c7a.png",
     "static/media/13.png": "/static/media/13.1095581abd7ae169e6fa.png",
@@ -24,7 +24,7 @@
     "static/media/11.png": "/static/media/11.502e8210d03f270cc99d.png",
     "static/media/Bannière Sapeurs.jpg": "/static/media/Bannière Sapeurs.474123aca6710c1efd6a.jpg",
     "static/media/4_2.png": "/static/media/4_2.655cbecf729eb25f5496.png",
-    "static/media/1_2.png": "/static/media/1_2.65383ca5e542de7eeab0.png",
+    "static/media/1_2.png": "/static/media/1_2.a4f782fe26c50dd3f6c1.png",
     "static/media/Chemise.png": "/static/media/Chemise.65383ca5e542de7eeab0.png",
     "static/media/3_4.png": "/static/media/3_4.6b04fec3a004ea0b670c.png",
     "static/media/Chemise_Africaine.png": "/static/media/Chemise_Africaine.76d77f5df9fd9ae92a90.png",
@@ -33,12 +33,12 @@
     "static/media/Costume_Croisé.png": "/static/media/Costume_Croisé.719aa9ebadd81a30431a.png",
     "static/media/12.png": "/static/media/12.720db55d1d0b187c9dcd.png",
     "static/media/Cuir.png": "/static/media/Cuir.653985984a853c9e58ce.png",
-    "static/media/4_1.png": "/static/media/4_1.f79d0775b0bf79fcc88a.png",
     "static/media/Accessoire.png": "/static/media/Accessoire.11592a792adb66f0e1ec.png",
     "static/media/5_3.png": "/static/media/5_3.14f3bd6c19caabd64e5f.png",
     "static/media/Mocassin.png": "/static/media/Mocassin.14f3bd6c19caabd64e5f.png",
     "static/media/3_1.png": "/static/media/3_1.f4c90cd086b5167ea0bd.png",
     "static/media/Costume_2_boutons.png": "/static/media/Costume_2_boutons.b96c73a92f258241eaba.png",
+    "static/media/4_1.png": "/static/media/4_1.ef1c99b93b0c011fef4b.png",
     "static/media/3_5.png": "/static/media/3_5.d96ec9dfe18ed9178192.png",
     "static/media/7_2.png": "/static/media/7_2.afe3dcd5a103808e583d.png",
     "static/media/2_1.png": "/static/media/2_1.8337a7ab3bf1da6ca23a.png",
@@ -58,10 +58,10 @@
     "static/media/logo.png": "/static/media/logo.539eea425416e7a253d8.png",
     "index.html": "/index.html",
     "main.562fc8fe.css.map": "/static/css/main.562fc8fe.css.map",
-    "main.759ae149.js.map": "/static/js/main.759ae149.js.map"
+    "main.1c50c8bf.js.map": "/static/js/main.1c50c8bf.js.map"
   },
   "entrypoints": [
     "static/css/main.562fc8fe.css",
-    "static/js/main.759ae149.js"
+    "static/js/main.1c50c8bf.js"
   ]
 }
