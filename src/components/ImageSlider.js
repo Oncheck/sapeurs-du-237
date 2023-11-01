@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import '../styles/ImageSlider.css'
 import { slides } from "../datas/slider";
 
@@ -17,9 +17,27 @@ const ImageSlider = () => {
         setCurrentIndex(newIndex)
     }
 
+    /*const goToPrevious = () => {
+        const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+        setCurrentIndex(newIndex);
+    };
+    
+    const goToNext = () => {
+        const newIndex = (currentIndex + 1) % slides.length;
+        setCurrentIndex(newIndex);
+    };*/
+
     const goToSlide = (slideIndex) => {
         setCurrentIndex(slideIndex)
     }
+
+    useEffect(() => {
+        const intervalId = setInterval(goToNext, 5000);
+        
+        return () => {
+          clearInterval(intervalId);
+        };
+    }, [currentIndex]);
 
     return (
         <div className="slider">

@@ -107,7 +107,7 @@ function EspaceMariage() {
                                 </div>
                             </div>
                             <div className="banner-second-right">
-                                <img src={banner_right} />
+                                <img src={banner_right} alt="banner" />
                             </div>
                         </div>
                     </div>
